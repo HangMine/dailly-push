@@ -45,6 +45,33 @@ pnpm generate:daily --date 2026-03-22
 
 站点页面直接读取 `src/content/daily` 下的静态内容，所以要把新生成的 JSON 一起提交到仓库。
 
+## 一键发布每日内容
+
+仓库内已经提供一条完整发布命令：
+
+```bash
+pnpm publish:daily
+pnpm publish:daily --date 2026-03-22
+pnpm publish:daily --date 2026-03-22 --skip-push
+```
+
+这条命令会依次执行：
+
+1. 检查当前分支是否为 `main`
+2. 检查工作区是否干净，避免误提交其他改动
+3. `git pull --rebase origin main`
+4. `pnpm generate:daily`
+5. `pnpm build`
+6. 仅提交 `src/content/daily` 下的内容变更
+7. `git push origin main`
+
+说明：
+
+- `generated/` 目录仍然只作为本地产物，不会被提交
+- 如果当天内容没有变化，命令会直接退出，不会创建空提交
+- `--skip-push` 适合第一次手动验证，只提交不推送
+- 自动推送依赖当前机器上的 Git 凭据已配置完成
+
 ## 站点路由
 
 - `/` 最新一期
@@ -68,8 +95,8 @@ pnpm generate:daily --date 2026-03-22
 
 之后的发布流程：
 
-1. 本地生成或更新内容
-2. 提交代码并推送到 `main`
+1. 本地运行 `pnpm publish:daily`
+2. 命令自动提交并推送到 `main`
 3. 在 `Actions` 页面查看 `Deploy to GitHub Pages` 工作流是否成功
 4. 成功后访问 `https://hangmine.github.io/dailly-push/`
 
@@ -78,8 +105,8 @@ pnpm generate:daily --date 2026-03-22
 - GitHub Pages 只负责构建和发布仓库里的现成内容
 - 当前工作流不会在 CI 里执行 `pnpm generate:daily`
 - 内容生成和站点发布是两段流程：
-  - 本地运行 `pnpm generate:daily`
-  - 提交生成结果后由 GitHub Actions 自动发布
+  - 本地或自动化环境运行 `pnpm publish:daily`
+  - 推送到 `main` 后由 GitHub Actions 自动发布
 
 ## 常见问题
 

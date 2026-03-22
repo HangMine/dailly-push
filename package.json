@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "test": "vitest run",
-    "generate:daily": "tsx scripts/generate-daily.ts"
+    "generate:daily": "tsx scripts/generate-daily.ts",
+    "publish:daily": "tsx scripts/publish-daily.ts"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.1",
