@@ -19,7 +19,7 @@ const latestIssue = await getLatestIssue();
           dateLabel={formatDisplayDate(latestIssue.data.date)}
           summary="通过静态生成呈现每日热门仓库，兼顾网页阅读体验与 QQ 可直接发送的纯文本版本。"
           stats={[
-            { label: '分榜数量2', value: `${latestIssue.data.sections.length}` },
+            { label: '分榜数量', value: `${latestIssue.data.sections.length}` },
             { label: '榜单条目', value: `${countRepos(latestIssue)}` },
             { label: '唯一仓库', value: `${countUniqueRepos(latestIssue)}` },
           ]}
