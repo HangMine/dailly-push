@@ -332,7 +332,7 @@ code {
 }
 
 .hero-blur-title {
-  max-width: 15ch;
+  width: max-content;
   letter-spacing: -0.04em;
 }
 
