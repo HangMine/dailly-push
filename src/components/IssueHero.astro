@@ -1,0 +1,81 @@
+---
+import AnimatedStatValue from '@/components/AnimatedStatValue';
+import BlurText from '@/components/reactbits/BlurText';
+import Aurora from '@/components/reactbits/Aurora';
+import Particles from '@/components/reactbits/Particles';
+
+interface Props {
+  title: string;
+  dateLabel: string;
+  summary: string;
+  stats: Array<{ label: string; value: string }>;
+}
+
+const { title, dateLabel, summary, stats } = Astro.props;
+const signalTags = ['Astro SSG', 'Particle Briefing', 'QQ Ready'];
+---
+
+<section class="hero-card hero-card--featured">
+  <div class="hero-aurora-layer" aria-hidden="true">
+    <Aurora
+      colorStops={['#0f766e', '#f59e0b', '#0b3f3a']}
+      amplitude={0.9}
+      blend={0.45}
+      speed={0.65}
+      client:load
+    />
+  </div>
+
+  <div class="hero-particle-layer" aria-hidden="true">
+    <Particles
+      particleCount={120}
+      particleSpread={8}
+      speed={0.12}
+      particleColors={['#0f766e', '#d97706', '#f8fafc']}
+      moveParticlesOnHover={true}
+      particleHoverFactor={0.9}
+      alphaParticles={true}
+      particleBaseSize={90}
+      sizeRandomness={0.9}
+      cameraDistance={18}
+      className="hero-reactbits-particles"
+      client:load
+    />
+  </div>
+
+  <div class="hero-copy">
+    <div class="hero-pill-row">
+      {
+        signalTags.map((tag, index) => (
+          <span class="hero-pill" style={`--pill-index:${index}`}>
+            {tag}
+          </span>
+        ))
+      }
+    </div>
+
+    <p class="eyebrow">Daily Ranking Brief</p>
+    <h1 class="sr-only">{title}</h1>
+    <BlurText
+      text={title}
+      className="hero-blur-title"
+      animateBy="letters"
+      delay={42}
+      stepDuration={0.24}
+      client:load
+    />
+    <p class="hero-date">{dateLabel}</p>
+    <p class="hero-summary">{summary}</p>
+  </div>
+
+  <div class="hero-stats">
+    {
+      stats.map((stat, index) => (
+        <div class="hero-stat" style={`--stat-index:${index}`}>
+          <AnimatedStatValue value={stat.value} className="hero-stat__value" client:load />
+          <span>{stat.label}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>

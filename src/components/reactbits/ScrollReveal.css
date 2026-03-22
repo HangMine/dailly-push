@@ -1,0 +1,12 @@
+.rb-scroll-reveal {
+  margin: 0;
+}
+
+.rb-scroll-reveal-text {
+  margin: 0;
+}
+
+.rb-scroll-word {
+  display: inline-block;
+  will-change: transform, filter, opacity;
+}

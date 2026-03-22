@@ -1,0 +1,44 @@
+---
+import ArchiveMotionPanel from '@/components/ArchiveMotionPanel.astro';
+import IssueHero from '@/components/IssueHero.astro';
+import IssueList from '@/components/IssueList.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getDailyIssues } from '@/lib/daily/content';
+import { formatDisplayDate } from '@/lib/daily/formatters';
+
+const entries = await getDailyIssues();
+const archiveMotionItems =
+  entries.length > 0
+    ? Array.from({ length: 28 }, (_, index) => {
+        const entry = entries[index % entries.length];
+        return `${formatDisplayDate(entry.data.date)} · ${entry.data.title}`;
+      })
+    : Array.from({ length: 28 }, (_, index) => `Daily Briefing ${index + 1}`);
+---
+
+<BaseLayout title="历史归档 | GitHub 天榜速递">
+  <IssueHero
+    title="历史归档"
+    dateLabel="按日期倒序浏览每一期"
+    summary="归档页保留所有已生成内容，方便回看每天的热点仓库、增长原因与传播节奏。"
+    stats={[
+      { label: '总期数', value: `${entries.length}` },
+      { label: '部署方式', value: 'GitHub Pages' },
+      { label: '内容形态', value: 'SSG' },
+    ]}
+  />
+
+  <ArchiveMotionPanel items={archiveMotionItems} />
+
+  {
+    entries.length ? (
+      <IssueList entries={entries} />
+    ) : (
+      <section class="empty-card">
+        <p class="eyebrow">Archive Empty</p>
+        <h1>归档还是空的</h1>
+        <p>生成第一期内容后，这里会自动出现历史列表。</p>
+      </section>
+    )
+  }
+</BaseLayout>

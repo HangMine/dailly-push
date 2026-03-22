@@ -1,0 +1,30 @@
+---
+import SectionTitle from '@/components/SectionTitle.astro';
+import type { SourceLink } from '@/lib/daily/schema';
+
+interface Props {
+  sources: SourceLink[];
+}
+
+const { sources } = Astro.props;
+---
+
+<section class="sources-card">
+  <div class="section-heading">
+    <span class="section-rule"></span>
+    <SectionTitle title="【来源链接】" />
+  </div>
+
+  <ol class="source-list">
+    {
+      sources.map((source) => (
+        <li>
+          <span>{source.label}</span>
+          <a href={source.url} target="_blank" rel="noreferrer">
+            {source.url}
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</section>

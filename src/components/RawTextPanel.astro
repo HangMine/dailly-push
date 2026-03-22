@@ -1,0 +1,63 @@
+---
+interface Props {
+  rawText: string;
+}
+
+const { rawText } = Astro.props;
+const panelId = `raw-${Math.random().toString(36).slice(2, 10)}`;
+---
+
+<details class="raw-panel">
+  <summary class="raw-panel__summary">
+    <div>
+      <p class="eyebrow">QQ Ready</p>
+      <h2>可直接发送的纯文本</h2>
+    </div>
+    <span class="raw-panel__toggle">点击展开</span>
+  </summary>
+
+  <div class="raw-panel__content">
+    <div class="raw-panel__actions">
+      <button class="copy-button" type="button" data-copy-target={panelId}>
+        复制纯文本
+      </button>
+    </div>
+
+    <pre id={panelId}>{rawText}</pre>
+  </div>
+</details>
+
+<script is:inline>
+  document.addEventListener('click', async (event) => {
+    const target = event.target;
+
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    const button = target.closest('[data-copy-target]');
+
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    const panelId = button.dataset.copyTarget;
+    const panel = panelId ? document.getElementById(panelId) : null;
+    const text = panel?.textContent?.trim();
+
+    if (!text) {
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(text);
+      const original = button.textContent;
+      button.textContent = '已复制';
+      window.setTimeout(() => {
+        button.textContent = original;
+      }, 1500);
+    } catch {
+      button.textContent = '复制失败';
+    }
+  });
+</script>

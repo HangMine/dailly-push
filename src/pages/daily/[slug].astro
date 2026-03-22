@@ -1,0 +1,37 @@
+---
+import IssueHero from '@/components/IssueHero.astro';
+import RankingSection from '@/components/RankingSection.astro';
+import RawTextPanel from '@/components/RawTextPanel.astro';
+import SourceList from '@/components/SourceList.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { countRepos, countUniqueRepos, getDailyIssues } from '@/lib/daily/content';
+import { formatDisplayDate } from '@/lib/daily/formatters';
+
+export async function getStaticPaths() {
+  const entries = await getDailyIssues();
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.data.title} | GitHub 天榜速递`}>
+  <IssueHero
+    title={entry.data.title}
+    dateLabel={formatDisplayDate(entry.data.date)}
+    summary="单日期详情页会完整展示四份榜单、中文解读，以及可直接发送的 QQ 纯文本版本。"
+    stats={[
+      { label: '分榜数量', value: `${entry.data.sections.length}` },
+      { label: '榜单条目', value: `${countRepos(entry)}` },
+      { label: '唯一仓库', value: `${countUniqueRepos(entry)}` },
+    ]}
+  />
+
+  {entry.data.sections.map((section, index) => <RankingSection section={section} index={index} />)}
+
+  <SourceList sources={entry.data.sources} />
+  <RawTextPanel rawText={entry.data.rawText} />
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import IssueHero from '@/components/IssueHero.astro';
+import RankingSection from '@/components/RankingSection.astro';
+import RawTextPanel from '@/components/RawTextPanel.astro';
+import SourceList from '@/components/SourceList.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { countRepos, countUniqueRepos, getLatestIssue } from '@/lib/daily/content';
+import { formatDisplayDate } from '@/lib/daily/formatters';
+
+const latestIssue = await getLatestIssue();
+---
+
+<BaseLayout title="GitHub 天榜速递">
+  {
+    latestIssue ? (
+      <>
+        <IssueHero
+          title={latestIssue.data.title}
+          dateLabel={formatDisplayDate(latestIssue.data.date)}
+          summary="通过静态生成呈现每日热门仓库，兼顾网页阅读体验与 QQ 可直接发送的纯文本版本。"
+          stats={[
+            { label: '分榜数量', value: `${latestIssue.data.sections.length}` },
+            { label: '榜单条目', value: `${countRepos(latestIssue)}` },
+            { label: '唯一仓库', value: `${countUniqueRepos(latestIssue)}` },
+          ]}
+        />
+
+        {latestIssue.data.sections.map((section, index) => <RankingSection section={section} index={index} />)}
+
+        <SourceList sources={latestIssue.data.sources} />
+        <RawTextPanel rawText={latestIssue.data.rawText} />
+      </>
+    ) : (
+      <section class="empty-card">
+        <p class="eyebrow">No Issue Yet</p>
+        <h1>还没有生成任何一期内容</h1>
+        <p>
+          运行 <code>pnpm generate:daily</code> 后，这里会自动展示最新一期榜单与历史归档。
+        </p>
+      </section>
+    )
+  }
+</BaseLayout>

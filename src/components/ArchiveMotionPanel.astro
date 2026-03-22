@@ -1,0 +1,33 @@
+---
+import GridMotion from '@/components/reactbits/GridMotion';
+import ScrollReveal from '@/components/reactbits/ScrollReveal';
+
+interface Props {
+  items: string[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="archive-motion-card">
+  <div class="archive-motion-copy">
+    <p class="eyebrow">Signal Wall</p>
+    <ScrollReveal
+      containerClassName="archive-motion-title"
+      textClassName="archive-motion-title__text"
+      baseOpacity={0.18}
+      baseRotation={1}
+      blurStrength={2}
+      rotationEnd="top 80%"
+      wordAnimationEnd="top 60%"
+      client:visible
+    >
+      {'Archive Replay Matrix'}
+    </ScrollReveal>
+    <p class="archive-motion-summary">把历史期数拆成一面持续流动的信号墙，方便快速回看不同日期的热门仓库脉冲。</p>
+  </div>
+
+  <div class="archive-motion-stage">
+    <GridMotion items={items} gradientColor="rgba(15, 118, 110, 0.28)" client:visible />
+  </div>
+</section>

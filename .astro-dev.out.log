@@ -1,0 +1,30 @@
+
+> dailly-push@0.1.0 dev E:\workspace\dailly-push
+> astro dev "--" "--host" "127.0.0.1" "--port" "4322" "--verbose"
+
+[vite] connected.
+[2m18:15:31[22m [34m[types][39m Generated [2m1ms[22m
+[vite] connected.
+[2m18:15:31[22m [34m[content][39m Syncing content
+[2m18:15:31[22m [34m[content][39m Astro config changed
+[2m18:15:31[22m [34m[content][39m Clearing content store
+[2m18:15:31[22m [34m[content][39m Synced content
+[33m[1m18:15:31[22m [WARN] [vite][39m [36m[plugin:astro:scripts] [39m[33mcontext method [1memitFile()[22m is not supported in serve mode. This plugin is likely not vite-compatible.[39m
+[2m18:15:31[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m18:15:31[22m [34m[vite][39m Port 4321 is in use, trying another one...
+[42m[1m astro [22m[49m [32mv6.0.8[39m [2mready in[22m 1007 [2mms[22m
+[2m┃[22m Local    [36mhttp://localhost:4322/dailly-push[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+[2m18:15:31[22m [32mwatching for file changes...[39m
+[2m18:16:04[22m [34m[200][39m / [2m181ms[22m
+[2m18:16:12[22m [34m[200][39m / [2m21ms[22m
+[2m18:16:13[22m [34m[vite][39m [32m✨ new dependencies optimized: [33mastro/runtime/client/dev-toolbar/entrypoint.js[32m[39m
+[2m18:16:13[22m [34m[vite][39m [32m✨ optimized dependencies changed. reloading[39m
+[2m18:16:13[22m [34m[200][39m / [2m21ms[22m
+[2m18:16:14[22m [33m[404][39m /@id/astro/runtime/client/dev-toolbar/astro_runtime_client_dev-toolbar_entrypoint__js.js.map [2m12ms[22m
+[2m18:16:36[22m [34m[200][39m / [2m22ms[22m
+[2m18:16:36[22m [33m[404][39m /@id/astro/runtime/client/dev-toolbar/astro_runtime_client_dev-toolbar_entrypoint__js.js.map [2m1ms[22m
+[2m18:16:47[22m [34m[200][39m / [2m19ms[22m
+[2m18:16:47[22m [33m[404][39m /@id/astro/runtime/client/dev-toolbar/astro_runtime_client_dev-toolbar_entrypoint__js.js.map [2m1ms[22m
+[2m18:17:02[22m [34m[200][39m / [2m23ms[22m
+[2m18:17:02[22m [33m[404][39m /@id/astro/runtime/client/dev-toolbar/astro_runtime_client_dev-toolbar_entrypoint__js.js.map [2m1ms[22m

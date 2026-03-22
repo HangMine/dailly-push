@@ -1,0 +1,9 @@
+node_modules
+.astro
+dist
+coverage
+generated
+.env
+.env.*
+!.env.example
+pnpm-debug.log

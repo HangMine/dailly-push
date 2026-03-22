@@ -1,0 +1,65 @@
+---
+import SectionTitle from '@/components/SectionTitle.astro';
+import SpotlightCard from '@/components/reactbits/SpotlightCard';
+import { formatNumber } from '@/lib/daily/formatters';
+import type { RankingSection as RankingSectionModel } from '@/lib/daily/schema';
+
+interface Props {
+  section: RankingSectionModel;
+  index: number;
+}
+
+const { section, index } = Astro.props;
+---
+
+<section class="ranking-section" style={`--section-index:${index};`}>
+  <div class="section-heading">
+    <span class="section-rule"></span>
+    <SectionTitle title={`【${section.title}】`} />
+  </div>
+
+  <div class="ranking-grid">
+    {
+      section.items.map((item, itemIndex) => (
+        <SpotlightCard
+          className="repo-card repo-card--spotlight"
+          spotlightColor="rgba(15, 118, 110, 0.18)"
+          client:visible
+        >
+          <article class="repo-card__body" style={`--item-index:${itemIndex};`}>
+            <div class="repo-topline">
+              <span class="repo-rank">#{item.rank}</span>
+              <div>
+                <h3>
+                  {item.owner}/{item.repoName}
+                </h3>
+                <p class="repo-meta">
+                  <span>{item.language}</span>
+                  <span>{item.category}</span>
+                </p>
+              </div>
+            </div>
+
+            <p class="repo-summary">{item.summaryZh}</p>
+
+            <div class="repo-stars">
+              <span>今日 ⭐{formatNumber(item.starsToday)}</span>
+              <span>总 ⭐{formatNumber(item.starsTotal)}</span>
+            </div>
+
+            <div class="repo-reasons">
+              <strong>增长原因</strong>
+              <ul>
+                {item.reasons.map((reason) => <li>{reason}</li>)}
+              </ul>
+            </div>
+
+            <a class="repo-link" href={item.repoUrl} target="_blank" rel="noreferrer">
+              查看仓库
+            </a>
+          </article>
+        </SpotlightCard>
+      ))
+    }
+  </div>
+</section>

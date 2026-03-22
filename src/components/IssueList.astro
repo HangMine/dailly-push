@@ -1,0 +1,31 @@
+---
+import type { DailyIssueEntry } from '@/lib/daily/content';
+import { countRepos, countUniqueRepos } from '@/lib/daily/content';
+import { formatDisplayDate } from '@/lib/daily/formatters';
+
+interface Props {
+  entries: DailyIssueEntry[];
+}
+
+const { entries } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<div class="archive-list">
+  {
+    entries.map((entry) => (
+      <a class="archive-card" href={`${baseUrl}daily/${entry.data.slug}/`}>
+        <div>
+          <p class="archive-card__date">{formatDisplayDate(entry.data.date)}</p>
+          <h2>{entry.data.title}</h2>
+        </div>
+
+        <div class="archive-card__meta">
+          <span>{entry.data.sections.length} 个分榜</span>
+          <span>{countRepos(entry)} 条入榜</span>
+          <span>{countUniqueRepos(entry)} 个唯一仓库</span>
+        </div>
+      </a>
+    ))
+  }
+</div>
