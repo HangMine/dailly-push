@@ -288,10 +288,23 @@ code {
 .hero-copy {
   max-width: 50rem;
   z-index: 2;
+  /*
+    Keep hero foreground mouse-transparent so react-bits Particles
+    (which listens on its own container) can continue receiving mousemove
+    even when the cursor is above title/summary/stats layers.
+
+    If you add interactive elements here later (links/buttons/inputs),
+    restore pointer-events:auto on those specific children instead of
+    removing this rule globally, otherwise the particle hover effect
+    will break again over foreground content.
+  */
+  pointer-events: none;
 }
 
 .hero-stats {
   z-index: 2;
+  /* Same reason as .hero-copy: allow pointer events to pass through to the particle layer below. */
+  pointer-events: none;
 }
 
 .hero-pill-row {
