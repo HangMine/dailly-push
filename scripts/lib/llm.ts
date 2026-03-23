@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { getLlmConfig } from './llm-config';
+import { fetchWithRetry } from './http';
 import type { RepoEnrichment, RepoMetadata, ScrapedRepo } from './types';
 import { extractFirstJsonObject, stripMarkdownFences } from './utils';
 
@@ -27,29 +28,38 @@ export async function enrichRepo(
     source_url: repo.sourceUrl,
   };
 
-  const response = await fetch(`${baseUrl}/chat/completions`, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
+  const llmUrl = `${baseUrl}/chat/completions`;
+  const response = await fetchWithRetry(
+    llmUrl,
+    {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model,
+        temperature: 0.4,
+        messages: [
+          {
+            role: 'system',
+            content:
+              '你是中文科技编辑。请根据给定仓库公开信息返回严格 JSON，对象字段只有 category、summaryZh、reasons。summaryZh 必须是中文，不要照搬英文。reasons 必须恰好 3 条，每条是完整中文句子，不要编号、不要加符号、不要输出 Markdown。信息不足时允许克制推断，但禁止编造具体版本号、发布日期、融资、下载量等无法确认的事实。',
+          },
+          {
+            role: 'user',
+            content: JSON.stringify(payload, null, 2),
+          },
+        ],
+      }),
+      signal: AbortSignal.timeout(60_000),
     },
-    body: JSON.stringify({
-      model,
-      temperature: 0.4,
-      messages: [
-        {
-          role: 'system',
-          content:
-            '你是中文科技编辑。请根据给定仓库公开信息返回严格 JSON，对象字段只有 category、summaryZh、reasons。summaryZh 必须是中文，不要照搬英文。reasons 必须恰好 3 条，每条是完整中文句子，不要编号、不要加符号、不要输出 Markdown。信息不足时允许克制推断，但禁止编造具体版本号、发布日期、融资、下载量等无法确认的事实。',
-        },
-        {
-          role: 'user',
-          content: JSON.stringify(payload, null, 2),
-        },
-      ],
-    }),
-    signal: AbortSignal.timeout(60_000),
-  });
+    {
+      label: `LLM ${repo.owner}/${repo.repoName}`,
+      retries: 3,
+      retryDelayMs: 2000,
+    },
+  );
 
   if (!response.ok) {
     throw new Error(`LLM request failed: ${repo.owner}/${repo.repoName} (${response.status})`);

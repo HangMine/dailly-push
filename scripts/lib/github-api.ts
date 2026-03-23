@@ -1,4 +1,4 @@
-import { createGitHubHeaders } from './http';
+import { createGitHubHeaders, fetchWithRetry } from './http';
 import type { RepoMetadata } from './types';
 
 interface RepoResponse {
@@ -10,10 +10,15 @@ interface RepoResponse {
 }
 
 export async function fetchGitHubMetadata(owner: string, repoName: string): Promise<RepoMetadata | null> {
-  const response = await fetch(`https://api.github.com/repos/${owner}/${repoName}`, {
-    headers: createGitHubHeaders(),
-    signal: AbortSignal.timeout(30_000),
-  });
+  const url = `https://api.github.com/repos/${owner}/${repoName}`;
+  const response = await fetchWithRetry(
+    url,
+    {
+      headers: createGitHubHeaders(),
+      signal: AbortSignal.timeout(30_000),
+    },
+    { label: `GitHub API ${owner}/${repoName}`, retries: 3, retryDelayMs: 1500 },
+  );
 
   if (response.status === 404) {
     return null;
