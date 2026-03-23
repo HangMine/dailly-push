@@ -3,6 +3,6 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://hangmine.github.io',
-  base: '/dailly-push',
+  base: '/dailly-push/',
   integrations: [react()],
 });
