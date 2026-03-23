@@ -90,7 +90,7 @@ function getTrackedDailyChanges(): string[] {
 }
 
 function commitChanges(date: string) {
-  run('git', ['add', 'src/content/daily', 'generated']);
+  run('git', ['add', 'src/content/daily']);
   run('git', ['commit', '-m', `chore: publish daily issue ${date}`]);
 }
 
