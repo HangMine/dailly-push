@@ -9,11 +9,14 @@ interface PublishOptions {
 const PNPM_COMMAND = process.platform === 'win32' ? 'pnpm.cmd' : 'pnpm';
 
 function run(command: string, args: string[], options?: { capture?: boolean }): string {
+  const useShell = process.platform === 'win32' && /pnpm(\.cmd)?$/i.test(command);
+
   if (options?.capture) {
     return execFileSync(command, args, {
       encoding: 'utf8',
       cwd: process.cwd(),
       env: process.env,
+      shell: useShell,
     }).trim();
   }
 
@@ -21,7 +24,7 @@ function run(command: string, args: string[], options?: { capture?: boolean }): 
     stdio: 'inherit',
     cwd: process.cwd(),
     env: process.env,
-    shell: process.platform === 'win32',
+    shell: useShell,
   });
   if (result.status !== 0) {
     throw new Error(
