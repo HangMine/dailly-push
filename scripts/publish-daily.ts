@@ -28,9 +28,23 @@ function parseOptions(args: string[]): PublishOptions {
   };
 }
 
-function ensureCleanWorktree() {
+function ensureCleanWorktree(options?: { allowPaths?: string[] }) {
   const status = run('git', ['status', '--porcelain'], { capture: true });
   if (!status) {
+    return;
+  }
+
+  const allowPaths = new Set(options?.allowPaths ?? []);
+  const blockingLines = status
+    .split(/\r?\n/)
+    .map((line) => line.trimEnd())
+    .filter(Boolean)
+    .filter((line) => {
+      const path = line.slice(3).trim();
+      return !allowPaths.has(path);
+    });
+
+  if (blockingLines.length === 0) {
     return;
   }
 
@@ -38,7 +52,7 @@ function ensureCleanWorktree() {
     [
       'Working tree is not clean. Please commit, stash, or discard existing changes before running publish:daily.',
       'Current git status:',
-      status,
+      blockingLines.join('\n'),
     ].join('\n'),
   );
 }
@@ -65,7 +79,7 @@ function getTrackedDailyChanges(): string[] {
 }
 
 function commitChanges(date: string) {
-  run('git', ['add', 'src/content/daily']);
+  run('git', ['add', 'src/content/daily', 'generated']);
   run('git', ['commit', '-m', `chore: publish daily issue ${date}`]);
 }
 
@@ -73,8 +87,12 @@ function main() {
   const args = process.argv.slice(2);
   const options = parseOptions(args);
   const publishDate = options.date ?? getShanghaiDateString();
+  const allowedGeneratedPaths = [
+    `src/content/daily/${publishDate}.json`,
+    `generated/${publishDate}.txt`,
+  ];
 
-  ensureCleanWorktree();
+  ensureCleanWorktree({ allowPaths: allowedGeneratedPaths });
   ensureMainBranch();
 
   run('git', ['pull', '--rebase', 'origin', 'main']);
