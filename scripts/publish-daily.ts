@@ -10,12 +10,23 @@ const PNPM_COMMAND = process.platform === 'win32' ? 'pnpm.cmd' : 'pnpm';
 
 function run(command: string, args: string[], options?: { capture?: boolean }): string {
   if (options?.capture) {
-    return execFileSync(command, args, { encoding: 'utf8' }).trim();
+    return execFileSync(command, args, {
+      encoding: 'utf8',
+      cwd: process.cwd(),
+      env: process.env,
+    }).trim();
   }
 
-  const result = spawnSync(command, args, { stdio: 'inherit' });
+  const result = spawnSync(command, args, {
+    stdio: 'inherit',
+    cwd: process.cwd(),
+    env: process.env,
+    shell: process.platform === 'win32',
+  });
   if (result.status !== 0) {
-    throw new Error(`Command failed: ${command} ${args.join(' ')}`);
+    throw new Error(
+      `Command failed: ${command} ${args.join(' ')} (exit=${result.status ?? 'null'}, signal=${result.signal ?? 'none'})`,
+    );
   }
 
   return '';
