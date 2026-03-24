@@ -1,0 +1,476 @@
+{
+  "date": "2026-03-24",
+  "slug": "2026-03-24",
+  "title": "📊 GitHub 天榜速递（2026-03-24）",
+  "rawText": "📊 GitHub 天榜速递（2026-03-24）\n\n━━━━━━━━━━\n【全站天榜 Top10】\n\n1. FujiwaraChoki/MoneyPrinterV2（Python）\n▸ 类别：自动化营销工具\n▸ 简介：这是一个用 Python 编写的自动化项目，定位于帮助用户把线上赚钱相关流程进行脚本化处理，结合命令行、JSON 配置以及社交平台触达等能力来提升执行效率。\n▸ Stars：今日 ⭐2,880｜总 ⭐23,489\n▸ 增长原因：\n　　　　- 仓库描述直接表明其目标是自动化处理线上赚钱流程，核心定位非常明确。\n　　　　- 主题标签包含 automation、cli、json、outreach、twitter 和 youtube，说明它偏向自动化运营与外联场景。\n　　　　- 项目使用 Python 实现，且没有展示复杂前端或通用框架信息，因此更适合归类为脚本化的营销自动化工具。\n▸ 链接：https://github.com/FujiwaraChoki/MoneyPrinterV2\n\n2. bytedance/deer-flow（Python）\n▸ 类别：AI 多智能体框架\n▸ 简介：Deer Flow 是字节跳动开源的 SuperAgent 执行框架，面向研究、编程与内容生成等复杂任务，强调通过沙箱、记忆、工具、技能、子代理和消息网关等机制，把需要数分钟到数小时的多阶段工作组织成可执行流程。项目以 Python 为主，同时从公开主题看也涉及 TypeScript、LangChain、LangGraph 及多智能体工作流，适合关注智能体编排、深度研究和自动化任务处理的开发者。\n▸ Stars：今日 ⭐3,546｜总 ⭐40,382\n▸ 增长原因：\n　　　　- 仓库定位清晰，核心价值是把研究、编码和创作类任务封装为可持续执行的 SuperAgent 工作流。\n　　　　- 公开信息显示它整合了沙箱、记忆、工具、子代理与消息网关等能力，说明其重点在复杂任务的协同执行而非单一模型调用。\n　　　　- 该项目位列 GitHub 热门且累计星标较高，反映出开发者社区对多智能体框架与自动化执行系统的关注度很高。\n▸ 链接：https://github.com/bytedance/deer-flow\n\n3. Crosstalk-Solutions/project-nomad（TypeScript）\n▸ 类别：离线生存与应急工具\n▸ 简介：Project N.O.M.A.D 是一个以 TypeScript 构建的自包含离线生存电脑项目，整合了关键工具、知识资料与 AI 能力，目标是在无网络或受限环境中为用户提供持续的信息支持与行动辅助。\n▸ Stars：今日 ⭐4,138｜总 ⭐13,726\n▸ 增长原因：\n　　　　- 项目描述明确强调自包含与离线可用，说明它面向断网、偏远或应急场景下的信息获取需求。\n　　　　- 它将关键工具、知识和 AI 集成到同一系统中，体现出面向生存支持与现场决策辅助的产品定位。\n　　　　- 该仓库当日获得较高关注度，说明这类离线智能终端方案在开发者社区中具有明显吸引力。\n▸ 链接：https://github.com/Crosstalk-Solutions/project-nomad\n\n4. vxcontrol/pentagi（Go）\n▸ 类别：安全测试/AI智能体\n▸ 简介：PentAGI 是一个采用 Go 构建的开源自主式 AI 智能体系统，面向渗透测试与安全测试自动化场景，强调通过多智能体协作执行较复杂的攻防评估任务，并支持自托管部署。\n▸ Stars：今日 ⭐1,309｜总 ⭐13,152\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是能够自主执行复杂渗透测试任务的 AI Agents 系统，核心定位非常清晰。\n　　　　- 主题标签同时覆盖渗透测试、安全自动化、多智能体、OpenAI 和 Anthropic 等关键词，说明其重点在于将大模型能力用于安全测试流程。\n　　　　- 项目使用 Go 开发并标注 self-hosted 与 open-source，表明它既偏向工程化落地，也适合需要本地部署的安全团队关注。\n▸ 链接：https://github.com/vxcontrol/pentagi\n\n5. browser-use/browser-use（Python）\n▸ 类别：AI 智能体浏览器自动化工具\n▸ 简介：这是一个基于 Python 的浏览器自动化项目，目标是让 AI 智能体能够更方便地访问和操作网站，从而执行在线任务。项目聚焦将大语言模型与浏览器交互结合，适合需要网页导航、表单操作和流程自动化的场景。\n▸ Stars：今日 ⭐1,157｜总 ⭐83,888\n▸ 增长原因：\n　　　　- 仓库描述明确强调让网站对 AI 智能体可访问，并帮助用户轻松自动化在线任务，定位非常清晰。\n　　　　- 项目主题包含 ai-agents、browser-automation、llm 和 playwright，说明它处于大模型驱动的浏览器自动化交叉方向。\n　　　　- 该仓库使用 Python 开发且在趋势榜中获得很高关注度，表明它在开发者生态中具备较强的实用性和讨论热度。\n▸ 链接：https://github.com/browser-use/browser-use\n\n6. TauricResearch/TradingAgents（Python）\n▸ 类别：金融交易智能体框架\n▸ 简介：这是一个用 Python 构建的多智能体大语言模型金融交易框架，面向交易研究与策略决策场景，强调通过多个代理协作处理金融分析与交易任务。\n▸ Stars：今日 ⭐2,530｜总 ⭐39,699\n▸ 增长原因：\n　　　　- 仓库名称、描述和主题标签都明确指向金融交易、多智能体与大语言模型框架这一定位。\n　　　　- 项目提供论文主页，说明其不仅是代码实现，也带有较强的方法研究和系统化设计背景。\n　　　　- 该仓库在趋势榜和总星标上表现突出，反映出开发者社区对智能交易代理方向的高度关注。\n▸ 链接：https://github.com/TauricResearch/TradingAgents\n\n7. tinygrad/tinygrad（Python）\n▸ 类别：深度学习框架\n▸ 简介：tinygrad 是一个以简洁实现为特色的轻量级深度学习框架，面向喜欢 PyTorch 风格接口并关注底层原理的开发者，强调用较少代码实现张量计算与神经网络训练能力。\n▸ Stars：今日 ⭐56｜总 ⭐31,930\n▸ 增长原因：\n　　　　- 仓库描述直接提到 PyTorch 和 micrograd，说明它定位在易理解且偏教学与实验性质的深度学习框架方向。\n　　　　- 项目使用 Python 开发，并以 tinygrad 为名，通常表明其核心关注点是张量运算、自动求导和神经网络训练这一类能力。\n　　　　- 该仓库拥有较高的累计关注度且在当日趋势榜继续增长，说明它在机器学习开发者社区中具有持续讨论度和实际吸引力。\n▸ 链接：https://github.com/tinygrad/tinygrad\n\n8. affaan-m/everything-claude-code（JavaScript）\n▸ 类别：AI 代理开发工具\n▸ 简介：这是一个面向多种智能代码代理与开发助手的性能优化体系，围绕技能编排、行为习惯、记忆管理、安全控制和以研究为先的开发流程，帮助提升 Claude Code、Codex、Cursor 等工具的使用效果与开发效率。\n▸ Stars：今日 ⭐4,458｜总 ⭐102,641\n▸ 增长原因：\n　　　　- 仓库描述明确强调这是一个用于代理执行环境的性能优化系统，核心关注点包括技能、记忆、安全与研究驱动开发流程。\n　　　　- 它同时面向 Claude Code、Codex、Opencode、Cursor 等多类代码助手，说明其定位不是单一模型应用，而是通用的 AI 代理开发增强工具。\n　　　　- 主题标签包含 ai-agents、developer-tools、llm 和 mcp，结合极高的关注度，可以判断它属于当前开发者高度关注的智能代理工具链项目。\n▸ 链接：https://github.com/affaan-m/everything-claude-code\n\n9. NousResearch/hermes-agent（Python）\n▸ 类别：AI 智能体框架\n▸ 简介：Hermes Agent 是一个用 Python 构建的 AI 智能体项目，定位为可随用户需求一起演进的代理系统，面向基于大语言模型的任务执行与交互场景，并与 OpenAI、Anthropic、Claude 等相关生态有较强关联。\n▸ Stars：今日 ⭐919｜总 ⭐11,758\n▸ 增长原因：\n　　　　- 仓库描述强调“会随着你一起成长的代理”，说明它的核心定位是可持续扩展和适应需求变化的智能体系统。\n　　　　- 主题标签集中在 ai-agent、llm、openai、anthropic、claude 等方向，表明该项目主要服务于大模型驱动的代理式应用开发。\n　　　　- 项目使用 Python 开发且拥有独立主页，同时在 GitHub 趋势榜获得较高关注，说明它是一个面向实际使用场景、讨论度较高的智能体框架项目。\n▸ 链接：https://github.com/NousResearch/hermes-agent\n\n10. jingyaogong/minimind（Python）\n▸ 类别：AI大模型\n▸ 简介：这是一个用 Python 实现的大模型教学与实践项目，目标是在较短时间内从零训练一个约 2600 万参数的轻量级 GPT 模型，帮助开发者理解大语言模型的核心训练流程与实现方法。\n▸ Stars：今日 ⭐487｜总 ⭐42,750\n▸ 增长原因：\n　　　　- 仓库描述明确强调从零训练小参数 GPT，主题与大语言模型训练直接相关。\n　　　　- 项目使用 Python 实现，适合作为学习和复现生成式人工智能模型训练流程的实践样例。\n　　　　- 仓库同时拥有独立主页并出现在热门趋势来源中，说明它在 AI 开发者社区中具有较高关注度。\n▸ 链接：https://github.com/jingyaogong/minimind\n\n━━━━━━━━━━\n【TypeScript 天榜 Top5】\n\n1. Crosstalk-Solutions/project-nomad（TypeScript）\n▸ 类别：离线生存与应急工具\n▸ 简介：Project N.O.M.A.D 是一个以 TypeScript 构建的自包含离线生存电脑项目，整合了关键工具、知识资料与 AI 能力，目标是在无网络或受限环境中为用户提供持续的信息支持与行动辅助。\n▸ Stars：今日 ⭐4,138｜总 ⭐13,726\n▸ 增长原因：\n　　　　- 项目描述明确强调自包含与离线可用，说明它面向断网、偏远或应急场景下的信息获取需求。\n　　　　- 它将关键工具、知识和 AI 集成到同一系统中，体现出面向生存支持与现场决策辅助的产品定位。\n　　　　- 该仓库当日获得较高关注度，说明这类离线智能终端方案在开发者社区中具有明显吸引力。\n▸ 链接：https://github.com/Crosstalk-Solutions/project-nomad\n\n2. czlonkowski/n8n-mcp（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个面向 Claude Desktop、Claude Code、Windsurf 和 Cursor 等客户端的 MCP 服务，主要用于帮助用户生成和构建 n8n 工作流。项目使用 TypeScript 开发，聚焦于把 AI 助手与 n8n 自动化编排能力连接起来，提升工作流搭建效率。\n▸ Stars：今日 ⭐146｜总 ⭐16,144\n▸ 增长原因：\n　　　　- 仓库描述明确说明它是为多种 AI 编码与桌面客户端提供的 MCP，用途是帮助用户构建 n8n 工作流。\n　　　　- 项目主题包含 mcp、mcp-server、n8n 和 workflows，表明它属于连接协议与自动化工作流相关的开发工具。\n　　　　- 仓库使用 TypeScript 开发且在 GitHub 趋势榜中获得较高关注，说明它在 AI 辅助自动化开发场景中具有明显实用性。\n▸ 链接：https://github.com/czlonkowski/n8n-mcp\n\n3. iptv-org/iptv（TypeScript）\n▸ 类别：媒体与流媒体\n▸ 简介：这是一个汇集全球公开 IPTV 电视频道流地址的开源项目，围绕 M3U 播放列表与频道整理提供可访问的频道集合，适合用于电视流媒体目录管理、检索与集成。\n▸ Stars：今日 ⭐106｜总 ⭐113,692\n▸ 增长原因：\n　　　　- 仓库描述明确表明它收集来自世界各地的公开 IPTV 频道，核心内容属于电视流媒体资源聚合。\n　　　　- 主题词包含 IPTV、M3U、playlist、streams 和 tv，说明项目重点是播放列表与频道流管理而非通用开发框架。\n　　　　- 该项目当天新增星标较多且总星标很高，反映出它在流媒体频道整理与使用场景中具有广泛关注度。\n▸ 链接：https://github.com/iptv-org/iptv\n\n4. pascalorg/editor（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个用 TypeScript 构建的在线编辑器项目，面向浏览器端使用场景，提供独立站点入口，整体上属于编辑与创作类开发工具。\n▸ Stars：今日 ⭐2,315｜总 ⭐3,782\n▸ 增长原因：\n　　　　- 仓库名称直接表明其核心能力与编辑器相关，且提供了可访问的产品主页，说明它不仅是代码示例而是可实际使用的工具项目。\n　　　　- 项目使用 TypeScript 开发，通常意味着其前端交互和工程化程度较高，适合作为浏览器中的编辑类应用或相关基础设施。\n　　　　- 该仓库出现在 TypeScript 日榜且当日获得较高关注，说明它近期具有较强传播度和讨论度，容易引起开发者对其产品形态与实现方式的兴趣。\n▸ 链接：https://github.com/pascalorg/editor\n\n5. elizaOS/eliza（Rust）\n▸ 类别：AI智能体框架\n▸ 简介：eliza 是一个面向大众的自主式 AI 智能体框架，强调通过插件化方式构建可在聊天场景与多平台环境中运行的代理系统，并覆盖如 Discord、Slack、Telegram 等常见集成方向。\n▸ Stars：今日 ⭐15｜总 ⭐17,901\n▸ 增长原因：\n　　　　- 仓库描述直接强调“面向所有人的自主智能体”，核心定位明确落在 AI 代理与自动化执行框架上。\n　　　　- 主题标签包含 agent、autonomous、framework、plugins 与 rag，说明它不仅是聊天机器人项目，更偏向可扩展的智能体开发基础设施。\n　　　　- 主题中还出现 Discord、Slack、Telegram 与 crypto 等关键词，表明该项目关注多平台接入和不同应用场景下的代理能力。\n▸ 链接：https://github.com/elizaOS/eliza\n\n━━━━━━━━━━\n【Vue 天榜 Top5】\n\n1. slidevjs/slidev（TypeScript）\n▸ 类别：演示文稿工具\n▸ 简介：Slidev 是一个面向开发者的演示文稿工具，使用 Markdown 编写幻灯片，并结合 Vue 与 Vite 生态来构建可定制的网页式演示内容。\n▸ Stars：今日 ⭐38｜总 ⭐45,076\n▸ 增长原因：\n　　　　- 仓库描述明确表明它用于制作面向开发者的演示幻灯片，核心用途非常清晰。\n　　　　- 主题标签包含 markdown、presentation、slides、vite 和 vue，说明它以 Markdown 为内容入口，并建立在前端开发生态之上。\n　　　　- 项目拥有较高的社区关注度，且今日仍有明显新增关注，体现出它在 Vue 相关工具中具备持续活跃度。\n▸ 链接：https://github.com/slidevjs/slidev\n\n2. vercel/ai（TypeScript）\n▸ 类别：AI 应用开发 SDK\n▸ 简介：这是一个面向 TypeScript 的开源 AI 开发工具包，由 Next.js 团队相关背景推出，帮助开发者在 React、Vue、Svelte 和 Next.js 等前端技术栈中构建 AI 应用与智能代理，并对接多种主流大模型服务。\n▸ Stars：今日 ⭐32｜总 ⭐22,947\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是用于构建 AI 驱动应用和代理的 TypeScript 工具包，产品定位非常清晰。\n　　　　- 主题和标签同时覆盖 OpenAI、Anthropic、Gemini、React、Vue、Svelte 与 Next.js，说明它强调多模型接入和多框架集成能力。\n　　　　- 项目拥有较高的累计关注度且当天仍有新增星标，显示出它在 AI 开发工具领域具备持续活跃度和社区认可。\n▸ 链接：https://github.com/vercel/ai\n\n3. ueberdosis/tiptap（TypeScript）\n▸ 类别：富文本编辑器框架\n▸ 简介：Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 应用提供可扩展的编辑能力，并可与 React、Vue、Solid 等前端技术栈集成。\n▸ Stars：今日 ⭐21｜总 ⭐35,815\n▸ 增长原因：\n　　　　- 仓库描述明确强调它是无头富文本编辑器框架，核心定位非常清晰。\n　　　　- 主题词包含 editor、rich-text、wysiwyg 和 prosemirror，说明它聚焦于网页端文本编辑场景。\n　　　　- 标签与主题同时提到 React、Vue 和 Solid，表明它适合作为多前端框架中的可定制编辑基础设施。\n▸ 链接：https://github.com/ueberdosis/tiptap\n\n4. wxt-dev/wxt（TypeScript）\n▸ 类别：开发工具\n▸ 简介：WXT 是一个面向浏览器扩展开发的下一代框架，使用 TypeScript 构建，聚焦于扩展项目的构建、开发调试与热更新体验，并支持与 React、Vue、Svelte、Solid 等前端技术栈配合使用。\n▸ Stars：今日 ⭐14｜总 ⭐9,446\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是用于 Web 扩展开发的框架，核心定位属于开发工具而不是普通业务应用。\n　　　　- 主题标签包含构建工具、开发服务器和热更新等关键词，说明它重点解决扩展开发流程中的工程化问题。\n　　　　- 标签显示它可配合 React、Vue、Svelte 和 Solid 等框架使用，体现出面向多技术栈的扩展开发支持能力。\n▸ 链接：https://github.com/wxt-dev/wxt\n\n5. nuxt/nuxt（TypeScript）\n▸ 类别：全栈框架\n▸ 简介：Nuxt 是一个基于 Vue 的全栈开发框架，支持服务端渲染、静态站点生成、客户端渲染与混合式应用构建，可用于开发通用型 Web 应用。\n▸ Stars：今日 ⭐10｜总 ⭐59,913\n▸ 增长原因：\n　　　　- 仓库描述直接表明它是面向 Vue 的全栈框架，项目定位十分明确。\n　　　　- 公开主题包含 SSR、SSG、CSR、server-rendering 和 hybrid，说明它覆盖多种主流渲染与部署模式。\n　　　　- 标签中包含 Static site generator、Universal、Full-stack framework 和 Node.js framework，表明它适合构建现代 Web 应用的完整框架体系。\n▸ 链接：https://github.com/nuxt/nuxt\n\n━━━━━━━━━━\n【React 天榜 Top5】\n\n1. remotion-dev/remotion（TypeScript）\n▸ 类别：视频与前端开发工具\n▸ 简介：Remotion 是一个基于 TypeScript 和 React 的视频生成工具，支持用组件化和编程方式创建视频内容，适合将前端开发流程用于动画、剪辑和可视化视频制作。\n▸ Stars：今日 ⭐123｜总 ⭐40,567\n▸ 增长原因：\n　　　　- 仓库描述明确强调用 React 以编程方式制作视频，核心定位非常清晰。\n　　　　- 项目使用 TypeScript 开发，并围绕 JavaScript、React 和 Video 等主题展开，体现出前端技术栈与视频生产的结合。\n　　　　- 仓库在 Best of JS 的 React 相关榜单中出现且星标总量较高，说明它在开发者社区中具备较强关注度。\n▸ 链接：https://github.com/remotion-dev/remotion\n\n2. shadcn-ui/ui（TypeScript）\n▸ 类别：UI 组件库\n▸ 简介：这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调美观设计、可访问性以及与多种前端框架的兼容性，常与 Tailwind CSS、Radix UI 等技术配合使用。\n▸ Stars：今日 ⭐122｜总 ⭐110,544\n▸ 增长原因：\n　　　　- 仓库描述明确指出它提供一组设计精良且注重可访问性的组件，核心定位属于前端界面组件领域。\n　　　　- 主题和标签同时包含 React、Component library、TailwindCSS、Radix UI、Next.js、Vite 等关键词，说明它主要服务于现代前端应用开发。\n　　　　- 它不仅提供组件，还强调代码分发与开放代码方式，体现出其作为组件库与配套分发平台的双重产品形态。\n▸ 链接：https://github.com/shadcn-ui/ui\n\n3. vercel-labs/agent-skills（JavaScript）\n▸ 类别：AI 代理工具\n▸ 简介：这是 Vercel 官方维护的代理技能集合项目，用于为智能体提供可复用的能力模块与相关实践，适合结合 Next.js、React 等技术栈构建 AI 应用。\n▸ Stars：今日 ⭐87｜总 ⭐23,711\n▸ 增长原因：\n　　　　- 仓库说明明确表明它是 Vercel 官方推出的 agent skills 集合，核心定位就是服务于智能体能力扩展。\n　　　　- 项目标签包含 AI、Next.js 和 React，说明它与现代前端框架结合紧密，适合用于构建面向生产的智能应用界面与流程。\n　　　　- 该项目总星标和当日增长都较高，反映出开发者社区对这类可复用代理能力组件有明显关注度。\n▸ 链接：https://github.com/vercel-labs/agent-skills\n\n4. vercel-labs/json-render（TypeScript）\n▸ 类别：前端开发框架\n▸ 简介：这是一个面向 React 生态的生成式界面框架，围绕 JSON 驱动的方式来描述和渲染 UI，适合用于构建与 AI 能力结合的动态界面。\n▸ Stars：今日 ⭐87｜总 ⭐13,151\n▸ 增长原因：\n　　　　- 仓库描述直接表明它是一个生成式界面框架，核心定位清晰偏向前端 UI 构建。\n　　　　- 项目标签包含 JSON、AI 和 React，说明它强调用结构化数据驱动界面，并面向智能交互场景。\n　　　　- 仓库使用 TypeScript 且归属于 Vercel Labs，结合独立官网信息，可判断其具备较完整的框架化产品形态。\n▸ 链接：https://github.com/vercel-labs/json-render\n\n5. excalidraw/excalidraw（TypeScript）\n▸ 类别：白板与图表绘制\n▸ 简介：Excalidraw 是一个基于 Web 的虚拟白板应用，用于快速绘制手绘风格的示意图、流程图和草图，并支持协作式可视化表达。\n▸ Stars：今日 ⭐77｜总 ⭐119,430\n▸ 增长原因：\n　　　　- 仓库描述明确表明它的核心能力是提供类似手绘效果的在线白板绘图体验。\n　　　　- 项目主题包含 canvas、collaboration、diagrams、drawing 和 whiteboard，说明它聚焦于图形绘制与协作场景。\n　　　　- 项目使用 TypeScript 并带有 React、Canvas 等标签，体现出它是面向现代前端生态的交互式绘图工具。\n▸ 链接：https://github.com/excalidraw/excalidraw\n\n来源链接：\n1. GitHub Trending（全站）：https://github.com/trending?since=daily\n2. GitHub Trending（TypeScript）：https://github.com/trending/typescript?since=daily\n3. Best of JS（Vue）：https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily\n4. Best of JS（React）：https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily",
+  "sections": [
+    {
+      "id": "overall",
+      "title": "全站天榜 Top10",
+      "items": [
+        {
+          "rank": 1,
+          "repoName": "MoneyPrinterV2",
+          "owner": "FujiwaraChoki",
+          "language": "Python",
+          "category": "自动化营销工具",
+          "summaryZh": "这是一个用 Python 编写的自动化项目，定位于帮助用户把线上赚钱相关流程进行脚本化处理，结合命令行、JSON 配置以及社交平台触达等能力来提升执行效率。",
+          "starsToday": 2880,
+          "starsTotal": 23489,
+          "reasons": [
+            "仓库描述直接表明其目标是自动化处理线上赚钱流程，核心定位非常明确。",
+            "主题标签包含 automation、cli、json、outreach、twitter 和 youtube，说明它偏向自动化运营与外联场景。",
+            "项目使用 Python 实现，且没有展示复杂前端或通用框架信息，因此更适合归类为脚本化的营销自动化工具。"
+          ],
+          "repoUrl": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 2,
+          "repoName": "deer-flow",
+          "owner": "bytedance",
+          "language": "Python",
+          "category": "AI 多智能体框架",
+          "summaryZh": "Deer Flow 是字节跳动开源的 SuperAgent 执行框架，面向研究、编程与内容生成等复杂任务，强调通过沙箱、记忆、工具、技能、子代理和消息网关等机制，把需要数分钟到数小时的多阶段工作组织成可执行流程。项目以 Python 为主，同时从公开主题看也涉及 TypeScript、LangChain、LangGraph 及多智能体工作流，适合关注智能体编排、深度研究和自动化任务处理的开发者。",
+          "starsToday": 3546,
+          "starsTotal": 40382,
+          "reasons": [
+            "仓库定位清晰，核心价值是把研究、编码和创作类任务封装为可持续执行的 SuperAgent 工作流。",
+            "公开信息显示它整合了沙箱、记忆、工具、子代理与消息网关等能力，说明其重点在复杂任务的协同执行而非单一模型调用。",
+            "该项目位列 GitHub 热门且累计星标较高，反映出开发者社区对多智能体框架与自动化执行系统的关注度很高。"
+          ],
+          "repoUrl": "https://github.com/bytedance/deer-flow",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 3,
+          "repoName": "project-nomad",
+          "owner": "Crosstalk-Solutions",
+          "language": "TypeScript",
+          "category": "离线生存与应急工具",
+          "summaryZh": "Project N.O.M.A.D 是一个以 TypeScript 构建的自包含离线生存电脑项目，整合了关键工具、知识资料与 AI 能力，目标是在无网络或受限环境中为用户提供持续的信息支持与行动辅助。",
+          "starsToday": 4138,
+          "starsTotal": 13726,
+          "reasons": [
+            "项目描述明确强调自包含与离线可用，说明它面向断网、偏远或应急场景下的信息获取需求。",
+            "它将关键工具、知识和 AI 集成到同一系统中，体现出面向生存支持与现场决策辅助的产品定位。",
+            "该仓库当日获得较高关注度，说明这类离线智能终端方案在开发者社区中具有明显吸引力。"
+          ],
+          "repoUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 4,
+          "repoName": "pentagi",
+          "owner": "vxcontrol",
+          "language": "Go",
+          "category": "安全测试/AI智能体",
+          "summaryZh": "PentAGI 是一个采用 Go 构建的开源自主式 AI 智能体系统，面向渗透测试与安全测试自动化场景，强调通过多智能体协作执行较复杂的攻防评估任务，并支持自托管部署。",
+          "starsToday": 1309,
+          "starsTotal": 13152,
+          "reasons": [
+            "仓库描述明确表明它是能够自主执行复杂渗透测试任务的 AI Agents 系统，核心定位非常清晰。",
+            "主题标签同时覆盖渗透测试、安全自动化、多智能体、OpenAI 和 Anthropic 等关键词，说明其重点在于将大模型能力用于安全测试流程。",
+            "项目使用 Go 开发并标注 self-hosted 与 open-source，表明它既偏向工程化落地，也适合需要本地部署的安全团队关注。"
+          ],
+          "repoUrl": "https://github.com/vxcontrol/pentagi",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 5,
+          "repoName": "browser-use",
+          "owner": "browser-use",
+          "language": "Python",
+          "category": "AI 智能体浏览器自动化工具",
+          "summaryZh": "这是一个基于 Python 的浏览器自动化项目，目标是让 AI 智能体能够更方便地访问和操作网站，从而执行在线任务。项目聚焦将大语言模型与浏览器交互结合，适合需要网页导航、表单操作和流程自动化的场景。",
+          "starsToday": 1157,
+          "starsTotal": 83888,
+          "reasons": [
+            "仓库描述明确强调让网站对 AI 智能体可访问，并帮助用户轻松自动化在线任务，定位非常清晰。",
+            "项目主题包含 ai-agents、browser-automation、llm 和 playwright，说明它处于大模型驱动的浏览器自动化交叉方向。",
+            "该仓库使用 Python 开发且在趋势榜中获得很高关注度，表明它在开发者生态中具备较强的实用性和讨论热度。"
+          ],
+          "repoUrl": "https://github.com/browser-use/browser-use",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 6,
+          "repoName": "TradingAgents",
+          "owner": "TauricResearch",
+          "language": "Python",
+          "category": "金融交易智能体框架",
+          "summaryZh": "这是一个用 Python 构建的多智能体大语言模型金融交易框架，面向交易研究与策略决策场景，强调通过多个代理协作处理金融分析与交易任务。",
+          "starsToday": 2530,
+          "starsTotal": 39699,
+          "reasons": [
+            "仓库名称、描述和主题标签都明确指向金融交易、多智能体与大语言模型框架这一定位。",
+            "项目提供论文主页，说明其不仅是代码实现，也带有较强的方法研究和系统化设计背景。",
+            "该仓库在趋势榜和总星标上表现突出，反映出开发者社区对智能交易代理方向的高度关注。"
+          ],
+          "repoUrl": "https://github.com/TauricResearch/TradingAgents",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 7,
+          "repoName": "tinygrad",
+          "owner": "tinygrad",
+          "language": "Python",
+          "category": "深度学习框架",
+          "summaryZh": "tinygrad 是一个以简洁实现为特色的轻量级深度学习框架，面向喜欢 PyTorch 风格接口并关注底层原理的开发者，强调用较少代码实现张量计算与神经网络训练能力。",
+          "starsToday": 56,
+          "starsTotal": 31930,
+          "reasons": [
+            "仓库描述直接提到 PyTorch 和 micrograd，说明它定位在易理解且偏教学与实验性质的深度学习框架方向。",
+            "项目使用 Python 开发，并以 tinygrad 为名，通常表明其核心关注点是张量运算、自动求导和神经网络训练这一类能力。",
+            "该仓库拥有较高的累计关注度且在当日趋势榜继续增长，说明它在机器学习开发者社区中具有持续讨论度和实际吸引力。"
+          ],
+          "repoUrl": "https://github.com/tinygrad/tinygrad",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 8,
+          "repoName": "everything-claude-code",
+          "owner": "affaan-m",
+          "language": "JavaScript",
+          "category": "AI 代理开发工具",
+          "summaryZh": "这是一个面向多种智能代码代理与开发助手的性能优化体系，围绕技能编排、行为习惯、记忆管理、安全控制和以研究为先的开发流程，帮助提升 Claude Code、Codex、Cursor 等工具的使用效果与开发效率。",
+          "starsToday": 4458,
+          "starsTotal": 102641,
+          "reasons": [
+            "仓库描述明确强调这是一个用于代理执行环境的性能优化系统，核心关注点包括技能、记忆、安全与研究驱动开发流程。",
+            "它同时面向 Claude Code、Codex、Opencode、Cursor 等多类代码助手，说明其定位不是单一模型应用，而是通用的 AI 代理开发增强工具。",
+            "主题标签包含 ai-agents、developer-tools、llm 和 mcp，结合极高的关注度，可以判断它属于当前开发者高度关注的智能代理工具链项目。"
+          ],
+          "repoUrl": "https://github.com/affaan-m/everything-claude-code",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 9,
+          "repoName": "hermes-agent",
+          "owner": "NousResearch",
+          "language": "Python",
+          "category": "AI 智能体框架",
+          "summaryZh": "Hermes Agent 是一个用 Python 构建的 AI 智能体项目，定位为可随用户需求一起演进的代理系统，面向基于大语言模型的任务执行与交互场景，并与 OpenAI、Anthropic、Claude 等相关生态有较强关联。",
+          "starsToday": 919,
+          "starsTotal": 11758,
+          "reasons": [
+            "仓库描述强调“会随着你一起成长的代理”，说明它的核心定位是可持续扩展和适应需求变化的智能体系统。",
+            "主题标签集中在 ai-agent、llm、openai、anthropic、claude 等方向，表明该项目主要服务于大模型驱动的代理式应用开发。",
+            "项目使用 Python 开发且拥有独立主页，同时在 GitHub 趋势榜获得较高关注，说明它是一个面向实际使用场景、讨论度较高的智能体框架项目。"
+          ],
+          "repoUrl": "https://github.com/NousResearch/hermes-agent",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        },
+        {
+          "rank": 10,
+          "repoName": "minimind",
+          "owner": "jingyaogong",
+          "language": "Python",
+          "category": "AI大模型",
+          "summaryZh": "这是一个用 Python 实现的大模型教学与实践项目，目标是在较短时间内从零训练一个约 2600 万参数的轻量级 GPT 模型，帮助开发者理解大语言模型的核心训练流程与实现方法。",
+          "starsToday": 487,
+          "starsTotal": 42750,
+          "reasons": [
+            "仓库描述明确强调从零训练小参数 GPT，主题与大语言模型训练直接相关。",
+            "项目使用 Python 实现，适合作为学习和复现生成式人工智能模型训练流程的实践样例。",
+            "仓库同时拥有独立主页并出现在热门趋势来源中，说明它在 AI 开发者社区中具有较高关注度。"
+          ],
+          "repoUrl": "https://github.com/jingyaogong/minimind",
+          "sourceUrl": "https://github.com/trending?since=daily"
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript 天榜 Top5",
+      "items": [
+        {
+          "rank": 1,
+          "repoName": "project-nomad",
+          "owner": "Crosstalk-Solutions",
+          "language": "TypeScript",
+          "category": "离线生存与应急工具",
+          "summaryZh": "Project N.O.M.A.D 是一个以 TypeScript 构建的自包含离线生存电脑项目，整合了关键工具、知识资料与 AI 能力，目标是在无网络或受限环境中为用户提供持续的信息支持与行动辅助。",
+          "starsToday": 4138,
+          "starsTotal": 13726,
+          "reasons": [
+            "项目描述明确强调自包含与离线可用，说明它面向断网、偏远或应急场景下的信息获取需求。",
+            "它将关键工具、知识和 AI 集成到同一系统中，体现出面向生存支持与现场决策辅助的产品定位。",
+            "该仓库当日获得较高关注度，说明这类离线智能终端方案在开发者社区中具有明显吸引力。"
+          ],
+          "repoUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
+          "sourceUrl": "https://github.com/trending/typescript?since=daily"
+        },
+        {
+          "rank": 2,
+          "repoName": "n8n-mcp",
+          "owner": "czlonkowski",
+          "language": "TypeScript",
+          "category": "开发工具",
+          "summaryZh": "这是一个面向 Claude Desktop、Claude Code、Windsurf 和 Cursor 等客户端的 MCP 服务，主要用于帮助用户生成和构建 n8n 工作流。项目使用 TypeScript 开发，聚焦于把 AI 助手与 n8n 自动化编排能力连接起来，提升工作流搭建效率。",
+          "starsToday": 146,
+          "starsTotal": 16144,
+          "reasons": [
+            "仓库描述明确说明它是为多种 AI 编码与桌面客户端提供的 MCP，用途是帮助用户构建 n8n 工作流。",
+            "项目主题包含 mcp、mcp-server、n8n 和 workflows，表明它属于连接协议与自动化工作流相关的开发工具。",
+            "仓库使用 TypeScript 开发且在 GitHub 趋势榜中获得较高关注，说明它在 AI 辅助自动化开发场景中具有明显实用性。"
+          ],
+          "repoUrl": "https://github.com/czlonkowski/n8n-mcp",
+          "sourceUrl": "https://github.com/trending/typescript?since=daily"
+        },
+        {
+          "rank": 3,
+          "repoName": "iptv",
+          "owner": "iptv-org",
+          "language": "TypeScript",
+          "category": "媒体与流媒体",
+          "summaryZh": "这是一个汇集全球公开 IPTV 电视频道流地址的开源项目，围绕 M3U 播放列表与频道整理提供可访问的频道集合，适合用于电视流媒体目录管理、检索与集成。",
+          "starsToday": 106,
+          "starsTotal": 113692,
+          "reasons": [
+            "仓库描述明确表明它收集来自世界各地的公开 IPTV 频道，核心内容属于电视流媒体资源聚合。",
+            "主题词包含 IPTV、M3U、playlist、streams 和 tv，说明项目重点是播放列表与频道流管理而非通用开发框架。",
+            "该项目当天新增星标较多且总星标很高，反映出它在流媒体频道整理与使用场景中具有广泛关注度。"
+          ],
+          "repoUrl": "https://github.com/iptv-org/iptv",
+          "sourceUrl": "https://github.com/trending/typescript?since=daily"
+        },
+        {
+          "rank": 4,
+          "repoName": "editor",
+          "owner": "pascalorg",
+          "language": "TypeScript",
+          "category": "开发工具",
+          "summaryZh": "这是一个用 TypeScript 构建的在线编辑器项目，面向浏览器端使用场景，提供独立站点入口，整体上属于编辑与创作类开发工具。",
+          "starsToday": 2315,
+          "starsTotal": 3782,
+          "reasons": [
+            "仓库名称直接表明其核心能力与编辑器相关，且提供了可访问的产品主页，说明它不仅是代码示例而是可实际使用的工具项目。",
+            "项目使用 TypeScript 开发，通常意味着其前端交互和工程化程度较高，适合作为浏览器中的编辑类应用或相关基础设施。",
+            "该仓库出现在 TypeScript 日榜且当日获得较高关注，说明它近期具有较强传播度和讨论度，容易引起开发者对其产品形态与实现方式的兴趣。"
+          ],
+          "repoUrl": "https://github.com/pascalorg/editor",
+          "sourceUrl": "https://github.com/trending/typescript?since=daily"
+        },
+        {
+          "rank": 5,
+          "repoName": "eliza",
+          "owner": "elizaOS",
+          "language": "Rust",
+          "category": "AI智能体框架",
+          "summaryZh": "eliza 是一个面向大众的自主式 AI 智能体框架，强调通过插件化方式构建可在聊天场景与多平台环境中运行的代理系统，并覆盖如 Discord、Slack、Telegram 等常见集成方向。",
+          "starsToday": 15,
+          "starsTotal": 17901,
+          "reasons": [
+            "仓库描述直接强调“面向所有人的自主智能体”，核心定位明确落在 AI 代理与自动化执行框架上。",
+            "主题标签包含 agent、autonomous、framework、plugins 与 rag，说明它不仅是聊天机器人项目，更偏向可扩展的智能体开发基础设施。",
+            "主题中还出现 Discord、Slack、Telegram 与 crypto 等关键词，表明该项目关注多平台接入和不同应用场景下的代理能力。"
+          ],
+          "repoUrl": "https://github.com/elizaOS/eliza",
+          "sourceUrl": "https://github.com/trending/typescript?since=daily"
+        }
+      ]
+    },
+    {
+      "id": "vue",
+      "title": "Vue 天榜 Top5",
+      "items": [
+        {
+          "rank": 1,
+          "repoName": "slidev",
+          "owner": "slidevjs",
+          "language": "TypeScript",
+          "category": "演示文稿工具",
+          "summaryZh": "Slidev 是一个面向开发者的演示文稿工具，使用 Markdown 编写幻灯片，并结合 Vue 与 Vite 生态来构建可定制的网页式演示内容。",
+          "starsToday": 38,
+          "starsTotal": 45076,
+          "reasons": [
+            "仓库描述明确表明它用于制作面向开发者的演示幻灯片，核心用途非常清晰。",
+            "主题标签包含 markdown、presentation、slides、vite 和 vue，说明它以 Markdown 为内容入口，并建立在前端开发生态之上。",
+            "项目拥有较高的社区关注度，且今日仍有明显新增关注，体现出它在 Vue 相关工具中具备持续活跃度。"
+          ],
+          "repoUrl": "https://github.com/slidevjs/slidev",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+        },
+        {
+          "rank": 2,
+          "repoName": "ai",
+          "owner": "vercel",
+          "language": "TypeScript",
+          "category": "AI 应用开发 SDK",
+          "summaryZh": "这是一个面向 TypeScript 的开源 AI 开发工具包，由 Next.js 团队相关背景推出，帮助开发者在 React、Vue、Svelte 和 Next.js 等前端技术栈中构建 AI 应用与智能代理，并对接多种主流大模型服务。",
+          "starsToday": 32,
+          "starsTotal": 22947,
+          "reasons": [
+            "仓库描述明确表明它是用于构建 AI 驱动应用和代理的 TypeScript 工具包，产品定位非常清晰。",
+            "主题和标签同时覆盖 OpenAI、Anthropic、Gemini、React、Vue、Svelte 与 Next.js，说明它强调多模型接入和多框架集成能力。",
+            "项目拥有较高的累计关注度且当天仍有新增星标，显示出它在 AI 开发工具领域具备持续活跃度和社区认可。"
+          ],
+          "repoUrl": "https://github.com/vercel/ai",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+        },
+        {
+          "rank": 3,
+          "repoName": "tiptap",
+          "owner": "ueberdosis",
+          "language": "TypeScript",
+          "category": "富文本编辑器框架",
+          "summaryZh": "Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 应用提供可扩展的编辑能力，并可与 React、Vue、Solid 等前端技术栈集成。",
+          "starsToday": 21,
+          "starsTotal": 35815,
+          "reasons": [
+            "仓库描述明确强调它是无头富文本编辑器框架，核心定位非常清晰。",
+            "主题词包含 editor、rich-text、wysiwyg 和 prosemirror，说明它聚焦于网页端文本编辑场景。",
+            "标签与主题同时提到 React、Vue 和 Solid，表明它适合作为多前端框架中的可定制编辑基础设施。"
+          ],
+          "repoUrl": "https://github.com/ueberdosis/tiptap",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+        },
+        {
+          "rank": 4,
+          "repoName": "wxt",
+          "owner": "wxt-dev",
+          "language": "TypeScript",
+          "category": "开发工具",
+          "summaryZh": "WXT 是一个面向浏览器扩展开发的下一代框架，使用 TypeScript 构建，聚焦于扩展项目的构建、开发调试与热更新体验，并支持与 React、Vue、Svelte、Solid 等前端技术栈配合使用。",
+          "starsToday": 14,
+          "starsTotal": 9446,
+          "reasons": [
+            "仓库描述明确表明它是用于 Web 扩展开发的框架，核心定位属于开发工具而不是普通业务应用。",
+            "主题标签包含构建工具、开发服务器和热更新等关键词，说明它重点解决扩展开发流程中的工程化问题。",
+            "标签显示它可配合 React、Vue、Svelte 和 Solid 等框架使用，体现出面向多技术栈的扩展开发支持能力。"
+          ],
+          "repoUrl": "https://github.com/wxt-dev/wxt",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+        },
+        {
+          "rank": 5,
+          "repoName": "nuxt",
+          "owner": "nuxt",
+          "language": "TypeScript",
+          "category": "全栈框架",
+          "summaryZh": "Nuxt 是一个基于 Vue 的全栈开发框架，支持服务端渲染、静态站点生成、客户端渲染与混合式应用构建，可用于开发通用型 Web 应用。",
+          "starsToday": 10,
+          "starsTotal": 59913,
+          "reasons": [
+            "仓库描述直接表明它是面向 Vue 的全栈框架，项目定位十分明确。",
+            "公开主题包含 SSR、SSG、CSR、server-rendering 和 hybrid，说明它覆盖多种主流渲染与部署模式。",
+            "标签中包含 Static site generator、Universal、Full-stack framework 和 Node.js framework，表明它适合构建现代 Web 应用的完整框架体系。"
+          ],
+          "repoUrl": "https://github.com/nuxt/nuxt",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "title": "React 天榜 Top5",
+      "items": [
+        {
+          "rank": 1,
+          "repoName": "remotion",
+          "owner": "remotion-dev",
+          "language": "TypeScript",
+          "category": "视频与前端开发工具",
+          "summaryZh": "Remotion 是一个基于 TypeScript 和 React 的视频生成工具，支持用组件化和编程方式创建视频内容，适合将前端开发流程用于动画、剪辑和可视化视频制作。",
+          "starsToday": 123,
+          "starsTotal": 40567,
+          "reasons": [
+            "仓库描述明确强调用 React 以编程方式制作视频，核心定位非常清晰。",
+            "项目使用 TypeScript 开发，并围绕 JavaScript、React 和 Video 等主题展开，体现出前端技术栈与视频生产的结合。",
+            "仓库在 Best of JS 的 React 相关榜单中出现且星标总量较高，说明它在开发者社区中具备较强关注度。"
+          ],
+          "repoUrl": "https://github.com/remotion-dev/remotion",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+        },
+        {
+          "rank": 2,
+          "repoName": "ui",
+          "owner": "shadcn-ui",
+          "language": "TypeScript",
+          "category": "UI 组件库",
+          "summaryZh": "这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调美观设计、可访问性以及与多种前端框架的兼容性，常与 Tailwind CSS、Radix UI 等技术配合使用。",
+          "starsToday": 122,
+          "starsTotal": 110544,
+          "reasons": [
+            "仓库描述明确指出它提供一组设计精良且注重可访问性的组件，核心定位属于前端界面组件领域。",
+            "主题和标签同时包含 React、Component library、TailwindCSS、Radix UI、Next.js、Vite 等关键词，说明它主要服务于现代前端应用开发。",
+            "它不仅提供组件，还强调代码分发与开放代码方式，体现出其作为组件库与配套分发平台的双重产品形态。"
+          ],
+          "repoUrl": "https://github.com/shadcn-ui/ui",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+        },
+        {
+          "rank": 3,
+          "repoName": "agent-skills",
+          "owner": "vercel-labs",
+          "language": "JavaScript",
+          "category": "AI 代理工具",
+          "summaryZh": "这是 Vercel 官方维护的代理技能集合项目，用于为智能体提供可复用的能力模块与相关实践，适合结合 Next.js、React 等技术栈构建 AI 应用。",
+          "starsToday": 87,
+          "starsTotal": 23711,
+          "reasons": [
+            "仓库说明明确表明它是 Vercel 官方推出的 agent skills 集合，核心定位就是服务于智能体能力扩展。",
+            "项目标签包含 AI、Next.js 和 React，说明它与现代前端框架结合紧密，适合用于构建面向生产的智能应用界面与流程。",
+            "该项目总星标和当日增长都较高，反映出开发者社区对这类可复用代理能力组件有明显关注度。"
+          ],
+          "repoUrl": "https://github.com/vercel-labs/agent-skills",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+        },
+        {
+          "rank": 4,
+          "repoName": "json-render",
+          "owner": "vercel-labs",
+          "language": "TypeScript",
+          "category": "前端开发框架",
+          "summaryZh": "这是一个面向 React 生态的生成式界面框架，围绕 JSON 驱动的方式来描述和渲染 UI，适合用于构建与 AI 能力结合的动态界面。",
+          "starsToday": 87,
+          "starsTotal": 13151,
+          "reasons": [
+            "仓库描述直接表明它是一个生成式界面框架，核心定位清晰偏向前端 UI 构建。",
+            "项目标签包含 JSON、AI 和 React，说明它强调用结构化数据驱动界面，并面向智能交互场景。",
+            "仓库使用 TypeScript 且归属于 Vercel Labs，结合独立官网信息，可判断其具备较完整的框架化产品形态。"
+          ],
+          "repoUrl": "https://github.com/vercel-labs/json-render",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+        },
+        {
+          "rank": 5,
+          "repoName": "excalidraw",
+          "owner": "excalidraw",
+          "language": "TypeScript",
+          "category": "白板与图表绘制",
+          "summaryZh": "Excalidraw 是一个基于 Web 的虚拟白板应用，用于快速绘制手绘风格的示意图、流程图和草图，并支持协作式可视化表达。",
+          "starsToday": 77,
+          "starsTotal": 119430,
+          "reasons": [
+            "仓库描述明确表明它的核心能力是提供类似手绘效果的在线白板绘图体验。",
+            "项目主题包含 canvas、collaboration、diagrams、drawing 和 whiteboard，说明它聚焦于图形绘制与协作场景。",
+            "项目使用 TypeScript 并带有 React、Canvas 等标签，体现出它是面向现代前端生态的交互式绘图工具。"
+          ],
+          "repoUrl": "https://github.com/excalidraw/excalidraw",
+          "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "GitHub Trending（全站）",
+      "url": "https://github.com/trending?since=daily"
+    },
+    {
+      "label": "GitHub Trending（TypeScript）",
+      "url": "https://github.com/trending/typescript?since=daily"
+    },
+    {
+      "label": "Best of JS（Vue）",
+      "url": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
+    },
+    {
+      "label": "Best of JS（React）",
+      "url": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
+    }
+  ],
+  "generatedAt": "2026-03-24T05:53:46.850Z"
+}
