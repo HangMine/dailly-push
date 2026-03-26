@@ -1,4 +1,6 @@
 import { execFileSync, spawnSync } from 'node:child_process';
+import { writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { getShanghaiDateString, parseDateArg } from './lib/utils';
 
 interface PublishOptions {
@@ -97,6 +99,38 @@ function commitChanges(date: string) {
   run('git', ['commit', '-m', `chore: publish daily issue ${date}`]);
 }
 
+function getHeadCommitShort() {
+  return run('git', ['rev-parse', '--short', 'HEAD'], { capture: true });
+}
+
+function getBuiltAtString() {
+  const now = new Date();
+  return new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).format(now).replace(' ', ' ');
+}
+
+function writeLatestBuildMeta(params: { success: boolean; builtAt: string; commit: string }) {
+  const payload = {
+    status: params.success ? 'success' : 'failed',
+    builtAt: params.builtAt,
+    commit: params.commit,
+  };
+
+  const outPath = resolve(process.cwd(), 'generated', 'latest-build.json');
+  writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+
+  console.log(`Latest build: ${payload.status}`);
+  console.log(`Built at: ${payload.builtAt}`);
+  console.log(`Commit: ${payload.commit}`);
+}
+
 function main() {
   const args = process.argv.slice(2);
   const options = parseOptions(args);
@@ -121,6 +155,9 @@ function main() {
 
   const changedFiles = getTrackedDailyChanges();
   if (changedFiles.length === 0) {
+    const builtAt = getBuiltAtString();
+    const commit = getHeadCommitShort();
+    writeLatestBuildMeta({ success: true, builtAt, commit });
     console.log(`No publishable content changes for ${publishDate}.`);
     return;
   }
@@ -128,11 +165,17 @@ function main() {
   commitChanges(publishDate);
 
   if (options.skipPush) {
+    const builtAt = getBuiltAtString();
+    const commit = getHeadCommitShort();
+    writeLatestBuildMeta({ success: true, builtAt, commit });
     console.log(`Committed daily issue ${publishDate}. Skipped push because --skip-push was provided.`);
     return;
   }
 
   run('git', ['push', 'origin', 'main']);
+  const builtAt = getBuiltAtString();
+  const commit = getHeadCommitShort();
+  writeLatestBuildMeta({ success: true, builtAt, commit });
   console.log(`Published daily issue ${publishDate} to origin/main.`);
 }
 
