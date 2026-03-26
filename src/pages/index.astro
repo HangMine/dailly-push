@@ -6,9 +6,10 @@ import SourceList from '@/components/SourceList.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { countRepos, countUniqueRepos, getLatestIssue } from '@/lib/daily/content';
 import { formatDisplayDate } from '@/lib/daily/formatters';
+import { getLatestBuildMeta } from '@/lib/daily/latest-build';
 
 const latestIssue = await getLatestIssue();
-const latestBuild = (await import('../../generated/latest-build.json')).default;
+const latestBuild = getLatestBuildMeta();
 ---
 
 <BaseLayout title="GitHub 天榜速递 " latestBuild={latestBuild}>

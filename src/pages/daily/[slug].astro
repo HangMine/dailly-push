@@ -6,6 +6,7 @@ import SourceList from '@/components/SourceList.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { countRepos, countUniqueRepos, getDailyIssues } from '@/lib/daily/content';
 import { formatDisplayDate } from '@/lib/daily/formatters';
+import { getLatestBuildMeta } from '@/lib/daily/latest-build';
 
 export async function getStaticPaths() {
   const entries = await getDailyIssues();
@@ -16,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const latestBuild = (await import('../../../generated/latest-build.json')).default;
+const latestBuild = getLatestBuildMeta();
 ---
 
 <BaseLayout title={`${entry.data.title} | GitHub 天榜速递`} latestBuild={latestBuild}>
