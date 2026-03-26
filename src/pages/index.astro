@@ -8,9 +8,10 @@ import { countRepos, countUniqueRepos, getLatestIssue } from '@/lib/daily/conten
 import { formatDisplayDate } from '@/lib/daily/formatters';
 
 const latestIssue = await getLatestIssue();
+const latestBuild = (await import('../../generated/latest-build.json')).default;
 ---
 
-<BaseLayout title="GitHub 天榜速递 ">
+<BaseLayout title="GitHub 天榜速递 " latestBuild={latestBuild}>
   {
     latestIssue ? (
       <>

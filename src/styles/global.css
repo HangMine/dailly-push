@@ -516,20 +516,23 @@ code {
 }
 
 .section-heading {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.9rem;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .section-rule {
   display: inline-block;
-  width: clamp(4rem, 12vw, 8rem);
+  flex: 0 0 auto;
+  width: clamp(4rem, 8vw, 6rem);
   height: 2px;
   background: linear-gradient(90deg, var(--warm), rgba(15, 118, 110, 0.2));
 }
 
 .section-reveal {
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 0;
 }
 

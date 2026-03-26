@@ -16,9 +16,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const latestBuild = (await import('../../../generated/latest-build.json')).default;
 ---
 
-<BaseLayout title={`${entry.data.title} | GitHub 天榜速递`}>
+<BaseLayout title={`${entry.data.title} | GitHub 天榜速递`} latestBuild={latestBuild}>
   <IssueHero
     title={entry.data.title}
     dateLabel={formatDisplayDate(entry.data.date)}

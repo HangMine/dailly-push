@@ -4,11 +4,17 @@ import '@/styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  latestBuild?: {
+    status: string;
+    builtAt: string;
+    commit: string;
+  };
 }
 
 const {
   title,
   description = 'GitHub 天榜速递，聚合每日热门仓库与中文增长解读。',
+  latestBuild,
 } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -49,5 +55,20 @@ const baseUrl = import.meta.env.BASE_URL;
         <slot />
       </main>
     </div>
+
+    {
+      latestBuild ? (
+        <script
+          is:inline
+          define:vars={{ latestBuild }}
+        >
+          {`
+            console.log(`Latest build: ${latestBuild.status}`);
+            console.log(`Built at: ${latestBuild.builtAt}`);
+            console.log(`Commit: ${latestBuild.commit}`);
+          `}
+        </script>
+      ) : null
+    }
   </body>
 </html>
