@@ -40,6 +40,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build metadata
+        shell: bash
+        run: |
+          echo "PUBLIC_LATEST_BUILD_STATUS=success" >> $GITHUB_ENV
+          echo "PUBLIC_LATEST_BUILD_COMMIT=${GITHUB_SHA::7}" >> $GITHUB_ENV
+          echo "PUBLIC_LATEST_BUILD_AT=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+
       - name: Build site
         run: pnpm build
 
