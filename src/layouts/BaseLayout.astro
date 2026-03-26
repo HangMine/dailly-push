@@ -58,15 +58,10 @@ const baseUrl = import.meta.env.BASE_URL;
 
     {
       latestBuild ? (
-        <script
-          is:inline
-          define:vars={{ latestBuild }}
-        >
-          {`
-            console.log(`Latest build: ${latestBuild.status}`);
-            console.log(`Built at: ${latestBuild.builtAt}`);
-            console.log(`Commit: ${latestBuild.commit}`);
-          `}
+        <script is:inline>
+          {`console.log(${JSON.stringify(`Latest build: ${latestBuild.status}`)});
+console.log(${JSON.stringify(`Built at: ${latestBuild.builtAt}`)});
+console.log(${JSON.stringify(`Commit: ${latestBuild.commit}`)});`}
         </script>
       ) : null
     }
