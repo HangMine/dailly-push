@@ -1,6 +1,4 @@
 ---
-import ScrollReveal from '@/components/reactbits/ScrollReveal';
-
 interface Props {
   title: string;
   className?: string;
@@ -10,17 +8,5 @@ const { title, className = '' } = Astro.props;
 ---
 
 <div class={`section-reveal ${className}`.trim()}>
-  <h2 class="section-reveal__fallback">{title}</h2>
-  <ScrollReveal
-    containerClassName="section-reveal__animated"
-    textClassName="section-reveal__text"
-    baseOpacity={0.2}
-    baseRotation={1}
-    blurStrength={2}
-    rotationEnd="top 75%"
-    wordAnimationEnd="top 55%"
-    client:visible
-  >
-    {title}
-  </ScrollReveal>
+  <h2 class="section-reveal__text">{title}</h2>
 </div>
