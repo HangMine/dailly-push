@@ -17,13 +17,13 @@ const {
   latestBuild,
 } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
-const latestBuildLogs = latestBuild
+const latestBuildConsoleScript = latestBuild
   ? [
-      `Latest build: ${latestBuild.status}`,
-      `Built at: ${latestBuild.builtAt}`,
-      `Commit: ${latestBuild.commit}`,
-    ]
-  : [];
+      `console.log(${JSON.stringify(`Latest build: ${latestBuild.status}`)});`,
+      `console.log(${JSON.stringify(`Built at: ${latestBuild.builtAt}`)});`,
+      `console.log(${JSON.stringify(`Commit: ${latestBuild.commit}`)});`,
+    ].join('\n')
+  : '';
 ---
 
 <!doctype html>
@@ -63,12 +63,6 @@ const latestBuildLogs = latestBuild
       </main>
     </div>
 
-    {
-      latestBuildLogs.length > 0 ? (
-        <script is:inline>
-          {latestBuildLogs.map((line) => `console.log(${JSON.stringify(line)});`).join('\n')}
-        </script>
-      ) : null
-    }
+    {latestBuildConsoleScript ? <script is:inline set:html={latestBuildConsoleScript}></script> : null}
   </body>
 </html>
