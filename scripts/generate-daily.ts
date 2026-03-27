@@ -4,7 +4,7 @@ import { SECTION_CONFIG } from '../src/lib/daily/constants';
 import { buildIssue } from './lib/build-issue';
 import { fetchGitHubMetadata } from './lib/github-api';
 import { fetchHtml } from './lib/http';
-import { enrichRepo } from './lib/llm';
+import { buildFallbackEnrichment, enrichRepo } from './lib/llm';
 import { parseSectionItems } from './lib/multi-source';
 import { DEFAULT_COLLECTION } from './lib/collections';
 import type { RepoEnrichment, RepoMetadata, ScrapedRepo, ScrapedSection } from './lib/types';
@@ -62,6 +62,15 @@ function collectUniqueRepos(sections: ScrapedSection[]): ScrapedRepo[] {
   return [...repoMap.values()];
 }
 
+const ENRICH_BATCH_SIZE = 4;
+
+async function runInBatches<T>(items: T[], batchSize: number, worker: (item: T) => Promise<void>) {
+  for (let index = 0; index < items.length; index += batchSize) {
+    const batch = items.slice(index, index + batchSize);
+    await Promise.all(batch.map((item) => worker(item)));
+  }
+}
+
 async function main() {
   const date = parseDateArg(process.argv.slice(2)) ?? getShanghaiDateString();
   console.log(`[step] generate start: ${date}`);
@@ -82,13 +91,19 @@ async function main() {
   }
 
   const enrichmentMap = new Map<string, RepoEnrichment>();
-  for (const repo of uniqueRepos) {
+  await runInBatches(uniqueRepos, ENRICH_BATCH_SIZE, async (repo) => {
     const metadata = metadataMap.get(repoKey(repo)) ?? null;
     console.log(`[step] enrich start: ${repo.owner}/${repo.repoName}`);
-    const enrichment = await enrichRepo(repo, metadata);
-    enrichmentMap.set(repoKey(repo), enrichment);
-    console.log(`[step] enrich done: ${repo.owner}/${repo.repoName}`);
-  }
+    try {
+      const enrichment = await enrichRepo(repo, metadata);
+      enrichmentMap.set(repoKey(repo), enrichment);
+      console.log(`[step] enrich done: ${repo.owner}/${repo.repoName}`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.warn(`[warn] enrich fallback: ${repo.owner}/${repo.repoName} :: ${message}`);
+      enrichmentMap.set(repoKey(repo), buildFallbackEnrichment(repo, metadata));
+    }
+  });
 
   console.log('[step] building issue...');
   const issue = buildIssue({

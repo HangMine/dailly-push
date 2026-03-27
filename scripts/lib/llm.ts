@@ -10,6 +10,25 @@ const enrichmentSchema = z.object({
   reasons: z.array(z.string().min(1)).length(3),
 });
 
+export function buildFallbackEnrichment(repo: ScrapedRepo, metadata: RepoMetadata | null): RepoEnrichment {
+  const language = metadata?.language || repo.language || '未知技术栈';
+  const description = (metadata?.description || repo.descriptionEn || '').trim();
+  const source = repo.owner === 'skills' ? 'Skills 榜单' : 'GitHub 热门榜单';
+  const summaryZh = description
+    ? `这是一个来自${source}的热门项目，当前主要技术方向是${language}，核心信息可参考项目描述与来源页。`
+    : `这是一个来自${source}的热门项目，当前主要技术方向是${language}，近期热度上升，值得继续关注。`;
+
+  return {
+    category: repo.owner === 'skills' ? 'AI Skills' : '热门开源项目',
+    summaryZh,
+    reasons: [
+      `该项目出现在${source}，说明它在当前周期内具备明确热度。`,
+      `从现有公开信息看，它的技术方向集中在${language}相关场景。`,
+      '虽然自动解读阶段失败，但项目链接与原始描述仍可直接用于人工快速判断。',
+    ],
+  };
+}
+
 export async function enrichRepo(
   repo: ScrapedRepo,
   metadata: RepoMetadata | null,
