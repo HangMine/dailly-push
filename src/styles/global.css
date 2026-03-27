@@ -186,6 +186,66 @@ code {
   gap: 1.25rem;
 }
 
+.section-tabs {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.section-tabs__list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.section-tabs__tab {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.section-tabs__tab:hover {
+  transform: translateY(-1px);
+}
+
+.section-tabs__tab.is-active {
+  color: #fff;
+  border-color: rgba(15, 118, 110, 0.18);
+  background: linear-gradient(135deg, var(--accent), #115e59);
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.2);
+}
+
+.section-tabs__panel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.section-tabs__panel[hidden] {
+  display: none;
+}
+
+.section-tabs__panel.is-active {
+  animation: rise-in 280ms ease both;
+}
+
 .hero-card,
 .raw-panel,
 .sources-card,

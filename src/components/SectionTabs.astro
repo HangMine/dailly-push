@@ -1,0 +1,82 @@
+---
+import type { RankingSection as RankingSectionModel } from '@/lib/daily/schema';
+
+interface Props {
+  groups: Array<{
+    key: string;
+    label: string;
+    sections: RankingSectionModel[];
+  }>;
+}
+
+const { groups } = Astro.props;
+const defaultKey = groups[0]?.key ?? 'github';
+---
+
+<section class="section-tabs" data-section-tabs>
+  <div class="section-tabs__list" role="tablist" aria-label="榜单分类切换">
+    {
+      groups.map((group) => (
+        <button
+          type="button"
+          class:list={['section-tabs__tab', group.key === defaultKey && 'is-active']}
+          role="tab"
+          aria-selected={group.key === defaultKey ? 'true' : 'false'}
+          aria-controls={`panel-${group.key}`}
+          id={`tab-${group.key}`}
+          data-tab-trigger={group.key}
+        >
+          {group.label}
+        </button>
+      ))
+    }
+  </div>
+
+  {
+    groups.map((group) => (
+      <div
+        class:list={['section-tabs__panel', group.key === defaultKey && 'is-active']}
+        role="tabpanel"
+        aria-labelledby={`tab-${group.key}`}
+        id={`panel-${group.key}`}
+        data-tab-panel={group.key}
+        hidden={group.key === defaultKey ? undefined : true}
+      >
+        <slot name={group.key} />
+      </div>
+    ))
+  }
+</section>
+
+<script is:inline>
+  const roots = document.querySelectorAll('[data-section-tabs]');
+  for (const root of roots) {
+    const triggers = Array.from(root.querySelectorAll('[data-tab-trigger]'));
+    const panels = Array.from(root.querySelectorAll('[data-tab-panel]'));
+
+    const activate = (key) => {
+      for (const trigger of triggers) {
+        const active = trigger.getAttribute('data-tab-trigger') === key;
+        trigger.classList.toggle('is-active', active);
+        trigger.setAttribute('aria-selected', active ? 'true' : 'false');
+      }
+
+      for (const panel of panels) {
+        const active = panel.getAttribute('data-tab-panel') === key;
+        panel.classList.toggle('is-active', active);
+        if (active) {
+          panel.removeAttribute('hidden');
+        } else {
+          panel.setAttribute('hidden', '');
+        }
+      }
+    };
+
+    for (const trigger of triggers) {
+      trigger.addEventListener('click', () => {
+        const key = trigger.getAttribute('data-tab-trigger');
+        if (key) activate(key);
+      });
+    }
+  }
+</script>

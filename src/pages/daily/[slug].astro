@@ -2,6 +2,7 @@
 import IssueHero from '@/components/IssueHero.astro';
 import RankingSection from '@/components/RankingSection.astro';
 import RawTextPanel from '@/components/RawTextPanel.astro';
+import SectionTabs from '@/components/SectionTabs.astro';
 import SourceList from '@/components/SourceList.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { countRepos, countUniqueRepos, getDailyIssues } from '@/lib/daily/content';
@@ -18,6 +19,8 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const latestBuild = getLatestBuildMeta();
+const githubSections = entry.data.sections.filter((section) => !section.id.startsWith('skills-'));
+const skillsSections = entry.data.sections.filter((section) => section.id.startsWith('skills-'));
 ---
 
 <BaseLayout title={`${entry.data.title} | GitHub 天榜速递`} latestBuild={latestBuild}>
@@ -32,7 +35,19 @@ const latestBuild = getLatestBuildMeta();
     ]}
   />
 
-  {entry.data.sections.map((section, index) => <RankingSection section={section} index={index} />)}
+  <SectionTabs
+    groups={[
+      { key: 'github', label: 'GitHub', sections: githubSections },
+      { key: 'skills', label: 'Skills', sections: skillsSections },
+    ]}
+  >
+    <Fragment slot="github">
+      {githubSections.map((section, index) => <RankingSection section={section} index={index} />)}
+    </Fragment>
+    <Fragment slot="skills">
+      {skillsSections.map((section, index) => <RankingSection section={section} index={index} />)}
+    </Fragment>
+  </SectionTabs>
 
   <SourceList sources={entry.data.sources} />
   <RawTextPanel rawText={entry.data.rawText} />
