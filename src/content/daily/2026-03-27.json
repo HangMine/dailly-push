@@ -2,7 +2,7 @@
   "date": "2026-03-27",
   "slug": "2026-03-27",
   "title": "📊 GitHub & Skills 天榜速递（2026-03-27）",
-  "rawText": "📊 GitHub & Skills 天榜速递（2026-03-27）\n\n━━━━━━━━━━\n【全站天榜 Top10】\n\n1. mvanhorn/last30days-skill（Python）\n▸ 类别：AI 智能体/研究工具\n▸ 简介：这是一个用 Python 实现的 AI 智能体技能，目标是围绕任意主题在 Reddit、X、YouTube、Hacker News、Polymarket 以及更广泛的网页内容中进行检索，并综合生成带有信息依据的摘要，适合用于追踪近期开启讨论的热点、社交媒体趋势与多来源研究整理。\n▸ Stars：今日 ⭐2,685｜总 ⭐10,487\n▸ 增长原因：\n　　　　- 仓库描述明确指出它会跨多个社交平台、社区站点和网页进行主题研究，核心能力属于面向信息检索与综合分析的 AI 工具。\n　　　　- 主题标签包含 deep-research、web-search、reddit、youtube、hackernews、polymarket 和 trends，说明其定位是结合实时性与多源内容的研究型技能。\n　　　　- 项目以 Python 开发，并强调生成 grounded summary，表明它不仅做搜索聚合，还重视基于来源证据的总结输出。\n▸ 链接：https://github.com/mvanhorn/last30days-skill\n\n2. Yeachan-Heo/oh-my-claudecode（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调将多个 AI 代理组织起来以支持并行执行、自动化流程与协同式编码实践。\n▸ Stars：今日 ⭐598｜总 ⭐12,766\n▸ 增长原因：\n　　　　- 仓库描述明确指出它以团队优先的方式为 Claude Code 提供多智能体编排能力，定位属于开发流程中的工具链增强。\n　　　　- 主题标签涵盖 ai-agents、multi-agent-systems、automation 和 parallel-execution，说明其核心价值在于协调多个代理完成自动化与并行化任务。\n　　　　- 项目使用 TypeScript 开发并拥有独立主页，且在趋势榜中获得较高关注，表明它是近期受到开发者重视的 AI 编码协作工具。\n▸ 链接：https://github.com/Yeachan-Heo/oh-my-claudecode\n\n3. virattt/dexter（TypeScript）\n▸ 类别：金融研究智能体\n▸ 简介：Dexter 是一个使用 TypeScript 开发的自主式智能体，面向深入的金融研究任务，强调让代理在较少人工干预下完成信息收集、分析与研究流程。\n▸ Stars：今日 ⭐210｜总 ⭐19,042\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于深度金融研究的自主智能体，主题定位非常清晰。\n　　　　- 项目采用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。\n　　　　- 该仓库在 GitHub 趋势榜获得较高关注，表明市场对金融研究自动化工具有明显兴趣。\n▸ 链接：https://github.com/virattt/dexter\n\n4. ruvnet/RuView（Rust）\n▸ 类别：无线感知与人体姿态识别\n▸ 简介：RuView 是一个以 Rust 为主的无线感知项目，目标是利用普通 WiFi 信号在无需摄像头画面的情况下实现实时人体姿态估计、生命体征监测和在场检测，方向涵盖 DensePose、射频感知以及嵌入式固件相关能力。\n▸ Stars：今日 ⭐1,002｜总 ⭐43,261\n▸ 增长原因：\n　　　　- 项目核心卖点是把日常 WiFi 信号转化为对人体状态的感知能力，具备明显的无接触、无视频监控特征。\n　　　　- 仓库主题同时包含 pose estimation、densepose、rf、monitoring 与 wifi，说明它处在无线感知与人体行为识别的交叉领域。\n　　　　- 项目还带有 esp32、mcu 和 firmware 等标签，表明它不仅关注算法概念，也涉及面向边缘设备和嵌入式场景的实现。\n▸ 链接：https://github.com/ruvnet/RuView\n\n5. bytedance/deer-flow（Python）\n▸ 类别：AI 多智能体框架\n▸ 简介：Deer Flow 是一个开源的长周期 SuperAgent 执行框架，面向需要持续数分钟到数小时的复杂任务，支持研究、编程与内容创作等场景。它通过沙箱、记忆、工具、技能、子代理和消息网关等机制组织多智能体协作，用于构建能够分阶段推进任务的智能工作流。项目以 Python 为主，并与 LangChain、LangGraph 等相关生态有较强关联。\n▸ Stars：今日 ⭐2,394｜总 ⭐48,649\n▸ 增长原因：\n　　　　- 仓库描述明确将其定位为开源的长周期 SuperAgent harness，核心价值是处理耗时较长且层次不同的复杂任务。\n　　　　- 公开信息提到沙箱、记忆、工具、技能、子代理和消息网关等组件，说明它强调多智能体编排与任务执行基础设施。\n　　　　- 主题标签集中在 agent、multi-agent、LLM、deep-research、LangChain 和 LangGraph 等方向，表明它属于 AI Agent 框架与工作流系统。\n▸ 链接：https://github.com/bytedance/deer-flow\n\n6. Vaibhavs10/insanely-fast-whisper（Jupyter Notebook）\n▸ 类别：语音识别\n▸ 简介：这是一个围绕 Whisper 的高性能语音转写项目，重点在于提升推理速度，适合用于更快地完成语音识别与转录任务。仓库主要以 Jupyter Notebook 形式呈现，说明其兼具实验演示和实际使用参考价值。\n▸ Stars：今日 ⭐1,370｜总 ⭐11,308\n▸ 增长原因：\n　　　　- 仓库名称直接表明它聚焦于 Whisper，并强调“insanely fast”这一速度优化方向，因此可归为语音识别与转写工具。\n　　　　- 项目主要语言是 Jupyter Notebook，这通常意味着仓库包含可复现的实验、示例流程或使用演示，便于开发者快速上手验证效果。\n　　　　- 该项目在今日和累计星标上都表现突出，说明它近期受到开发者广泛关注，反映出高性能语音转写方案具有较强的实际吸引力。\n▸ 链接：https://github.com/Vaibhavs10/insanely-fast-whisper\n\n7. agentscope-ai/agentscope（Python）\n▸ 类别：AI智能体开发框架\n▸ 简介：AgentScope 是一个面向大语言模型应用的 Python 框架，聚焦可观察、可理解、可控的智能体构建与运行，支持多智能体、聊天机器人、多模态及 MCP 等相关场景。\n▸ Stars：今日 ⭐437｜总 ⭐20,528\n▸ 增长原因：\n　　　　- 仓库描述明确强调构建和运行可被看见、理解与信任的智能体，表明其核心定位是智能体开发与执行框架。\n　　　　- 主题标签覆盖 llm、llm-agent、multi-agent、chatbot、multi-modal 和 react-agent，说明它面向大模型驱动的多种智能体应用场景。\n　　　　- 项目提供独立文档站点并以 Python 为主要语言，结合较高的社区关注度，显示其具备较成熟的开发者使用基础与生态吸引力。\n▸ 链接：https://github.com/agentscope-ai/agentscope\n\n8. twentyhq/twenty（TypeScript）\n▸ 类别：开源商业应用\n▸ 简介：Twenty 是一个由社区驱动、以 TypeScript 为核心技术栈构建的开源 CRM 项目，目标是打造 Salesforce 的现代替代方案，覆盖客户关系、销售与营销等业务场景。\n▸ Stars：今日 ⭐117｜总 ⭐41,320\n▸ 增长原因：\n　　　　- 仓库描述明确表明它要构建 Salesforce 的现代替代方案，产品定位直接指向 CRM 与商业客户管理场景。\n　　　　- 项目主题包含 crm、customer、sales、marketing 等关键词，说明其核心用途围绕客户关系管理和业务运营展开。\n　　　　- 技术标签显示它采用 TypeScript，并结合 React、NestJS、GraphQL 与 PostgreSQL 等 Web 技术栈实现，符合现代开源商业应用的特征。\n▸ 链接：https://github.com/twentyhq/twenty\n\n9. datalab-to/chandra（Python）\n▸ 类别：AI/文档OCR\n▸ 简介：这是一个用 Python 开发的 OCR 项目，重点面向复杂表格、表单和手写内容识别，并尝试保留页面整体版式结构，适合文档理解与结构化提取场景。\n▸ Stars：今日 ⭐557｜总 ⭐6,228\n▸ 增长原因：\n　　　　- 仓库描述明确指出它支持复杂表格、表单和手写内容识别，说明其核心方向是文档 OCR 而非通用图像处理。\n　　　　- 项目强调完整布局处理能力，表明它不仅提取文字，还关注页面结构与版面信息的保留。\n　　　　- 仓库主题包含 ai 和 ocr，且近期获得较高关注度，说明它属于受到开发者关注的 AI 文档识别工具。\n▸ 链接：https://github.com/datalab-to/chandra\n\n━━━━━━━━━━\n【TypeScript 天榜 Top5】\n\n1. Yeachan-Heo/oh-my-claudecode（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调将多个 AI 代理组织起来以支持并行执行、自动化流程与协同式编码实践。\n▸ Stars：今日 ⭐598｜总 ⭐12,766\n▸ 增长原因：\n　　　　- 仓库描述明确指出它以团队优先的方式为 Claude Code 提供多智能体编排能力，定位属于开发流程中的工具链增强。\n　　　　- 主题标签涵盖 ai-agents、multi-agent-systems、automation 和 parallel-execution，说明其核心价值在于协调多个代理完成自动化与并行化任务。\n　　　　- 项目使用 TypeScript 开发并拥有独立主页，且在趋势榜中获得较高关注，表明它是近期受到开发者重视的 AI 编码协作工具。\n▸ 链接：https://github.com/Yeachan-Heo/oh-my-claudecode\n\n2. virattt/dexter（TypeScript）\n▸ 类别：金融研究智能体\n▸ 简介：Dexter 是一个使用 TypeScript 开发的自主式智能体，面向深入的金融研究任务，强调让代理在较少人工干预下完成信息收集、分析与研究流程。\n▸ Stars：今日 ⭐210｜总 ⭐19,042\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于深度金融研究的自主智能体，主题定位非常清晰。\n　　　　- 项目采用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。\n　　　　- 该仓库在 GitHub 趋势榜获得较高关注，表明市场对金融研究自动化工具有明显兴趣。\n▸ 链接：https://github.com/virattt/dexter\n\n3. twentyhq/twenty（TypeScript）\n▸ 类别：开源商业应用\n▸ 简介：Twenty 是一个由社区驱动、以 TypeScript 为核心技术栈构建的开源 CRM 项目，目标是打造 Salesforce 的现代替代方案，覆盖客户关系、销售与营销等业务场景。\n▸ Stars：今日 ⭐117｜总 ⭐41,320\n▸ 增长原因：\n　　　　- 仓库描述明确表明它要构建 Salesforce 的现代替代方案，产品定位直接指向 CRM 与商业客户管理场景。\n　　　　- 项目主题包含 crm、customer、sales、marketing 等关键词，说明其核心用途围绕客户关系管理和业务运营展开。\n　　　　- 技术标签显示它采用 TypeScript，并结合 React、NestJS、GraphQL 与 PostgreSQL 等 Web 技术栈实现，符合现代开源商业应用的特征。\n▸ 链接：https://github.com/twentyhq/twenty\n\n4. pascalorg/editor（TypeScript）\n▸ 类别：3D建筑设计编辑器\n▸ 简介：这是一个使用 TypeScript 构建的在线 3D 建筑项目编辑与分享工具，面向建筑场景的创建、编辑和协作展示，提供通过网页访问的编辑体验。\n▸ Stars：今日 ⭐633｜总 ⭐7,343\n▸ 增长原因：\n　　　　- 仓库描述明确指出其核心功能是创建和分享 3D 建筑项目，产品定位较为清晰。\n　　　　- 项目使用 TypeScript 开发，并提供独立主页，说明它更像可直接使用的 Web 编辑器而不只是底层库。\n　　　　- 该仓库在近期趋势榜上获得较高关注，反映出 3D 建筑设计与在线编辑场景具有明显吸引力。\n▸ 链接：https://github.com/pascalorg/editor\n\n5. letta-ai/claude-subconscious（TypeScript）\n▸ 类别：开发者工具\n▸ 简介：这是一个用 TypeScript 开发的项目，目标是为 Claude Code 增加类似“潜意识”的能力，暗示其可为代码助手提供持续的上下文、记忆或后台辅助机制。\n▸ Stars：今日 ⭐446｜总 ⭐1,767\n▸ 增长原因：\n　　　　- 仓库描述直接表明它围绕 Claude Code 扩展能力展开，因此更接近面向 AI 编码场景的开发者工具。\n　　　　- 项目使用 TypeScript 构建，说明其很可能服务于 JavaScript 或 Node.js 相关生态中的集成与开发流程。\n　　　　- 该仓库出现在 TypeScript 趋势榜且当日获得较多关注，表明开发者社区对提升代码助手能力的工具有明显兴趣。\n▸ 链接：https://github.com/letta-ai/claude-subconscious\n\n━━━━━━━━━━\n【Vue 天榜 Top5】\n\n1. slidevjs/slidev（TypeScript）\n▸ 类别：演示文稿框架\n▸ 简介：Slidev 是一个面向开发者的演示文稿工具，使用 Markdown 编写幻灯片，并基于 Vue 与 Vite 提供可扩展的前端能力与开发体验。\n▸ Stars：今日 ⭐44｜总 ⭐45,180\n▸ 增长原因：\n　　　　- 仓库描述明确指向为开发者制作演示幻灯片，核心用途非常清晰。\n　　　　- 主题标签包含 markdown、presentation、slides、vite 和 vue，说明它结合文档式编写与现代前端技术栈。\n　　　　- 项目主页独立且社区关注度较高，表明它已形成较成熟的产品形态与用户认知。\n▸ 链接：https://github.com/slidevjs/slidev\n\n2. vercel/ai（TypeScript）\n▸ 类别：AI 应用开发工具\n▸ 简介：这是一个面向 TypeScript 生态的开源 AI 开发工具包，用于构建集成大语言模型的应用与智能体。项目由 Vercel 推出，强调在 React、Vue、Svelte 与 Next.js 等前端框架中的集成能力，并覆盖 OpenAI、Anthropic、Gemini 等多种模型服务。\n▸ Stars：今日 ⭐26｜总 ⭐23,025\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是用于 TypeScript 的 AI 工具包，核心用途是帮助开发者构建 AI 驱动的应用和智能体。\n　　　　- 主题标签覆盖 OpenAI、Anthropic、Gemini、LLM、Generative UI 以及多种前端框架，说明它定位于多模型接入与前端集成开发。\n　　　　- 项目语言为 TypeScript，且与 React、Vue、Svelte、Next.js 等技术栈紧密相关，因此更适合归类为 AI 应用开发工具而非单一模型或终端产品。\n▸ 链接：https://github.com/vercel/ai\n\n3. storybookjs/storybook（TypeScript）\n▸ 类别：前端开发工具\n▸ 简介：Storybook 是一个面向前端界面组件的开发工作台，用于在脱离业务页面的环境中构建、展示、编写文档并测试 UI 组件，适用于 React、Vue、Angular、Svelte、Web Components 等多种技术栈，也可与 Vite、Webpack 等构建工具配合使用。\n▸ Stars：今日 ⭐20｜总 ⭐89,532\n▸ 增长原因：\n　　　　- 仓库定位清晰，核心价值是让开发者以组件为单位独立构建、调试、文档化和测试界面。\n　　　　- 项目覆盖 React、Vue、Angular、Svelte 等多个主流前端生态，说明它具有较强的跨框架适配能力。\n　　　　- 主题标签包含 design systems、documentation、testing、vite 和 webpack，表明它不仅是组件展示工具，也服务于设计系统与前端工程化流程。\n▸ 链接：https://github.com/storybookjs/storybook\n\n4. TanStack/query（TypeScript）\n▸ 类别：数据获取与异步状态管理\n▸ 简介：TanStack Query 是一个面向 Web 应用的异步状态管理与数据请求工具，主要用于处理服务器状态、缓存与重新获取数据，并支持 React、Vue、Svelte 和 Solid 等主流前端框架。\n▸ Stars：今日 ⭐15｜总 ⭐48,925\n▸ 增长原因：\n　　　　- 仓库描述明确强调异步状态管理、服务器状态工具和数据获取能力，核心定位非常清晰。\n　　　　- 主题和标签同时覆盖缓存、请求、GraphQL、REST 以及 stale-while-revalidate 等关键词，说明它聚焦于前端数据同步与缓存策略。\n　　　　- 它同时提供 React Query、Vue Query、Svelte Query 和 Solid Query，表明这是一个跨框架的通用数据层方案。\n▸ 链接：https://github.com/TanStack/query\n\n5. ueberdosis/tiptap（TypeScript）\n▸ 类别：富文本编辑器框架\n▸ 简介：Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 场景提供可扩展的编辑能力，并可与 React、Vue、Solid 等前端技术栈集成。\n▸ Stars：今日 ⭐15｜总 ⭐35,882\n▸ 增长原因：\n　　　　- 仓库描述明确强调它是面向 Web 开发者的无头富文本编辑器框架，定位非常清晰。\n　　　　- 主题标签包含 rich-text、wysiwyg、editor 和 prosemirror，说明其核心能力集中在富文本编辑与可视化编辑场景。\n　　　　- 标签和主题同时覆盖 React、Vue、Solid 等生态，表明它不是绑定单一界面的成品编辑器，而是可集成到多种前端框架中的基础能力层。\n▸ 链接：https://github.com/ueberdosis/tiptap\n\n━━━━━━━━━━\n【React 天榜 Top5】\n\n1. remotion-dev/remotion（TypeScript）\n▸ 类别：视频与前端开发\n▸ 简介：Remotion 是一个基于 TypeScript 与 React 的程序化视频生成工具，帮助开发者用熟悉的前端组件与代码方式来制作和组织视频内容。\n▸ Stars：今日 ⭐99｜总 ⭐40,860\n▸ 增长原因：\n　　　　- 仓库描述明确指出它用于以编程方式制作视频，核心用途非常清晰。\n　　　　- 项目语言为 TypeScript，主题与标签包含 React 和 Video，说明它面向前端技术栈并围绕视频创作展开。\n　　　　- 它拥有较高的累计关注度且当天增长明显，表明该项目在 React 相关开发者社区中具备较强关注度。\n▸ 链接：https://github.com/remotion-dev/remotion\n\n2. shadcn-ui/ui（TypeScript）\n▸ 类别：前端组件库\n▸ 简介：这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调美观设计、可访问性以及可与多种常见前端框架协同使用。项目围绕组件复用与按需引入展开，结合 Tailwind CSS、Radix UI 等技术栈，适合用于快速构建一致性的应用界面。\n▸ Stars：今日 ⭐84｜总 ⭐110,818\n▸ 增长原因：\n　　　　- 仓库描述明确指出它既提供一组注重设计与无障碍能力的组件，也提供代码分发能力，符合前端组件库与组件平台的定位。\n　　　　- 项目主题和标签集中在 React、Tailwind CSS、Radix UI、Next.js、Vite 等前端技术，说明它主要服务于现代 Web 界面开发场景。\n　　　　- 仓库星标规模较高且当日仍有明显增长，反映出它在开发者社区中具有较强关注度和实际采用价值。\n▸ 链接：https://github.com/shadcn-ui/ui\n\n3. vercel-labs/agent-skills（JavaScript）\n▸ 类别：AI 代理工具库\n▸ 简介：这是 Vercel Labs 提供的官方代理技能集合仓库，使用 JavaScript 构建，面向 AI 代理能力的组织、复用与集成，并与 React、Next.js 技术栈存在较强关联。\n▸ Stars：今日 ⭐68｜总 ⭐23,930\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是 Vercel 的官方 agent skills 集合，核心定位就是为 AI 代理提供技能能力。\n　　　　- 项目语言为 JavaScript，且标签包含 React、Next.js 和 AI，说明它更偏向面向现代 Web 与智能应用场景的工具库。\n　　　　- 仓库已获得较高的社区关注度，并且提供独立主页，表明其具有一定的可发现性与持续使用价值。\n▸ 链接：https://github.com/vercel-labs/agent-skills\n\n4. excalidraw/excalidraw（TypeScript）\n▸ 类别：白板与绘图\n▸ 简介：Excalidraw 是一个基于 Web 的虚拟白板项目，用于绘制手绘风格的图表、草图和流程示意，强调轻量、直观的画布交互体验，并支持协作类使用场景。\n▸ Stars：今日 ⭐67｜总 ⭐119,638\n▸ 增长原因：\n　　　　- 仓库描述明确说明它是用于绘制手绘风格图表的虚拟白板，核心定位非常清晰。\n　　　　- 主题标签包含 whiteboard、drawing、diagrams 和 collaboration，说明它同时覆盖绘图表达与协作场景。\n　　　　- 项目使用 TypeScript，并带有 React 相关标签，表明它是现代前端技术栈下的画布类应用项目。\n▸ 链接：https://github.com/excalidraw/excalidraw\n\n5. vercel-labs/json-render（TypeScript）\n▸ 类别：前端框架\n▸ 简介：这是一个面向 React 生态的生成式 UI 框架，强调用 JSON 形式描述界面结构，并结合 AI 场景来驱动界面渲染与交互组织。\n▸ Stars：今日 ⭐45｜总 ⭐13,423\n▸ 增长原因：\n　　　　- 仓库描述直接表明它是一个生成式 UI 框架，定位清晰地属于前端界面开发基础设施。\n　　　　- 项目标签同时包含 JSON、AI 和 React，说明它的核心价值在于把结构化描述与智能生成能力结合到 React 界面中。\n　　　　- 该项目来自 Vercel Labs 且拥有较高的社区关注度，表明它在新型 UI 构建方式上具备较强的探索性和参考价值。\n▸ 链接：https://github.com/vercel-labs/json-render\n\n━━━━━━━━━━\n【Trending Skills Top 5】\n\n1. find-skills｜vercel-labs/skills\n▸ 类别：其他\n▸ 简介：这是一个来自 vercel-labs/skills 聚合来源的条目，指向 skills.sh 的热门内容页，当前公开信息不足以判断其具体功能或技术方向。\n▸ 数据：📦 24h 1\n▸ 推荐理由：\n　　　　- 仓库名称与描述仅表明它与 vercel-labs/skills 来源相关，缺少明确的项目定位、功能介绍和技术细节。\n　　　　- 提供的链接指向 skills.sh 的热门页面，更像是聚合展示入口，而不是能够直接说明项目能力的独立仓库主页。\n　　　　- 现有标签只有 skills.sh 和 trending，这些信息不足以将其准确归类为开发工具、应用框架或其他明确的软件类别。\n▸ 链接：https://skills.sh/vercel-labs/skills/find-skills\n\n2. microsoft-foundry｜microsoft/azure-skills\n▸ 类别：云与 AI 开发资源\n▸ 简介：这是一个来自 microsoft/azure-skills 来源的技能型资源仓库条目，名称指向 Microsoft Foundry，整体更像与云平台或 AI 开发相关的学习素材、示例或实践内容集合。基于当前公开信息，暂时无法确认其具体功能边界，但可以判断它属于面向开发者的技能学习与实践资源。\n▸ 数据：📦 24h 2\n▸ 推荐理由：\n　　　　- 仓库来源标注为 microsoft/azure-skills，说明它与微软的技能学习或实践资源体系有关。\n　　　　- 名称中包含 Microsoft Foundry，这通常暗示其主题与微软云服务、开发平台或 AI 相关能力建设有关。\n　　　　- 公开信息只有来源、标签和趋势标记，缺少详细 README 与功能说明，因此更适合归类为开发学习资源而非具体产品项目。\n▸ 链接：https://skills.sh/microsoft/azure-skills/microsoft-foundry\n\n3. frontend-design｜anthropics/skills\n▸ 类别：前端设计技能资源\n▸ 简介：这是一个来自 anthropics/skills 体系的前端设计相关技能仓库，当前公开信息显示它被 skills.sh 收录并出现在趋势列表中。由于缺少更详细的项目说明、文档内容和示例信息，可以判断它更像是面向前端设计主题的技能型资源，而不是一个具备完整产品说明的独立应用项目。\n▸ 数据：📦 24h 26\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 frontend-design，说明其主题聚焦于前端设计方向的技能内容。\n　　　　- 公开描述仅标注来源为 anthropics/skills，缺乏功能介绍、技术架构和使用说明，因此更适合归类为技能资源。\n　　　　- 该仓库带有 trending 和 hot 标签，且来源页面为 skills.sh 的趋势页，表明它近期在相关资源列表中受到关注。\n▸ 链接：https://skills.sh/anthropics/skills/frontend-design\n\n4. vercel-react-best-practices｜vercel-labs/agent-skills\n▸ 类别：前端开发\n▸ 简介：这是一个聚焦 Vercel 与 React 最佳实践的技能型资源，来源于 vercel-labs/agent-skills，适合用于整理现代 React 应用在 Vercel 生态中的开发规范与实践要点。\n▸ 数据：📦 24h 27\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 Vercel 与 React 最佳实践，主题明确属于前端工程与框架实践。\n　　　　- 该项目被标记为 skills.sh 的热门内容，说明它更像面向开发者的可复用技能知识而非传统应用仓库。\n　　　　- 公开信息仅能确认其来源于 vercel-labs 的 agent-skills 体系，因此可以谨慎判断其价值在于总结实践方法与指导开发流程。\n▸ 链接：https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices\n\n5. web-design-guidelines｜vercel-labs/agent-skills\n▸ 类别：设计规范\n▸ 简介：这是一个来自 vercel-labs/agent-skills 的网页设计指南技能条目，面向需要在智能体或项目中复用网页设计原则与实践的人群。公开信息显示它被收录在 skills.sh 的趋势列表中，说明这类与 Web 设计规范相关的技能内容近期受到关注。\n▸ 数据：📦 24h 28\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 web-design-guidelines，能够明确判断其主题与网页设计指导原则相关。\n　　　　- 来源标注为 vercel-labs/agent-skills，说明它更像一个可复用的技能条目而非独立应用项目。\n　　　　- 该条目带有 trending 标签并出现在 skills.sh 趋势页，表明它近期具有一定关注度。\n▸ 链接：https://skills.sh/vercel-labs/agent-skills/web-design-guidelines\n\n━━━━━━━━━━\n【Hot Skills Top 5】\n\n1. frontend-design｜anthropics/skills\n▸ 类别：前端设计技能资源\n▸ 简介：这是一个来自 anthropics/skills 体系的前端设计相关技能仓库，当前公开信息显示它被 skills.sh 收录并出现在趋势列表中。由于缺少更详细的项目说明、文档内容和示例信息，可以判断它更像是面向前端设计主题的技能型资源，而不是一个具备完整产品说明的独立应用项目。\n▸ 数据：⚡ 1H 1｜📈 Change +262\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 frontend-design，说明其主题聚焦于前端设计方向的技能内容。\n　　　　- 公开描述仅标注来源为 anthropics/skills，缺乏功能介绍、技术架构和使用说明，因此更适合归类为技能资源。\n　　　　- 该仓库带有 trending 和 hot 标签，且来源页面为 skills.sh 的趋势页，表明它近期在相关资源列表中受到关注。\n▸ 链接：https://skills.sh/anthropics/skills/frontend-design\n\n2. active-research｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个来自 actionbook/actionbook 的 active-research 条目，当前公开信息显示它被收录在 skills.sh 热门列表中，但仓库用途、功能边界和具体实现细节较少，暂时更适合归为信息有限的通用项目。\n▸ 数据：⚡ 1H 2｜📈 Change +31\n▸ 推荐理由：\n　　　　- 公开描述只有来源信息，缺少明确的产品定位、技术栈说明或使用场景，因此难以进一步细分到更具体的软件类别。\n　　　　- 它出现在 skills.sh 的热门来源列表中，并带有一定关注度标签，说明该条目近期有一定可见性，但这不足以证明其具体属于开发工具、应用程序或模型资源。\n　　　　- 仓库名包含 active-research，可能与研究流程或任务能力有关，但在没有主页、主题标签和详细介绍支撑的情况下，采用保守归类更符合公开信息。\n▸ 链接：https://skills.sh/actionbook/actionbook/active-research\n\n3. extract｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个来自 actionbook/actionbook 的条目，当前公开信息非常有限，像是被 skills.sh 热门列表收录的仓库或技能项，但难以仅凭现有字段判断其具体功能与技术方向。\n▸ 数据：⚡ 1H 3｜📈 Change +31\n▸ 推荐理由：\n　　　　- 仓库描述只有来源指向 actionbook/actionbook，没有提供明确的项目用途、能力边界或应用场景。\n　　　　- 公开字段中缺少主页、主题标签和详细说明，因此无法可靠归类到开发工具、数据处理或其他更具体的软件类别。\n　　　　- 它出现在 skills.sh 的热门来源中并带有变化标签，说明该条目具备一定关注度，但这些信息不足以支持更深入的事实性判断。\n▸ 链接：https://skills.sh/actionbook/actionbook/extract\n\n4. actionbook｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个名为 ActionBook 的项目条目，公开信息显示其来源指向 actionbook/actionbook，但当前可见资料非常有限，难以明确判断其具体功能、技术栈或应用场景。\n▸ 数据：⚡ 1H 4｜📈 Change +31\n▸ 推荐理由：\n　　　　- 仓库描述仅显示来源信息，缺少对项目目标、核心能力和使用方式的直接说明。\n　　　　- 当前提供的主页、主题和详细标签信息不足，无法可靠归类到开发工具、框架或应用等更具体类别。\n　　　　- 虽然它出现在 skills.sh 的热门列表中并带有一定关注度，但这些信号只能说明其受到关注，不能替代对项目内容本身的确认。\n▸ 链接：https://skills.sh/actionbook/actionbook/actionbook\n\n5. test-driven-development｜obra/superpowers\n▸ 类别：教程/实践技能\n▸ 简介：这是一个围绕测试驱动开发的练习型仓库，名称表明其主题是通过实际操作学习 TDD 方法，来源信息显示它被 skills.sh 收录为热门技能内容之一。\n▸ 数据：⚡ 1H 5｜📈 Change +78\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 test-driven-development，能够明确判断其核心主题是测试驱动开发实践。\n　　　　- 标签中包含 skills.sh 和 hot，说明它更像面向学习者的技能训练内容，并且近期具有一定关注度。\n　　　　- 公开信息未提供详细功能介绍和代码细节，因此更稳妥的归类是教程或实践技能资源，而不是具体的软件产品。\n▸ 链接：https://skills.sh/obra/superpowers/test-driven-development\n\n来源链接：\n1. GitHub Trending（全站）：https://github.com/trending?since=daily\n2. GitHub Trending（TypeScript）：https://github.com/trending/typescript?since=daily\n3. Best of JS（Vue）：https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily\n4. Best of JS（React）：https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily\n5. skills.sh（Trending）：https://skills.sh/trending\n6. skills.sh（Hot）：https://skills.sh/hot",
+  "rawText": "📊 GitHub & Skills 天榜速递（2026-03-27）\n\n━━━━━━━━━━\n【全站天榜 Top10】\n\n1. mvanhorn/last30days-skill（Python）\n▸ 类别：AI研究与信息聚合工具\n▸ 简介：这是一个用 Python 编写的 AI 智能体技能，用于围绕任意主题同时检索 Reddit、X、YouTube、Hacker News、Polymarket 以及网页等多个来源，并生成基于来源信息的综合摘要。项目定位偏向近期动态研究与趋势追踪，适合做跨平台信息汇总、社交媒体观察和主题调研。\n▸ Stars：今日 ⭐2,685｜总 ⭐10,566\n▸ 增长原因：\n　　　　- 项目描述明确强调可针对任意主题跨多个平台开展检索，并输出有依据的综合总结，体现出研究代理与信息聚合工具的特征。\n　　　　- 仓库主题词包含 deep-research、web-search、research、trends、social-media、reddit、youtube、hackernews 和 polymarket，说明其核心场景是多源信息搜集与趋势分析。\n　　　　- 项目以 AI skill 形式提供能力，且使用 Python 实现，表明它更像可集成到智能体工作流中的研究组件，而不是单一内容平台客户端。\n▸ 链接：https://github.com/mvanhorn/last30days-skill\n\n2. Yeachan-Heo/oh-my-claudecode（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调并行执行、自动化流程以及多代理协同开发体验。\n▸ Stars：今日 ⭐598｜总 ⭐12,813\n▸ 增长原因：\n　　　　- 仓库描述明确指出其核心是面向团队的多智能体编排，说明它属于提升协作式开发效率的工具类项目。\n　　　　- 主题标签包含 ai-agents、multi-agent-systems、parallel-execution 和 automation，表明它聚焦于代理协作与开发流程自动化。\n　　　　- 项目围绕 Claude 与 Claude Code 生态展开，并提供独立官网，体现出较明确的产品化定位与开发者工具属性。\n▸ 链接：https://github.com/Yeachan-Heo/oh-my-claudecode\n\n3. virattt/dexter（TypeScript）\n▸ 类别：金融研究智能体\n▸ 简介：Dexter 是一个用 TypeScript 开发的自主式智能体，面向深度金融研究场景，强调让代理自动执行研究任务与信息分析。\n▸ Stars：今日 ⭐210｜总 ⭐19,064\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于深度金融研究的自主智能体，产品定位较为清晰。\n　　　　- 项目使用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。\n　　　　- 该仓库在趋势榜中获得较高当日关注，表明市场对将智能体用于金融研究这一方向有明显兴趣。\n▸ 链接：https://github.com/virattt/dexter\n\n4. ruvnet/RuView（Rust）\n▸ 类别：智能感知/无线人体姿态识别\n▸ 简介：RuView 是一个以 Rust 为主的无线感知项目，尝试利用普通 WiFi 信号在不依赖摄像头画面的情况下，实现实时人体姿态估计、生命体征监测与存在检测。仓库信息显示其方向结合了 DensePose、射频感知、ESP32 与固件开发等主题，面向低成本设备上的环境与人体状态感知场景。\n▸ Stars：今日 ⭐1,002｜总 ⭐43,288\n▸ 增长原因：\n　　　　- 项目核心卖点是把常见 WiFi 信号转化为对人体姿态和状态的实时感知，这种无视频方案在隐私敏感环境中很有吸引力。\n　　　　- 仓库主题同时覆盖 Rust、ESP32、MCU、固件和射频等关键词，说明它不仅是算法概念展示，也涉及软硬件结合的落地实现。\n　　　　- 该项目出现在 GitHub 日榜且当日获得较高关注，表明无线感知与无摄像头人体检测方向近期具备较强讨论度。\n▸ 链接：https://github.com/ruvnet/RuView\n\n5. bytedance/deer-flow（Python）\n▸ 类别：AI 智能体框架\n▸ 简介：这是一个面向长时任务的开源 SuperAgent 执行框架，强调通过沙箱、记忆、工具、技能、子智能体和消息网关等机制，支持从研究、编程到内容生成等多类任务协同完成。项目以 Python 为主，结合多智能体与工作流编排思路，适合构建可持续运行、可分解复杂目标的 AI 代理系统。\n▸ Stars：今日 ⭐2,394｜总 ⭐48,795\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于长时任务的开源 SuperAgent harness，核心定位就是智能体执行与调度框架。\n　　　　- 公开主题包含 agent、multi-agent、agentic-framework、agentic-workflow、llm 等关键词，说明其重点在 AI 智能体系统与工作流编排。\n　　　　- 项目介绍提到沙箱、记忆、工具、技能、子智能体和消息网关等能力，这些都是构建复杂代理协作系统的典型基础设施。\n▸ 链接：https://github.com/bytedance/deer-flow\n\n6. Vaibhavs10/insanely-fast-whisper（Jupyter Notebook）\n▸ 类别：语音识别\n▸ 简介：这是一个围绕 Whisper 的高性能语音转写项目，重点在于以更快的方式完成音频转文本任务，仓库主要以 Jupyter Notebook 形式展示使用与实现思路。\n▸ Stars：今日 ⭐1,370｜总 ⭐11,342\n▸ 增长原因：\n　　　　- 仓库名称直接指向 Whisper，并强调 insanely-fast，说明核心价值是提升语音转写速度。\n　　　　- 项目主要使用 Jupyter Notebook，通常意味着它包含可运行示例、实验流程或性能演示，适合展示语音识别推理方案。\n　　　　- 该仓库出现在 GitHub 热门列表且当日增长显著，表明开发者社区对高效语音转文本工具有较强关注。\n▸ 链接：https://github.com/Vaibhavs10/insanely-fast-whisper\n\n7. agentscope-ai/agentscope（Python）\n▸ 类别：AI智能体开发框架\n▸ 简介：AgentScope 是一个用于构建、运行与观察 AI 智能体的 Python 框架，重点强调让开发者能够更直观地理解智能体行为并提升可控性与可信度。它面向大语言模型应用场景，支持多智能体、聊天机器人、多模态及 MCP 等相关能力，适合用于搭建可调试、可扩展的智能体系统。\n▸ Stars：今日 ⭐437｜总 ⭐20,564\n▸ 增长原因：\n　　　　- 仓库描述明确聚焦于构建和运行可见、可理解、可被信任的智能体，说明它的核心定位是智能体开发框架而非单一应用。\n　　　　- 主题标签覆盖 llm、llm-agent、multi-agent、multi-modal、chatbot 和 react-agent，表明其服务于大模型驱动的多种智能体场景。\n　　　　- 提供独立文档站点且以 Python 为主要语言，说明项目具有较完整的开发者使用体系，适合工程化构建和调试智能体应用。\n▸ 链接：https://github.com/agentscope-ai/agentscope\n\n8. twentyhq/twenty（TypeScript）\n▸ 类别：企业软件\n▸ 简介：Twenty 是一个以社区协作为驱动的开源 CRM 项目，目标是打造 Salesforce 的现代化替代方案。该仓库使用 TypeScript 开发，采用 monorepo 组织，技术栈覆盖 React、NestJS、GraphQL 与 PostgreSQL，面向销售、营销和客户管理等 Web 场景。\n▸ Stars：今日 ⭐117｜总 ⭐41,347\n▸ 增长原因：\n　　　　- 项目定位非常清晰，直接聚焦 CRM 这一企业核心业务系统，并强调作为现代化替代方案的产品方向。\n　　　　- 仓库公开信息显示其前后端技术栈较完整，结合 React、NestJS、GraphQL 和 PostgreSQL，体现出成熟的全栈 Web 应用架构。\n　　　　- 它以开源和社区驱动为重要特征，同时拥有较高的关注度和活跃趋势，说明其在开发者社区中具备较强吸引力。\n▸ 链接：https://github.com/twentyhq/twenty\n\n9. datalab-to/chandra（Python）\n▸ 类别：AI工具\n▸ 简介：这是一个用 Python 开发的 OCR 项目，重点处理复杂表格、表单和手写内容，并尽量保留完整版面结构，适合文档理解与信息提取场景。\n▸ Stars：今日 ⭐557｜总 ⭐6,244\n▸ 增长原因：\n　　　　- 仓库描述明确表明它面向 OCR 任务，且强调对复杂表格、表单和手写文本的识别能力。\n　　　　- 项目特别提到保留完整布局信息，这说明它不仅关注文字识别，也重视文档结构解析。\n　　　　- 仓库主题包含 AI 与 OCR，结合较高的关注增长，说明它属于受到开发者关注的智能文档处理工具。\n▸ 链接：https://github.com/datalab-to/chandra\n\n━━━━━━━━━━\n【TypeScript 天榜 Top5】\n\n1. Yeachan-Heo/oh-my-claudecode（TypeScript）\n▸ 类别：开发工具\n▸ 简介：这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调并行执行、自动化流程以及多代理协同开发体验。\n▸ Stars：今日 ⭐598｜总 ⭐12,813\n▸ 增长原因：\n　　　　- 仓库描述明确指出其核心是面向团队的多智能体编排，说明它属于提升协作式开发效率的工具类项目。\n　　　　- 主题标签包含 ai-agents、multi-agent-systems、parallel-execution 和 automation，表明它聚焦于代理协作与开发流程自动化。\n　　　　- 项目围绕 Claude 与 Claude Code 生态展开，并提供独立官网，体现出较明确的产品化定位与开发者工具属性。\n▸ 链接：https://github.com/Yeachan-Heo/oh-my-claudecode\n\n2. virattt/dexter（TypeScript）\n▸ 类别：金融研究智能体\n▸ 简介：Dexter 是一个用 TypeScript 开发的自主式智能体，面向深度金融研究场景，强调让代理自动执行研究任务与信息分析。\n▸ Stars：今日 ⭐210｜总 ⭐19,064\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于深度金融研究的自主智能体，产品定位较为清晰。\n　　　　- 项目使用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。\n　　　　- 该仓库在趋势榜中获得较高当日关注，表明市场对将智能体用于金融研究这一方向有明显兴趣。\n▸ 链接：https://github.com/virattt/dexter\n\n3. twentyhq/twenty（TypeScript）\n▸ 类别：企业软件\n▸ 简介：Twenty 是一个以社区协作为驱动的开源 CRM 项目，目标是打造 Salesforce 的现代化替代方案。该仓库使用 TypeScript 开发，采用 monorepo 组织，技术栈覆盖 React、NestJS、GraphQL 与 PostgreSQL，面向销售、营销和客户管理等 Web 场景。\n▸ Stars：今日 ⭐117｜总 ⭐41,347\n▸ 增长原因：\n　　　　- 项目定位非常清晰，直接聚焦 CRM 这一企业核心业务系统，并强调作为现代化替代方案的产品方向。\n　　　　- 仓库公开信息显示其前后端技术栈较完整，结合 React、NestJS、GraphQL 和 PostgreSQL，体现出成熟的全栈 Web 应用架构。\n　　　　- 它以开源和社区驱动为重要特征，同时拥有较高的关注度和活跃趋势，说明其在开发者社区中具备较强吸引力。\n▸ 链接：https://github.com/twentyhq/twenty\n\n4. pascalorg/editor（TypeScript）\n▸ 类别：3D建筑设计编辑器\n▸ 简介：这是一个用于创建与分享三维建筑项目的 TypeScript 编辑器，面向在线建筑设计与协作展示场景。\n▸ Stars：今日 ⭐633｜总 ⭐7,359\n▸ 增长原因：\n　　　　- 仓库描述明确提到可创建和分享三维建筑项目，核心定位属于建筑设计相关的 3D 编辑工具。\n　　　　- 项目使用 TypeScript 开发，并提供独立主页，说明其形态更接近可直接使用的在线编辑应用而非单纯代码库。\n　　　　- 该仓库在当日趋势榜获得较高关注，反映出开发者社区对建筑可视化与协作创作工具的兴趣较强。\n▸ 链接：https://github.com/pascalorg/editor\n\n5. letta-ai/claude-subconscious（TypeScript）\n▸ 类别：开发者工具\n▸ 简介：这是一个用 TypeScript 编写的开发者工具项目，目标是为 Claude Code 引入类似“潜意识”的能力，暗示其尝试扩展代码助手在后台记忆、上下文处理或辅助决策方面的行为。\n▸ Stars：今日 ⭐446｜总 ⭐1,768\n▸ 增长原因：\n　　　　- 项目描述直接表明它围绕 Claude Code 的能力增强展开，因此更接近面向开发流程的工具而非通用应用。\n　　　　- 仓库使用 TypeScript 开发，通常意味着它可能服务于 JavaScript 或相关工程生态中的集成与扩展场景。\n　　　　- 该项目出现在 GitHub TypeScript 日榜且当日获得较多关注，说明它在开发者社区中具有较强的话题性和实验价值。\n▸ 链接：https://github.com/letta-ai/claude-subconscious\n\n━━━━━━━━━━\n【Vue 天榜 Top5】\n\n1. slidevjs/slidev（TypeScript）\n▸ 类别：演示文稿工具\n▸ 简介：Slidev 是一个面向开发者的演示文稿工具，使用 TypeScript 构建，围绕 Markdown、Vite 和 Vue 生态来制作与展示幻灯片内容。\n▸ Stars：今日 ⭐44｜总 ⭐45,182\n▸ 增长原因：\n　　　　- 仓库描述明确强调这是为开发者打造的演示幻灯片工具，产品定位非常清晰。\n　　　　- 公开主题标签包含 markdown、presentation、slides、vite 和 vue，说明它主打基于前端技术栈的内容编写与展示体验。\n　　　　- 项目拥有较高的累计关注度且当日仍有明显新增关注，表明它在 Vue 相关工具中具有持续活跃度和社区认可度。\n▸ 链接：https://github.com/slidevjs/slidev\n\n2. vercel/ai（TypeScript）\n▸ 类别：AI 开发工具\n▸ 简介：这是一个面向 TypeScript 的开源 AI 开发工具包，用于构建由大语言模型驱动的应用与智能体，并支持在 React、Vue、Svelte 以及 Next.js 等前端生态中集成生成式 AI 能力。\n▸ Stars：今日 ⭐26｜总 ⭐23,025\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是用于构建 AI 应用和智能体的 TypeScript 工具包，定位属于 AI 开发基础设施而不是单一业务应用。\n　　　　- 主题和标签同时覆盖 OpenAI、Anthropic、Gemini、LLM、Chat 与 AI Agents，说明它面向多模型接入和通用生成式 AI 场景。\n　　　　- 它强调对 React、Vue、Svelte 和 Next.js 等框架的支持，适合作为前端与全栈项目集成 AI 能力的 SDK。\n▸ 链接：https://github.com/vercel/ai\n\n3. storybookjs/storybook（TypeScript）\n▸ 类别：前端 UI 组件开发与测试工具\n▸ 简介：Storybook 是一个面向前端界面的组件工作台，用于在隔离环境中构建、展示、编写文档并测试 UI 组件，适用于 React、Vue、Angular、Svelte、React Native 以及 Web Components 等多种技术栈。\n▸ Stars：今日 ⭐20｜总 ⭐89,533\n▸ 增长原因：\n　　　　- 仓库描述明确说明它用于在隔离环境中构建、文档化和测试 UI 组件，核心定位非常清晰。\n　　　　- 主题标签涵盖 React、Vue、Angular、Svelte、Vite、Webpack 和 Web Components，说明它是跨框架的前端组件开发基础设施。\n　　　　- description、topics 和 tags 同时强调 components、design-systems、documentation 与 testing，表明它服务于组件库、设计系统和前端协作流程。\n▸ 链接：https://github.com/storybookjs/storybook\n\n4. TanStack/query（TypeScript）\n▸ 类别：异步数据获取与服务端状态管理\n▸ 简介：TanStack Query 是一个面向 Web 应用的异步状态管理与数据获取库，重点处理服务端状态、缓存、请求同步与数据更新，并为 React、Vue、Svelte 和 Solid 等框架提供对应方案，适合构建依赖接口数据的前端应用。\n▸ Stars：今日 ⭐15｜总 ⭐48,925\n▸ 增长原因：\n　　　　- 仓库描述明确强调异步状态管理、服务端状态工具和数据获取能力，核心定位非常清晰。\n　　　　- 主题与标签包含 cache、fetch、GraphQL、REST、stale-while-revalidate 以及多种前端框架，说明它主要解决接口数据缓存与同步问题。\n　　　　- 项目使用 TypeScript 并覆盖 React Query、Vue Query、Svelte Query 和 Solid Query，体现出它是一个跨框架的前端数据层方案。\n▸ 链接：https://github.com/TanStack/query\n\n5. ueberdosis/tiptap（TypeScript）\n▸ 类别：富文本编辑器框架\n▸ 简介：Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 开发者构建可高度定制的所见即所得编辑体验，支持在 React、Vue、Solid 等前端技术栈中集成。\n▸ Stars：今日 ⭐15｜总 ⭐35,883\n▸ 增长原因：\n　　　　- 仓库描述明确强调它是无头富文本编辑器框架，核心定位非常清晰。\n　　　　- 主题标签包含 ProseMirror、rich-text、wysiwyg、editor 等关键词，说明它聚焦网页富文本编辑能力。\n　　　　- 标签显示其适配 Vue、React、Solid 等生态，体现出它作为前端编辑器基础框架的通用集成价值。\n▸ 链接：https://github.com/ueberdosis/tiptap\n\n━━━━━━━━━━\n【React 天榜 Top5】\n\n1. remotion-dev/remotion（TypeScript）\n▸ 类别：视频开发\n▸ 简介：Remotion 是一个基于 React 的视频编程框架，允许开发者用 TypeScript 或 JavaScript 以组件化方式生成和编辑视频内容。\n▸ Stars：今日 ⭐99｜总 ⭐40,861\n▸ 增长原因：\n　　　　- 仓库描述明确强调以 React 方式编程制作视频，核心定位非常清晰。\n　　　　- 项目使用 TypeScript，且主题标签集中在 React 与 Video，说明它面向前端开发者的视频生产场景。\n　　　　- 较高的总星标和当日增长表明该项目在 React 视频开发方向具有持续关注度。\n▸ 链接：https://github.com/remotion-dev/remotion\n\n2. shadcn-ui/ui（TypeScript）\n▸ 类别：UI 组件库\n▸ 简介：这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调良好的视觉设计、可访问性以及与多种前端框架的兼容性。项目以 TypeScript 为主要语言，围绕 shadcn 风格、Tailwind CSS、Radix UI 等技术栈，为开发者提供可组合的界面组件与配套使用方式。\n▸ Stars：今日 ⭐84｜总 ⭐110,823\n▸ 增长原因：\n　　　　- 仓库描述明确指出它既提供精心设计且注重可访问性的组件，也提供代码分发能力，核心定位非常接近 UI 组件库与组件平台。\n　　　　- 项目主题和标签集中在 React、Component library、TailwindCSS、Radix UI、Next.js 与 Vite，说明它主要服务于现代前端界面开发场景。\n　　　　- 仓库拥有较高的社区关注度，并且出现在相关技术榜单来源中，表明它在前端组件生态里具有较强影响力。\n▸ 链接：https://github.com/shadcn-ui/ui\n\n3. vercel-labs/agent-skills（JavaScript）\n▸ 类别：AI 代理工具库\n▸ 简介：这是 Vercel 提供的官方 Agent Skills 集合项目，用于汇集和组织可供智能代理使用的能力模块，技术栈与 JavaScript、React 和 Next.js 生态相关。\n▸ Stars：今日 ⭐68｜总 ⭐23,933\n▸ 增长原因：\n　　　　- 仓库描述明确表明它是 Vercel 官方维护的 agent skills 集合，定位清晰且来源可信。\n　　　　- 项目标签包含 AI、React 和 Next.js，说明它主要面向现代 Web 与智能代理结合的开发场景。\n　　　　- 该项目获得了较高的社区关注度，反映出开发者对可复用代理能力组件的实际需求较强。\n▸ 链接：https://github.com/vercel-labs/agent-skills\n\n4. excalidraw/excalidraw（TypeScript）\n▸ 类别：在线白板与绘图\n▸ 简介：Excalidraw 是一个基于 TypeScript 和 React 的在线白板工具，用于绘制带手绘风格的图表、草图和协作内容，适合做流程示意、头脑风暴和轻量可视化表达。\n▸ Stars：今日 ⭐67｜总 ⭐119,639\n▸ 增长原因：\n　　　　- 仓库描述明确指出它是用于绘制手绘风格图表的虚拟白板，核心用途非常清晰。\n　　　　- 主题标签包含 whiteboard、drawing、diagrams 和 collaboration，说明它同时强调绘图表达与协作场景。\n　　　　- 项目使用 TypeScript 开发，并带有 Canvas 与 React 相关标签，体现出它是面向现代 Web 交互白板的前端项目。\n▸ 链接：https://github.com/excalidraw/excalidraw\n\n5. vercel-labs/json-render（TypeScript）\n▸ 类别：前端开发框架\n▸ 简介：这是一个由 JSON 驱动的生成式界面框架，面向 React 生态，强调用结构化描述来生成和渲染用户界面，适合探索 AI 与前端界面组合的开发方式。\n▸ Stars：今日 ⭐45｜总 ⭐13,430\n▸ 增长原因：\n　　　　- 仓库描述直接表明它是一个生成式 UI 框架，核心定位清晰地落在界面构建而非通用工具库。\n　　　　- 项目标签同时包含 JSON、AI 和 React，说明它结合结构化数据描述、智能生成能力与主流前端技术栈。\n　　　　- 仓库名称、官网域名与公开简介共同指向渲染和界面生成场景，因此可归类为前端开发框架。\n▸ 链接：https://github.com/vercel-labs/json-render\n\n━━━━━━━━━━\n【Trending Skills Top 5】\n\n1. find-skills｜vercel-labs/skills\n▸ 类别：其他\n▸ 简介：这是 skills.sh 趋势页收录的一项技能条目，公开信息仅表明其来源于 vercel-labs/skills，当前缺少关于功能定位、技术实现和使用场景的详细介绍。\n▸ 数据：📦 24h 1\n▸ 推荐理由：\n　　　　- 仓库描述只有来源信息，无法据此准确判断它属于开发工具、应用项目还是内容索引。\n　　　　- 标签显示它与 skills.sh 及趋势收录有关，因此更像是一个技能条目或目录项而非独立软件产品。\n　　　　- 在缺少 README、主页说明和主题标签的情况下，采用其他这一保守分类更符合现有公开信息。\n▸ 链接：https://skills.sh/vercel-labs/skills/find-skills\n\n2. microsoft-foundry｜microsoft/azure-skills\n▸ 类别：开发者工具\n▸ 简介：这是一个来自 microsoft/azure-skills 来源的技能仓库条目，聚焦于微软生态中的技能或自动化能力封装，适合关注开发流程与云端能力集成的开发者参考。\n▸ 数据：📦 24h 2\n▸ 推荐理由：\n　　　　- 仓库名称包含 microsoft-foundry，且来源指向 microsoft/azure-skills，说明它与微软相关技能体系或能力封装有关。\n　　　　- 标签中出现 skills.sh 和 trending，表明该项目当前被技能类工具社区收录并具有一定关注度。\n　　　　- 公开信息非常有限，但从命名和来源可以判断它更接近开发者工具或平台能力集成，而不是面向普通用户的消费级应用。\n▸ 链接：https://skills.sh/microsoft/azure-skills/microsoft-foundry\n\n3. frontend-design｜anthropics/skills\n▸ 类别：前端设计\n▸ 简介：这是一个收录于 skills.sh 趋势榜的前端设计类技能仓库，来源标注为 anthropics/skills，主要面向与前端界面设计相关的技能化内容组织与使用场景。\n▸ 数据：📦 24h 26\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 frontend-design，能够明确反映其主题与前端设计相关。\n　　　　- 给定语言与描述都指向 anthropics/skills，说明它更像一个技能条目而非传统应用源码仓库。\n　　　　- 该项目出现在 skills.sh 的 trending 来源中，表明它近期具有一定关注度与参考价值。\n▸ 链接：https://skills.sh/anthropics/skills/frontend-design\n\n4. vercel-react-best-practices｜vercel-labs/agent-skills\n▸ 类别：前端开发\n▸ 简介：这是一个围绕 React 在 Vercel 场景下最佳实践的技能型仓库，来源于 vercel-labs 的 agent-skills 体系，更像面向开发者或智能体的实践指南与工作流知识集合。\n▸ 数据：📦 24h 27\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 vercel-react-best-practices，核心主题明显是 React 开发中的最佳实践。\n　　　　- 其来源标注为 vercel-labs/agent-skills，说明它属于技能库的一部分，侧重经验沉淀而非传统应用项目。\n　　　　- 该条目出现在 skills.sh 的 trending 列表中，表明它近期受到关注，具备一定参考价值。\n▸ 链接：https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices\n\n5. web-design-guidelines｜vercel-labs/agent-skills\n▸ 类别：设计规范\n▸ 简介：这是一个收录于 agent-skills 体系中的网页设计指南技能，面向需要产出或评审 Web 界面的场景，提供可复用的设计原则与实践参考。该项目公开信息显示其来源于 vercel-labs/agent-skills，并在 skills.sh 的趋势列表中出现，说明它更像是供智能代理或开发者调用的结构化设计知识条目，而不是独立应用。\n▸ 数据：📦 24h 28\n▸ 推荐理由：\n　　　　- 仓库名称直接指向 web-design-guidelines，表明核心内容聚焦网页设计规范与指导原则。\n　　　　- 公开描述注明其来源于 vercel-labs 的 agent-skills 体系，说明它属于技能型知识条目而非普通业务项目。\n　　　　- 它出现在 skills.sh 的 trending 列表中，说明这类面向网页设计实践的技能内容近期受到关注。\n▸ 链接：https://skills.sh/vercel-labs/agent-skills/web-design-guidelines\n\n━━━━━━━━━━\n【Hot Skills Top 5】\n\n1. active-research｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个来自 actionbook/actionbook 来源的技能型仓库条目，公开信息显示它被 skills.sh 收录为热门内容之一，但当前缺少关于其具体功能、使用场景和实现细节的明确说明。\n▸ 数据：⚡ 1H 1｜📈 Change +19\n▸ 推荐理由：\n　　　　- 仓库名称与来源信息都指向 actionbook/actionbook，但提供的描述仅表明其来源，无法确认更细分的软件类别。\n　　　　- 标签显示它与 skills.sh 平台相关并被标记为热门，说明它具有一定关注度，但这不足以判断其具体技术方向。\n　　　　- 主页、主题词和详细介绍都为空，在信息有限的情况下，将其归为其他更符合谨慎原则。\n▸ 链接：https://skills.sh/actionbook/actionbook/active-research\n\n2. planning-with-files-zh｜othmanadi/planning-with-files\n▸ 类别：其他\n▸ 简介：这是一个与“基于文件进行规划”相关的中文镜像或整理仓库，公开信息显示其来源于 othmanadi/planning-with-files，当前可见信息主要用于指向原始项目而非详细介绍功能实现。\n▸ 数据：⚡ 1H 2｜📈 Change +32\n▸ 推荐理由：\n　　　　- 仓库名称包含 planning-with-files-zh，且描述中明确标注来源于 othmanadi/planning-with-files，说明它很可能是中文化或转引版本。\n　　　　- 公开元数据里没有提供主页、主题词和更完整的功能说明，因此更适合归为其他而不是细分到特定开发框架或应用类别。\n　　　　- 该仓库出现在 skills.sh 热门列表并带有变更标记，表明它在相关技能或资源聚合场景中具有一定关注度。\n▸ 链接：https://skills.sh/othmanadi/planning-with-files/planning-with-files-zh\n\n3. actionbook｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个名为 Actionbook 的仓库，当前公开信息非常有限，来源指向 actionbook/actionbook，本身更像是被 skills.sh 收录展示的项目条目，但无法仅凭现有数据明确判断其具体技术方向与功能定位。\n▸ 数据：⚡ 1H 3｜📈 Change +18\n▸ 推荐理由：\n　　　　- 仓库描述只有来源信息，缺少明确的功能介绍、技术栈说明或使用场景，因此难以归入常见的软件类别。\n　　　　- 标签主要体现了 skills.sh 的收录来源与热度变化信息，而不是项目自身的产品特征或领域属性。\n　　　　- 在缺乏主页、主题词和详细说明的情况下，将其归为其他更能避免对项目用途做出未经证实的推断。\n▸ 链接：https://skills.sh/actionbook/actionbook/actionbook\n\n4. extract｜actionbook/actionbook\n▸ 类别：其他\n▸ 简介：这是一个来自 actionbook/actionbook 的技能条目，当前公开信息主要表明它被 skills.sh 热门列表收录，但缺少关于具体功能、适用场景和实现内容的进一步说明。\n▸ 数据：⚡ 1H 4｜📈 Change +17\n▸ 推荐理由：\n　　　　- 仓库描述仅显示来源信息，未提供足够内容判断其明确的软件类别或技术方向。\n　　　　- 标签中包含 skills.sh 和 hot，说明它与技能条目聚合或热门展示有关，但不足以确认更细分定位。\n　　　　- 在缺少主页、主题词和详细说明的情况下，采用较为保守的“其他”分类更符合公开信息。\n▸ 链接：https://skills.sh/actionbook/actionbook/extract\n\n5. md2wechat｜geekjourneyx/md2wechat-skill\n▸ 类别：内容创作工具\n▸ 简介：这是一个面向 skills 生态的 md2wechat 技能仓库，主要用于将 Markdown 内容适配或转换为适合微信公众号场景的输出形式。从仓库命名和来源信息看，它更偏向内容排版与发布流程中的辅助工具，适合有微信公众号编辑需求的用户关注。\n▸ 数据：⚡ 1H 5｜📈 Change +12\n▸ 推荐理由：\n　　　　- 仓库名称包含 md2wechat，直接表明其核心用途与 Markdown 到微信内容适配相关。\n　　　　- 来源指向 geekjourneyx/md2wechat-skill，说明它是以技能形式封装的工具，便于集成到特定工作流中使用。\n　　　　- 该条目出现在 skills.sh 的热门列表中，说明它近期获得了一定关注，具备实际使用或讨论价值。\n▸ 链接：https://skills.sh/geekjourneyx/md2wechat-skill/md2wechat\n\n来源链接：\n1. GitHub Trending（全站）：https://github.com/trending?since=daily\n2. GitHub Trending（TypeScript）：https://github.com/trending/typescript?since=daily\n3. Best of JS（Vue）：https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily\n4. Best of JS（React）：https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily\n5. skills.sh（Trending）：https://skills.sh/trending\n6. skills.sh（Hot）：https://skills.sh/hot",
   "sections": [
     {
       "id": "overall",
@@ -13,14 +13,14 @@
           "repoName": "last30days-skill",
           "owner": "mvanhorn",
           "language": "Python",
-          "category": "AI 智能体/研究工具",
-          "summaryZh": "这是一个用 Python 实现的 AI 智能体技能，目标是围绕任意主题在 Reddit、X、YouTube、Hacker News、Polymarket 以及更广泛的网页内容中进行检索，并综合生成带有信息依据的摘要，适合用于追踪近期开启讨论的热点、社交媒体趋势与多来源研究整理。",
+          "category": "AI研究与信息聚合工具",
+          "summaryZh": "这是一个用 Python 编写的 AI 智能体技能，用于围绕任意主题同时检索 Reddit、X、YouTube、Hacker News、Polymarket 以及网页等多个来源，并生成基于来源信息的综合摘要。项目定位偏向近期动态研究与趋势追踪，适合做跨平台信息汇总、社交媒体观察和主题调研。",
           "starsToday": 2685,
-          "starsTotal": 10487,
+          "starsTotal": 10566,
           "reasons": [
-            "仓库描述明确指出它会跨多个社交平台、社区站点和网页进行主题研究，核心能力属于面向信息检索与综合分析的 AI 工具。",
-            "主题标签包含 deep-research、web-search、reddit、youtube、hackernews、polymarket 和 trends，说明其定位是结合实时性与多源内容的研究型技能。",
-            "项目以 Python 开发，并强调生成 grounded summary，表明它不仅做搜索聚合，还重视基于来源证据的总结输出。"
+            "项目描述明确强调可针对任意主题跨多个平台开展检索，并输出有依据的综合总结，体现出研究代理与信息聚合工具的特征。",
+            "仓库主题词包含 deep-research、web-search、research、trends、social-media、reddit、youtube、hackernews 和 polymarket，说明其核心场景是多源信息搜集与趋势分析。",
+            "项目以 AI skill 形式提供能力，且使用 Python 实现，表明它更像可集成到智能体工作流中的研究组件，而不是单一内容平台客户端。"
           ],
           "repoUrl": "https://github.com/mvanhorn/last30days-skill",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -31,13 +31,13 @@
           "owner": "Yeachan-Heo",
           "language": "TypeScript",
           "category": "开发工具",
-          "summaryZh": "这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调将多个 AI 代理组织起来以支持并行执行、自动化流程与协同式编码实践。",
+          "summaryZh": "这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调并行执行、自动化流程以及多代理协同开发体验。",
           "starsToday": 598,
-          "starsTotal": 12766,
+          "starsTotal": 12813,
           "reasons": [
-            "仓库描述明确指出它以团队优先的方式为 Claude Code 提供多智能体编排能力，定位属于开发流程中的工具链增强。",
-            "主题标签涵盖 ai-agents、multi-agent-systems、automation 和 parallel-execution，说明其核心价值在于协调多个代理完成自动化与并行化任务。",
-            "项目使用 TypeScript 开发并拥有独立主页，且在趋势榜中获得较高关注，表明它是近期受到开发者重视的 AI 编码协作工具。"
+            "仓库描述明确指出其核心是面向团队的多智能体编排，说明它属于提升协作式开发效率的工具类项目。",
+            "主题标签包含 ai-agents、multi-agent-systems、parallel-execution 和 automation，表明它聚焦于代理协作与开发流程自动化。",
+            "项目围绕 Claude 与 Claude Code 生态展开，并提供独立官网，体现出较明确的产品化定位与开发者工具属性。"
           ],
           "repoUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -48,13 +48,13 @@
           "owner": "virattt",
           "language": "TypeScript",
           "category": "金融研究智能体",
-          "summaryZh": "Dexter 是一个使用 TypeScript 开发的自主式智能体，面向深入的金融研究任务，强调让代理在较少人工干预下完成信息收集、分析与研究流程。",
+          "summaryZh": "Dexter 是一个用 TypeScript 开发的自主式智能体，面向深度金融研究场景，强调让代理自动执行研究任务与信息分析。",
           "starsToday": 210,
-          "starsTotal": 19042,
+          "starsTotal": 19064,
           "reasons": [
-            "仓库描述明确指出它是用于深度金融研究的自主智能体，主题定位非常清晰。",
-            "项目采用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。",
-            "该仓库在 GitHub 趋势榜获得较高关注，表明市场对金融研究自动化工具有明显兴趣。"
+            "仓库描述明确指出它是用于深度金融研究的自主智能体，产品定位较为清晰。",
+            "项目使用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。",
+            "该仓库在趋势榜中获得较高当日关注，表明市场对将智能体用于金融研究这一方向有明显兴趣。"
           ],
           "repoUrl": "https://github.com/virattt/dexter",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -64,14 +64,14 @@
           "repoName": "RuView",
           "owner": "ruvnet",
           "language": "Rust",
-          "category": "无线感知与人体姿态识别",
-          "summaryZh": "RuView 是一个以 Rust 为主的无线感知项目，目标是利用普通 WiFi 信号在无需摄像头画面的情况下实现实时人体姿态估计、生命体征监测和在场检测，方向涵盖 DensePose、射频感知以及嵌入式固件相关能力。",
+          "category": "智能感知/无线人体姿态识别",
+          "summaryZh": "RuView 是一个以 Rust 为主的无线感知项目，尝试利用普通 WiFi 信号在不依赖摄像头画面的情况下，实现实时人体姿态估计、生命体征监测与存在检测。仓库信息显示其方向结合了 DensePose、射频感知、ESP32 与固件开发等主题，面向低成本设备上的环境与人体状态感知场景。",
           "starsToday": 1002,
-          "starsTotal": 43261,
+          "starsTotal": 43288,
           "reasons": [
-            "项目核心卖点是把日常 WiFi 信号转化为对人体状态的感知能力，具备明显的无接触、无视频监控特征。",
-            "仓库主题同时包含 pose estimation、densepose、rf、monitoring 与 wifi，说明它处在无线感知与人体行为识别的交叉领域。",
-            "项目还带有 esp32、mcu 和 firmware 等标签，表明它不仅关注算法概念，也涉及面向边缘设备和嵌入式场景的实现。"
+            "项目核心卖点是把常见 WiFi 信号转化为对人体姿态和状态的实时感知，这种无视频方案在隐私敏感环境中很有吸引力。",
+            "仓库主题同时覆盖 Rust、ESP32、MCU、固件和射频等关键词，说明它不仅是算法概念展示，也涉及软硬件结合的落地实现。",
+            "该项目出现在 GitHub 日榜且当日获得较高关注，表明无线感知与无摄像头人体检测方向近期具备较强讨论度。"
           ],
           "repoUrl": "https://github.com/ruvnet/RuView",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -81,14 +81,14 @@
           "repoName": "deer-flow",
           "owner": "bytedance",
           "language": "Python",
-          "category": "AI 多智能体框架",
-          "summaryZh": "Deer Flow 是一个开源的长周期 SuperAgent 执行框架，面向需要持续数分钟到数小时的复杂任务，支持研究、编程与内容创作等场景。它通过沙箱、记忆、工具、技能、子代理和消息网关等机制组织多智能体协作，用于构建能够分阶段推进任务的智能工作流。项目以 Python 为主，并与 LangChain、LangGraph 等相关生态有较强关联。",
+          "category": "AI 智能体框架",
+          "summaryZh": "这是一个面向长时任务的开源 SuperAgent 执行框架，强调通过沙箱、记忆、工具、技能、子智能体和消息网关等机制，支持从研究、编程到内容生成等多类任务协同完成。项目以 Python 为主，结合多智能体与工作流编排思路，适合构建可持续运行、可分解复杂目标的 AI 代理系统。",
           "starsToday": 2394,
-          "starsTotal": 48649,
+          "starsTotal": 48795,
           "reasons": [
-            "仓库描述明确将其定位为开源的长周期 SuperAgent harness，核心价值是处理耗时较长且层次不同的复杂任务。",
-            "公开信息提到沙箱、记忆、工具、技能、子代理和消息网关等组件，说明它强调多智能体编排与任务执行基础设施。",
-            "主题标签集中在 agent、multi-agent、LLM、deep-research、LangChain 和 LangGraph 等方向，表明它属于 AI Agent 框架与工作流系统。"
+            "仓库描述明确指出它是用于长时任务的开源 SuperAgent harness，核心定位就是智能体执行与调度框架。",
+            "公开主题包含 agent、multi-agent、agentic-framework、agentic-workflow、llm 等关键词，说明其重点在 AI 智能体系统与工作流编排。",
+            "项目介绍提到沙箱、记忆、工具、技能、子智能体和消息网关等能力，这些都是构建复杂代理协作系统的典型基础设施。"
           ],
           "repoUrl": "https://github.com/bytedance/deer-flow",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -99,13 +99,13 @@
           "owner": "Vaibhavs10",
           "language": "Jupyter Notebook",
           "category": "语音识别",
-          "summaryZh": "这是一个围绕 Whisper 的高性能语音转写项目，重点在于提升推理速度，适合用于更快地完成语音识别与转录任务。仓库主要以 Jupyter Notebook 形式呈现，说明其兼具实验演示和实际使用参考价值。",
+          "summaryZh": "这是一个围绕 Whisper 的高性能语音转写项目，重点在于以更快的方式完成音频转文本任务，仓库主要以 Jupyter Notebook 形式展示使用与实现思路。",
           "starsToday": 1370,
-          "starsTotal": 11308,
+          "starsTotal": 11342,
           "reasons": [
-            "仓库名称直接表明它聚焦于 Whisper，并强调“insanely fast”这一速度优化方向，因此可归为语音识别与转写工具。",
-            "项目主要语言是 Jupyter Notebook，这通常意味着仓库包含可复现的实验、示例流程或使用演示，便于开发者快速上手验证效果。",
-            "该项目在今日和累计星标上都表现突出，说明它近期受到开发者广泛关注，反映出高性能语音转写方案具有较强的实际吸引力。"
+            "仓库名称直接指向 Whisper，并强调 insanely-fast，说明核心价值是提升语音转写速度。",
+            "项目主要使用 Jupyter Notebook，通常意味着它包含可运行示例、实验流程或性能演示，适合展示语音识别推理方案。",
+            "该仓库出现在 GitHub 热门列表且当日增长显著，表明开发者社区对高效语音转文本工具有较强关注。"
           ],
           "repoUrl": "https://github.com/Vaibhavs10/insanely-fast-whisper",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -116,13 +116,13 @@
           "owner": "agentscope-ai",
           "language": "Python",
           "category": "AI智能体开发框架",
-          "summaryZh": "AgentScope 是一个面向大语言模型应用的 Python 框架，聚焦可观察、可理解、可控的智能体构建与运行，支持多智能体、聊天机器人、多模态及 MCP 等相关场景。",
+          "summaryZh": "AgentScope 是一个用于构建、运行与观察 AI 智能体的 Python 框架，重点强调让开发者能够更直观地理解智能体行为并提升可控性与可信度。它面向大语言模型应用场景，支持多智能体、聊天机器人、多模态及 MCP 等相关能力，适合用于搭建可调试、可扩展的智能体系统。",
           "starsToday": 437,
-          "starsTotal": 20528,
+          "starsTotal": 20564,
           "reasons": [
-            "仓库描述明确强调构建和运行可被看见、理解与信任的智能体，表明其核心定位是智能体开发与执行框架。",
-            "主题标签覆盖 llm、llm-agent、multi-agent、chatbot、multi-modal 和 react-agent，说明它面向大模型驱动的多种智能体应用场景。",
-            "项目提供独立文档站点并以 Python 为主要语言，结合较高的社区关注度，显示其具备较成熟的开发者使用基础与生态吸引力。"
+            "仓库描述明确聚焦于构建和运行可见、可理解、可被信任的智能体，说明它的核心定位是智能体开发框架而非单一应用。",
+            "主题标签覆盖 llm、llm-agent、multi-agent、multi-modal、chatbot 和 react-agent，表明其服务于大模型驱动的多种智能体场景。",
+            "提供独立文档站点且以 Python 为主要语言，说明项目具有较完整的开发者使用体系，适合工程化构建和调试智能体应用。"
           ],
           "repoUrl": "https://github.com/agentscope-ai/agentscope",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -132,14 +132,14 @@
           "repoName": "twenty",
           "owner": "twentyhq",
           "language": "TypeScript",
-          "category": "开源商业应用",
-          "summaryZh": "Twenty 是一个由社区驱动、以 TypeScript 为核心技术栈构建的开源 CRM 项目，目标是打造 Salesforce 的现代替代方案，覆盖客户关系、销售与营销等业务场景。",
+          "category": "企业软件",
+          "summaryZh": "Twenty 是一个以社区协作为驱动的开源 CRM 项目，目标是打造 Salesforce 的现代化替代方案。该仓库使用 TypeScript 开发，采用 monorepo 组织，技术栈覆盖 React、NestJS、GraphQL 与 PostgreSQL，面向销售、营销和客户管理等 Web 场景。",
           "starsToday": 117,
-          "starsTotal": 41320,
+          "starsTotal": 41347,
           "reasons": [
-            "仓库描述明确表明它要构建 Salesforce 的现代替代方案，产品定位直接指向 CRM 与商业客户管理场景。",
-            "项目主题包含 crm、customer、sales、marketing 等关键词，说明其核心用途围绕客户关系管理和业务运营展开。",
-            "技术标签显示它采用 TypeScript，并结合 React、NestJS、GraphQL 与 PostgreSQL 等 Web 技术栈实现，符合现代开源商业应用的特征。"
+            "项目定位非常清晰，直接聚焦 CRM 这一企业核心业务系统，并强调作为现代化替代方案的产品方向。",
+            "仓库公开信息显示其前后端技术栈较完整，结合 React、NestJS、GraphQL 和 PostgreSQL，体现出成熟的全栈 Web 应用架构。",
+            "它以开源和社区驱动为重要特征，同时拥有较高的关注度和活跃趋势，说明其在开发者社区中具备较强吸引力。"
           ],
           "repoUrl": "https://github.com/twentyhq/twenty",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -149,14 +149,14 @@
           "repoName": "chandra",
           "owner": "datalab-to",
           "language": "Python",
-          "category": "AI/文档OCR",
-          "summaryZh": "这是一个用 Python 开发的 OCR 项目，重点面向复杂表格、表单和手写内容识别，并尝试保留页面整体版式结构，适合文档理解与结构化提取场景。",
+          "category": "AI工具",
+          "summaryZh": "这是一个用 Python 开发的 OCR 项目，重点处理复杂表格、表单和手写内容，并尽量保留完整版面结构，适合文档理解与信息提取场景。",
           "starsToday": 557,
-          "starsTotal": 6228,
+          "starsTotal": 6244,
           "reasons": [
-            "仓库描述明确指出它支持复杂表格、表单和手写内容识别，说明其核心方向是文档 OCR 而非通用图像处理。",
-            "项目强调完整布局处理能力，表明它不仅提取文字，还关注页面结构与版面信息的保留。",
-            "仓库主题包含 ai 和 ocr，且近期获得较高关注度，说明它属于受到开发者关注的 AI 文档识别工具。"
+            "仓库描述明确表明它面向 OCR 任务，且强调对复杂表格、表单和手写文本的识别能力。",
+            "项目特别提到保留完整布局信息，这说明它不仅关注文字识别，也重视文档结构解析。",
+            "仓库主题包含 AI 与 OCR，结合较高的关注增长，说明它属于受到开发者关注的智能文档处理工具。"
           ],
           "repoUrl": "https://github.com/datalab-to/chandra",
           "sourceUrl": "https://github.com/trending?since=daily"
@@ -173,13 +173,13 @@
           "owner": "Yeachan-Heo",
           "language": "TypeScript",
           "category": "开发工具",
-          "summaryZh": "这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调将多个 AI 代理组织起来以支持并行执行、自动化流程与协同式编码实践。",
+          "summaryZh": "这是一个面向团队协作的 Claude Code 多智能体编排工具，使用 TypeScript 构建，强调并行执行、自动化流程以及多代理协同开发体验。",
           "starsToday": 598,
-          "starsTotal": 12766,
+          "starsTotal": 12813,
           "reasons": [
-            "仓库描述明确指出它以团队优先的方式为 Claude Code 提供多智能体编排能力，定位属于开发流程中的工具链增强。",
-            "主题标签涵盖 ai-agents、multi-agent-systems、automation 和 parallel-execution，说明其核心价值在于协调多个代理完成自动化与并行化任务。",
-            "项目使用 TypeScript 开发并拥有独立主页，且在趋势榜中获得较高关注，表明它是近期受到开发者重视的 AI 编码协作工具。"
+            "仓库描述明确指出其核心是面向团队的多智能体编排，说明它属于提升协作式开发效率的工具类项目。",
+            "主题标签包含 ai-agents、multi-agent-systems、parallel-execution 和 automation，表明它聚焦于代理协作与开发流程自动化。",
+            "项目围绕 Claude 与 Claude Code 生态展开，并提供独立官网，体现出较明确的产品化定位与开发者工具属性。"
           ],
           "repoUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
           "sourceUrl": "https://github.com/trending/typescript?since=daily"
@@ -190,13 +190,13 @@
           "owner": "virattt",
           "language": "TypeScript",
           "category": "金融研究智能体",
-          "summaryZh": "Dexter 是一个使用 TypeScript 开发的自主式智能体，面向深入的金融研究任务，强调让代理在较少人工干预下完成信息收集、分析与研究流程。",
+          "summaryZh": "Dexter 是一个用 TypeScript 开发的自主式智能体，面向深度金融研究场景，强调让代理自动执行研究任务与信息分析。",
           "starsToday": 210,
-          "starsTotal": 19042,
+          "starsTotal": 19064,
           "reasons": [
-            "仓库描述明确指出它是用于深度金融研究的自主智能体，主题定位非常清晰。",
-            "项目采用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。",
-            "该仓库在 GitHub 趋势榜获得较高关注，表明市场对金融研究自动化工具有明显兴趣。"
+            "仓库描述明确指出它是用于深度金融研究的自主智能体，产品定位较为清晰。",
+            "项目使用 TypeScript 开发，说明其更偏向现代应用与代理工作流的工程实现。",
+            "该仓库在趋势榜中获得较高当日关注，表明市场对将智能体用于金融研究这一方向有明显兴趣。"
           ],
           "repoUrl": "https://github.com/virattt/dexter",
           "sourceUrl": "https://github.com/trending/typescript?since=daily"
@@ -206,14 +206,14 @@
           "repoName": "twenty",
           "owner": "twentyhq",
           "language": "TypeScript",
-          "category": "开源商业应用",
-          "summaryZh": "Twenty 是一个由社区驱动、以 TypeScript 为核心技术栈构建的开源 CRM 项目，目标是打造 Salesforce 的现代替代方案，覆盖客户关系、销售与营销等业务场景。",
+          "category": "企业软件",
+          "summaryZh": "Twenty 是一个以社区协作为驱动的开源 CRM 项目，目标是打造 Salesforce 的现代化替代方案。该仓库使用 TypeScript 开发，采用 monorepo 组织，技术栈覆盖 React、NestJS、GraphQL 与 PostgreSQL，面向销售、营销和客户管理等 Web 场景。",
           "starsToday": 117,
-          "starsTotal": 41320,
+          "starsTotal": 41347,
           "reasons": [
-            "仓库描述明确表明它要构建 Salesforce 的现代替代方案，产品定位直接指向 CRM 与商业客户管理场景。",
-            "项目主题包含 crm、customer、sales、marketing 等关键词，说明其核心用途围绕客户关系管理和业务运营展开。",
-            "技术标签显示它采用 TypeScript，并结合 React、NestJS、GraphQL 与 PostgreSQL 等 Web 技术栈实现，符合现代开源商业应用的特征。"
+            "项目定位非常清晰，直接聚焦 CRM 这一企业核心业务系统，并强调作为现代化替代方案的产品方向。",
+            "仓库公开信息显示其前后端技术栈较完整，结合 React、NestJS、GraphQL 和 PostgreSQL，体现出成熟的全栈 Web 应用架构。",
+            "它以开源和社区驱动为重要特征，同时拥有较高的关注度和活跃趋势，说明其在开发者社区中具备较强吸引力。"
           ],
           "repoUrl": "https://github.com/twentyhq/twenty",
           "sourceUrl": "https://github.com/trending/typescript?since=daily"
@@ -224,13 +224,13 @@
           "owner": "pascalorg",
           "language": "TypeScript",
           "category": "3D建筑设计编辑器",
-          "summaryZh": "这是一个使用 TypeScript 构建的在线 3D 建筑项目编辑与分享工具，面向建筑场景的创建、编辑和协作展示，提供通过网页访问的编辑体验。",
+          "summaryZh": "这是一个用于创建与分享三维建筑项目的 TypeScript 编辑器，面向在线建筑设计与协作展示场景。",
           "starsToday": 633,
-          "starsTotal": 7343,
+          "starsTotal": 7359,
           "reasons": [
-            "仓库描述明确指出其核心功能是创建和分享 3D 建筑项目，产品定位较为清晰。",
-            "项目使用 TypeScript 开发，并提供独立主页，说明它更像可直接使用的 Web 编辑器而不只是底层库。",
-            "该仓库在近期趋势榜上获得较高关注，反映出 3D 建筑设计与在线编辑场景具有明显吸引力。"
+            "仓库描述明确提到可创建和分享三维建筑项目，核心定位属于建筑设计相关的 3D 编辑工具。",
+            "项目使用 TypeScript 开发，并提供独立主页，说明其形态更接近可直接使用的在线编辑应用而非单纯代码库。",
+            "该仓库在当日趋势榜获得较高关注，反映出开发者社区对建筑可视化与协作创作工具的兴趣较强。"
           ],
           "repoUrl": "https://github.com/pascalorg/editor",
           "sourceUrl": "https://github.com/trending/typescript?since=daily"
@@ -241,13 +241,13 @@
           "owner": "letta-ai",
           "language": "TypeScript",
           "category": "开发者工具",
-          "summaryZh": "这是一个用 TypeScript 开发的项目，目标是为 Claude Code 增加类似“潜意识”的能力，暗示其可为代码助手提供持续的上下文、记忆或后台辅助机制。",
+          "summaryZh": "这是一个用 TypeScript 编写的开发者工具项目，目标是为 Claude Code 引入类似“潜意识”的能力，暗示其尝试扩展代码助手在后台记忆、上下文处理或辅助决策方面的行为。",
           "starsToday": 446,
-          "starsTotal": 1767,
+          "starsTotal": 1768,
           "reasons": [
-            "仓库描述直接表明它围绕 Claude Code 扩展能力展开，因此更接近面向 AI 编码场景的开发者工具。",
-            "项目使用 TypeScript 构建，说明其很可能服务于 JavaScript 或 Node.js 相关生态中的集成与开发流程。",
-            "该仓库出现在 TypeScript 趋势榜且当日获得较多关注，表明开发者社区对提升代码助手能力的工具有明显兴趣。"
+            "项目描述直接表明它围绕 Claude Code 的能力增强展开，因此更接近面向开发流程的工具而非通用应用。",
+            "仓库使用 TypeScript 开发，通常意味着它可能服务于 JavaScript 或相关工程生态中的集成与扩展场景。",
+            "该项目出现在 GitHub TypeScript 日榜且当日获得较多关注，说明它在开发者社区中具有较强的话题性和实验价值。"
           ],
           "repoUrl": "https://github.com/letta-ai/claude-subconscious",
           "sourceUrl": "https://github.com/trending/typescript?since=daily"
@@ -263,14 +263,14 @@
           "repoName": "slidev",
           "owner": "slidevjs",
           "language": "TypeScript",
-          "category": "演示文稿框架",
-          "summaryZh": "Slidev 是一个面向开发者的演示文稿工具，使用 Markdown 编写幻灯片，并基于 Vue 与 Vite 提供可扩展的前端能力与开发体验。",
+          "category": "演示文稿工具",
+          "summaryZh": "Slidev 是一个面向开发者的演示文稿工具，使用 TypeScript 构建，围绕 Markdown、Vite 和 Vue 生态来制作与展示幻灯片内容。",
           "starsToday": 44,
-          "starsTotal": 45180,
+          "starsTotal": 45182,
           "reasons": [
-            "仓库描述明确指向为开发者制作演示幻灯片，核心用途非常清晰。",
-            "主题标签包含 markdown、presentation、slides、vite 和 vue，说明它结合文档式编写与现代前端技术栈。",
-            "项目主页独立且社区关注度较高，表明它已形成较成熟的产品形态与用户认知。"
+            "仓库描述明确强调这是为开发者打造的演示幻灯片工具，产品定位非常清晰。",
+            "公开主题标签包含 markdown、presentation、slides、vite 和 vue，说明它主打基于前端技术栈的内容编写与展示体验。",
+            "项目拥有较高的累计关注度且当日仍有明显新增关注，表明它在 Vue 相关工具中具有持续活跃度和社区认可度。"
           ],
           "repoUrl": "https://github.com/slidevjs/slidev",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
@@ -280,14 +280,14 @@
           "repoName": "ai",
           "owner": "vercel",
           "language": "TypeScript",
-          "category": "AI 应用开发工具",
-          "summaryZh": "这是一个面向 TypeScript 生态的开源 AI 开发工具包，用于构建集成大语言模型的应用与智能体。项目由 Vercel 推出，强调在 React、Vue、Svelte 与 Next.js 等前端框架中的集成能力，并覆盖 OpenAI、Anthropic、Gemini 等多种模型服务。",
+          "category": "AI 开发工具",
+          "summaryZh": "这是一个面向 TypeScript 的开源 AI 开发工具包，用于构建由大语言模型驱动的应用与智能体，并支持在 React、Vue、Svelte 以及 Next.js 等前端生态中集成生成式 AI 能力。",
           "starsToday": 26,
           "starsTotal": 23025,
           "reasons": [
-            "仓库描述明确表明它是用于 TypeScript 的 AI 工具包，核心用途是帮助开发者构建 AI 驱动的应用和智能体。",
-            "主题标签覆盖 OpenAI、Anthropic、Gemini、LLM、Generative UI 以及多种前端框架，说明它定位于多模型接入与前端集成开发。",
-            "项目语言为 TypeScript，且与 React、Vue、Svelte、Next.js 等技术栈紧密相关，因此更适合归类为 AI 应用开发工具而非单一模型或终端产品。"
+            "仓库描述明确表明它是用于构建 AI 应用和智能体的 TypeScript 工具包，定位属于 AI 开发基础设施而不是单一业务应用。",
+            "主题和标签同时覆盖 OpenAI、Anthropic、Gemini、LLM、Chat 与 AI Agents，说明它面向多模型接入和通用生成式 AI 场景。",
+            "它强调对 React、Vue、Svelte 和 Next.js 等框架的支持，适合作为前端与全栈项目集成 AI 能力的 SDK。"
           ],
           "repoUrl": "https://github.com/vercel/ai",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
@@ -297,14 +297,14 @@
           "repoName": "storybook",
           "owner": "storybookjs",
           "language": "TypeScript",
-          "category": "前端开发工具",
-          "summaryZh": "Storybook 是一个面向前端界面组件的开发工作台，用于在脱离业务页面的环境中构建、展示、编写文档并测试 UI 组件，适用于 React、Vue、Angular、Svelte、Web Components 等多种技术栈，也可与 Vite、Webpack 等构建工具配合使用。",
+          "category": "前端 UI 组件开发与测试工具",
+          "summaryZh": "Storybook 是一个面向前端界面的组件工作台，用于在隔离环境中构建、展示、编写文档并测试 UI 组件，适用于 React、Vue、Angular、Svelte、React Native 以及 Web Components 等多种技术栈。",
           "starsToday": 20,
-          "starsTotal": 89532,
+          "starsTotal": 89533,
           "reasons": [
-            "仓库定位清晰，核心价值是让开发者以组件为单位独立构建、调试、文档化和测试界面。",
-            "项目覆盖 React、Vue、Angular、Svelte 等多个主流前端生态，说明它具有较强的跨框架适配能力。",
-            "主题标签包含 design systems、documentation、testing、vite 和 webpack，表明它不仅是组件展示工具，也服务于设计系统与前端工程化流程。"
+            "仓库描述明确说明它用于在隔离环境中构建、文档化和测试 UI 组件，核心定位非常清晰。",
+            "主题标签涵盖 React、Vue、Angular、Svelte、Vite、Webpack 和 Web Components，说明它是跨框架的前端组件开发基础设施。",
+            "description、topics 和 tags 同时强调 components、design-systems、documentation 与 testing，表明它服务于组件库、设计系统和前端协作流程。"
           ],
           "repoUrl": "https://github.com/storybookjs/storybook",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
@@ -314,14 +314,14 @@
           "repoName": "query",
           "owner": "TanStack",
           "language": "TypeScript",
-          "category": "数据获取与异步状态管理",
-          "summaryZh": "TanStack Query 是一个面向 Web 应用的异步状态管理与数据请求工具，主要用于处理服务器状态、缓存与重新获取数据，并支持 React、Vue、Svelte 和 Solid 等主流前端框架。",
+          "category": "异步数据获取与服务端状态管理",
+          "summaryZh": "TanStack Query 是一个面向 Web 应用的异步状态管理与数据获取库，重点处理服务端状态、缓存、请求同步与数据更新，并为 React、Vue、Svelte 和 Solid 等框架提供对应方案，适合构建依赖接口数据的前端应用。",
           "starsToday": 15,
           "starsTotal": 48925,
           "reasons": [
-            "仓库描述明确强调异步状态管理、服务器状态工具和数据获取能力，核心定位非常清晰。",
-            "主题和标签同时覆盖缓存、请求、GraphQL、REST 以及 stale-while-revalidate 等关键词，说明它聚焦于前端数据同步与缓存策略。",
-            "它同时提供 React Query、Vue Query、Svelte Query 和 Solid Query，表明这是一个跨框架的通用数据层方案。"
+            "仓库描述明确强调异步状态管理、服务端状态工具和数据获取能力，核心定位非常清晰。",
+            "主题与标签包含 cache、fetch、GraphQL、REST、stale-while-revalidate 以及多种前端框架，说明它主要解决接口数据缓存与同步问题。",
+            "项目使用 TypeScript 并覆盖 React Query、Vue Query、Svelte Query 和 Solid Query，体现出它是一个跨框架的前端数据层方案。"
           ],
           "repoUrl": "https://github.com/TanStack/query",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
@@ -332,13 +332,13 @@
           "owner": "ueberdosis",
           "language": "TypeScript",
           "category": "富文本编辑器框架",
-          "summaryZh": "Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 场景提供可扩展的编辑能力，并可与 React、Vue、Solid 等前端技术栈集成。",
+          "summaryZh": "Tiptap 是一个基于 ProseMirror 的无头富文本编辑器框架，面向 Web 开发者构建可高度定制的所见即所得编辑体验，支持在 React、Vue、Solid 等前端技术栈中集成。",
           "starsToday": 15,
-          "starsTotal": 35882,
+          "starsTotal": 35883,
           "reasons": [
-            "仓库描述明确强调它是面向 Web 开发者的无头富文本编辑器框架，定位非常清晰。",
-            "主题标签包含 rich-text、wysiwyg、editor 和 prosemirror，说明其核心能力集中在富文本编辑与可视化编辑场景。",
-            "标签和主题同时覆盖 React、Vue、Solid 等生态，表明它不是绑定单一界面的成品编辑器，而是可集成到多种前端框架中的基础能力层。"
+            "仓库描述明确强调它是无头富文本编辑器框架，核心定位非常清晰。",
+            "主题标签包含 ProseMirror、rich-text、wysiwyg、editor 等关键词，说明它聚焦网页富文本编辑能力。",
+            "标签显示其适配 Vue、React、Solid 等生态，体现出它作为前端编辑器基础框架的通用集成价值。"
           ],
           "repoUrl": "https://github.com/ueberdosis/tiptap",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily"
@@ -354,14 +354,14 @@
           "repoName": "remotion",
           "owner": "remotion-dev",
           "language": "TypeScript",
-          "category": "视频与前端开发",
-          "summaryZh": "Remotion 是一个基于 TypeScript 与 React 的程序化视频生成工具，帮助开发者用熟悉的前端组件与代码方式来制作和组织视频内容。",
+          "category": "视频开发",
+          "summaryZh": "Remotion 是一个基于 React 的视频编程框架，允许开发者用 TypeScript 或 JavaScript 以组件化方式生成和编辑视频内容。",
           "starsToday": 99,
-          "starsTotal": 40860,
+          "starsTotal": 40861,
           "reasons": [
-            "仓库描述明确指出它用于以编程方式制作视频，核心用途非常清晰。",
-            "项目语言为 TypeScript，主题与标签包含 React 和 Video，说明它面向前端技术栈并围绕视频创作展开。",
-            "它拥有较高的累计关注度且当天增长明显，表明该项目在 React 相关开发者社区中具备较强关注度。"
+            "仓库描述明确强调以 React 方式编程制作视频，核心定位非常清晰。",
+            "项目使用 TypeScript，且主题标签集中在 React 与 Video，说明它面向前端开发者的视频生产场景。",
+            "较高的总星标和当日增长表明该项目在 React 视频开发方向具有持续关注度。"
           ],
           "repoUrl": "https://github.com/remotion-dev/remotion",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
@@ -371,14 +371,14 @@
           "repoName": "ui",
           "owner": "shadcn-ui",
           "language": "TypeScript",
-          "category": "前端组件库",
-          "summaryZh": "这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调美观设计、可访问性以及可与多种常见前端框架协同使用。项目围绕组件复用与按需引入展开，结合 Tailwind CSS、Radix UI 等技术栈，适合用于快速构建一致性的应用界面。",
+          "category": "UI 组件库",
+          "summaryZh": "这是一个面向 React 生态的开源 UI 组件集合与代码分发平台，强调良好的视觉设计、可访问性以及与多种前端框架的兼容性。项目以 TypeScript 为主要语言，围绕 shadcn 风格、Tailwind CSS、Radix UI 等技术栈，为开发者提供可组合的界面组件与配套使用方式。",
           "starsToday": 84,
-          "starsTotal": 110818,
+          "starsTotal": 110823,
           "reasons": [
-            "仓库描述明确指出它既提供一组注重设计与无障碍能力的组件，也提供代码分发能力，符合前端组件库与组件平台的定位。",
-            "项目主题和标签集中在 React、Tailwind CSS、Radix UI、Next.js、Vite 等前端技术，说明它主要服务于现代 Web 界面开发场景。",
-            "仓库星标规模较高且当日仍有明显增长，反映出它在开发者社区中具有较强关注度和实际采用价值。"
+            "仓库描述明确指出它既提供精心设计且注重可访问性的组件，也提供代码分发能力，核心定位非常接近 UI 组件库与组件平台。",
+            "项目主题和标签集中在 React、Component library、TailwindCSS、Radix UI、Next.js 与 Vite，说明它主要服务于现代前端界面开发场景。",
+            "仓库拥有较高的社区关注度，并且出现在相关技术榜单来源中，表明它在前端组件生态里具有较强影响力。"
           ],
           "repoUrl": "https://github.com/shadcn-ui/ui",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
@@ -389,13 +389,13 @@
           "owner": "vercel-labs",
           "language": "JavaScript",
           "category": "AI 代理工具库",
-          "summaryZh": "这是 Vercel Labs 提供的官方代理技能集合仓库，使用 JavaScript 构建，面向 AI 代理能力的组织、复用与集成，并与 React、Next.js 技术栈存在较强关联。",
+          "summaryZh": "这是 Vercel 提供的官方 Agent Skills 集合项目，用于汇集和组织可供智能代理使用的能力模块，技术栈与 JavaScript、React 和 Next.js 生态相关。",
           "starsToday": 68,
-          "starsTotal": 23930,
+          "starsTotal": 23933,
           "reasons": [
-            "仓库描述明确表明它是 Vercel 的官方 agent skills 集合，核心定位就是为 AI 代理提供技能能力。",
-            "项目语言为 JavaScript，且标签包含 React、Next.js 和 AI，说明它更偏向面向现代 Web 与智能应用场景的工具库。",
-            "仓库已获得较高的社区关注度，并且提供独立主页，表明其具有一定的可发现性与持续使用价值。"
+            "仓库描述明确表明它是 Vercel 官方维护的 agent skills 集合，定位清晰且来源可信。",
+            "项目标签包含 AI、React 和 Next.js，说明它主要面向现代 Web 与智能代理结合的开发场景。",
+            "该项目获得了较高的社区关注度，反映出开发者对可复用代理能力组件的实际需求较强。"
           ],
           "repoUrl": "https://github.com/vercel-labs/agent-skills",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
@@ -405,14 +405,14 @@
           "repoName": "excalidraw",
           "owner": "excalidraw",
           "language": "TypeScript",
-          "category": "白板与绘图",
-          "summaryZh": "Excalidraw 是一个基于 Web 的虚拟白板项目，用于绘制手绘风格的图表、草图和流程示意，强调轻量、直观的画布交互体验，并支持协作类使用场景。",
+          "category": "在线白板与绘图",
+          "summaryZh": "Excalidraw 是一个基于 TypeScript 和 React 的在线白板工具，用于绘制带手绘风格的图表、草图和协作内容，适合做流程示意、头脑风暴和轻量可视化表达。",
           "starsToday": 67,
-          "starsTotal": 119638,
+          "starsTotal": 119639,
           "reasons": [
-            "仓库描述明确说明它是用于绘制手绘风格图表的虚拟白板，核心定位非常清晰。",
-            "主题标签包含 whiteboard、drawing、diagrams 和 collaboration，说明它同时覆盖绘图表达与协作场景。",
-            "项目使用 TypeScript，并带有 React 相关标签，表明它是现代前端技术栈下的画布类应用项目。"
+            "仓库描述明确指出它是用于绘制手绘风格图表的虚拟白板，核心用途非常清晰。",
+            "主题标签包含 whiteboard、drawing、diagrams 和 collaboration，说明它同时强调绘图表达与协作场景。",
+            "项目使用 TypeScript 开发，并带有 Canvas 与 React 相关标签，体现出它是面向现代 Web 交互白板的前端项目。"
           ],
           "repoUrl": "https://github.com/excalidraw/excalidraw",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
@@ -422,14 +422,14 @@
           "repoName": "json-render",
           "owner": "vercel-labs",
           "language": "TypeScript",
-          "category": "前端框架",
-          "summaryZh": "这是一个面向 React 生态的生成式 UI 框架，强调用 JSON 形式描述界面结构，并结合 AI 场景来驱动界面渲染与交互组织。",
+          "category": "前端开发框架",
+          "summaryZh": "这是一个由 JSON 驱动的生成式界面框架，面向 React 生态，强调用结构化描述来生成和渲染用户界面，适合探索 AI 与前端界面组合的开发方式。",
           "starsToday": 45,
-          "starsTotal": 13423,
+          "starsTotal": 13430,
           "reasons": [
-            "仓库描述直接表明它是一个生成式 UI 框架，定位清晰地属于前端界面开发基础设施。",
-            "项目标签同时包含 JSON、AI 和 React，说明它的核心价值在于把结构化描述与智能生成能力结合到 React 界面中。",
-            "该项目来自 Vercel Labs 且拥有较高的社区关注度，表明它在新型 UI 构建方式上具备较强的探索性和参考价值。"
+            "仓库描述直接表明它是一个生成式 UI 框架，核心定位清晰地落在界面构建而非通用工具库。",
+            "项目标签同时包含 JSON、AI 和 React，说明它结合结构化数据描述、智能生成能力与主流前端技术栈。",
+            "仓库名称、官网域名与公开简介共同指向渲染和界面生成场景，因此可归类为前端开发框架。"
           ],
           "repoUrl": "https://github.com/vercel-labs/json-render",
           "sourceUrl": "https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily"
@@ -446,13 +446,13 @@
           "owner": "skills",
           "language": "vercel-labs/skills",
           "category": "其他",
-          "summaryZh": "这是一个来自 vercel-labs/skills 聚合来源的条目，指向 skills.sh 的热门内容页，当前公开信息不足以判断其具体功能或技术方向。",
+          "summaryZh": "这是 skills.sh 趋势页收录的一项技能条目，公开信息仅表明其来源于 vercel-labs/skills，当前缺少关于功能定位、技术实现和使用场景的详细介绍。",
           "starsToday": 1,
           "starsTotal": 0,
           "reasons": [
-            "仓库名称与描述仅表明它与 vercel-labs/skills 来源相关，缺少明确的项目定位、功能介绍和技术细节。",
-            "提供的链接指向 skills.sh 的热门页面，更像是聚合展示入口，而不是能够直接说明项目能力的独立仓库主页。",
-            "现有标签只有 skills.sh 和 trending，这些信息不足以将其准确归类为开发工具、应用框架或其他明确的软件类别。"
+            "仓库描述只有来源信息，无法据此准确判断它属于开发工具、应用项目还是内容索引。",
+            "标签显示它与 skills.sh 及趋势收录有关，因此更像是一个技能条目或目录项而非独立软件产品。",
+            "在缺少 README、主页说明和主题标签的情况下，采用其他这一保守分类更符合现有公开信息。"
           ],
           "repoUrl": "https://skills.sh/vercel-labs/skills/find-skills",
           "sourceUrl": "https://skills.sh/trending"
@@ -462,14 +462,14 @@
           "repoName": "microsoft-foundry",
           "owner": "skills",
           "language": "microsoft/azure-skills",
-          "category": "云与 AI 开发资源",
-          "summaryZh": "这是一个来自 microsoft/azure-skills 来源的技能型资源仓库条目，名称指向 Microsoft Foundry，整体更像与云平台或 AI 开发相关的学习素材、示例或实践内容集合。基于当前公开信息，暂时无法确认其具体功能边界，但可以判断它属于面向开发者的技能学习与实践资源。",
+          "category": "开发者工具",
+          "summaryZh": "这是一个来自 microsoft/azure-skills 来源的技能仓库条目，聚焦于微软生态中的技能或自动化能力封装，适合关注开发流程与云端能力集成的开发者参考。",
           "starsToday": 2,
           "starsTotal": 0,
           "reasons": [
-            "仓库来源标注为 microsoft/azure-skills，说明它与微软的技能学习或实践资源体系有关。",
-            "名称中包含 Microsoft Foundry，这通常暗示其主题与微软云服务、开发平台或 AI 相关能力建设有关。",
-            "公开信息只有来源、标签和趋势标记，缺少详细 README 与功能说明，因此更适合归类为开发学习资源而非具体产品项目。"
+            "仓库名称包含 microsoft-foundry，且来源指向 microsoft/azure-skills，说明它与微软相关技能体系或能力封装有关。",
+            "标签中出现 skills.sh 和 trending，表明该项目当前被技能类工具社区收录并具有一定关注度。",
+            "公开信息非常有限，但从命名和来源可以判断它更接近开发者工具或平台能力集成，而不是面向普通用户的消费级应用。"
           ],
           "repoUrl": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
           "sourceUrl": "https://skills.sh/trending"
@@ -479,14 +479,14 @@
           "repoName": "frontend-design",
           "owner": "skills",
           "language": "anthropics/skills",
-          "category": "前端设计技能资源",
-          "summaryZh": "这是一个来自 anthropics/skills 体系的前端设计相关技能仓库，当前公开信息显示它被 skills.sh 收录并出现在趋势列表中。由于缺少更详细的项目说明、文档内容和示例信息，可以判断它更像是面向前端设计主题的技能型资源，而不是一个具备完整产品说明的独立应用项目。",
+          "category": "前端设计",
+          "summaryZh": "这是一个收录于 skills.sh 趋势榜的前端设计类技能仓库，来源标注为 anthropics/skills，主要面向与前端界面设计相关的技能化内容组织与使用场景。",
           "starsToday": 26,
           "starsTotal": 0,
           "reasons": [
-            "仓库名称直接指向 frontend-design，说明其主题聚焦于前端设计方向的技能内容。",
-            "公开描述仅标注来源为 anthropics/skills，缺乏功能介绍、技术架构和使用说明，因此更适合归类为技能资源。",
-            "该仓库带有 trending 和 hot 标签，且来源页面为 skills.sh 的趋势页，表明它近期在相关资源列表中受到关注。"
+            "仓库名称直接指向 frontend-design，能够明确反映其主题与前端设计相关。",
+            "给定语言与描述都指向 anthropics/skills，说明它更像一个技能条目而非传统应用源码仓库。",
+            "该项目出现在 skills.sh 的 trending 来源中，表明它近期具有一定关注度与参考价值。"
           ],
           "repoUrl": "https://skills.sh/anthropics/skills/frontend-design",
           "sourceUrl": "https://skills.sh/trending"
@@ -497,13 +497,13 @@
           "owner": "skills",
           "language": "vercel-labs/agent-skills",
           "category": "前端开发",
-          "summaryZh": "这是一个聚焦 Vercel 与 React 最佳实践的技能型资源，来源于 vercel-labs/agent-skills，适合用于整理现代 React 应用在 Vercel 生态中的开发规范与实践要点。",
+          "summaryZh": "这是一个围绕 React 在 Vercel 场景下最佳实践的技能型仓库，来源于 vercel-labs 的 agent-skills 体系，更像面向开发者或智能体的实践指南与工作流知识集合。",
           "starsToday": 27,
           "starsTotal": 0,
           "reasons": [
-            "仓库名称直接指向 Vercel 与 React 最佳实践，主题明确属于前端工程与框架实践。",
-            "该项目被标记为 skills.sh 的热门内容，说明它更像面向开发者的可复用技能知识而非传统应用仓库。",
-            "公开信息仅能确认其来源于 vercel-labs 的 agent-skills 体系，因此可以谨慎判断其价值在于总结实践方法与指导开发流程。"
+            "仓库名称直接指向 vercel-react-best-practices，核心主题明显是 React 开发中的最佳实践。",
+            "其来源标注为 vercel-labs/agent-skills，说明它属于技能库的一部分，侧重经验沉淀而非传统应用项目。",
+            "该条目出现在 skills.sh 的 trending 列表中，表明它近期受到关注，具备一定参考价值。"
           ],
           "repoUrl": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
           "sourceUrl": "https://skills.sh/trending"
@@ -514,13 +514,13 @@
           "owner": "skills",
           "language": "vercel-labs/agent-skills",
           "category": "设计规范",
-          "summaryZh": "这是一个来自 vercel-labs/agent-skills 的网页设计指南技能条目，面向需要在智能体或项目中复用网页设计原则与实践的人群。公开信息显示它被收录在 skills.sh 的趋势列表中，说明这类与 Web 设计规范相关的技能内容近期受到关注。",
+          "summaryZh": "这是一个收录于 agent-skills 体系中的网页设计指南技能，面向需要产出或评审 Web 界面的场景，提供可复用的设计原则与实践参考。该项目公开信息显示其来源于 vercel-labs/agent-skills，并在 skills.sh 的趋势列表中出现，说明它更像是供智能代理或开发者调用的结构化设计知识条目，而不是独立应用。",
           "starsToday": 28,
           "starsTotal": 0,
           "reasons": [
-            "仓库名称直接指向 web-design-guidelines，能够明确判断其主题与网页设计指导原则相关。",
-            "来源标注为 vercel-labs/agent-skills，说明它更像一个可复用的技能条目而非独立应用项目。",
-            "该条目带有 trending 标签并出现在 skills.sh 趋势页，表明它近期具有一定关注度。"
+            "仓库名称直接指向 web-design-guidelines，表明核心内容聚焦网页设计规范与指导原则。",
+            "公开描述注明其来源于 vercel-labs 的 agent-skills 体系，说明它属于技能型知识条目而非普通业务项目。",
+            "它出现在 skills.sh 的 trending 列表中，说明这类面向网页设计实践的技能内容近期受到关注。"
           ],
           "repoUrl": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
           "sourceUrl": "https://skills.sh/trending"
@@ -533,87 +533,87 @@
       "items": [
         {
           "rank": 1,
-          "repoName": "frontend-design",
-          "owner": "skills",
-          "language": "anthropics/skills",
-          "category": "前端设计技能资源",
-          "summaryZh": "这是一个来自 anthropics/skills 体系的前端设计相关技能仓库，当前公开信息显示它被 skills.sh 收录并出现在趋势列表中。由于缺少更详细的项目说明、文档内容和示例信息，可以判断它更像是面向前端设计主题的技能型资源，而不是一个具备完整产品说明的独立应用项目。",
-          "starsToday": 1,
-          "starsTotal": 262,
-          "reasons": [
-            "仓库名称直接指向 frontend-design，说明其主题聚焦于前端设计方向的技能内容。",
-            "公开描述仅标注来源为 anthropics/skills，缺乏功能介绍、技术架构和使用说明，因此更适合归类为技能资源。",
-            "该仓库带有 trending 和 hot 标签，且来源页面为 skills.sh 的趋势页，表明它近期在相关资源列表中受到关注。"
-          ],
-          "repoUrl": "https://skills.sh/anthropics/skills/frontend-design",
-          "sourceUrl": "https://skills.sh/hot"
-        },
-        {
-          "rank": 2,
           "repoName": "active-research",
           "owner": "skills",
           "language": "actionbook/actionbook",
           "category": "其他",
-          "summaryZh": "这是一个来自 actionbook/actionbook 的 active-research 条目，当前公开信息显示它被收录在 skills.sh 热门列表中，但仓库用途、功能边界和具体实现细节较少，暂时更适合归为信息有限的通用项目。",
-          "starsToday": 2,
-          "starsTotal": 31,
+          "summaryZh": "这是一个来自 actionbook/actionbook 来源的技能型仓库条目，公开信息显示它被 skills.sh 收录为热门内容之一，但当前缺少关于其具体功能、使用场景和实现细节的明确说明。",
+          "starsToday": 1,
+          "starsTotal": 19,
           "reasons": [
-            "公开描述只有来源信息，缺少明确的产品定位、技术栈说明或使用场景，因此难以进一步细分到更具体的软件类别。",
-            "它出现在 skills.sh 的热门来源列表中，并带有一定关注度标签，说明该条目近期有一定可见性，但这不足以证明其具体属于开发工具、应用程序或模型资源。",
-            "仓库名包含 active-research，可能与研究流程或任务能力有关，但在没有主页、主题标签和详细介绍支撑的情况下，采用保守归类更符合公开信息。"
+            "仓库名称与来源信息都指向 actionbook/actionbook，但提供的描述仅表明其来源，无法确认更细分的软件类别。",
+            "标签显示它与 skills.sh 平台相关并被标记为热门，说明它具有一定关注度，但这不足以判断其具体技术方向。",
+            "主页、主题词和详细介绍都为空，在信息有限的情况下，将其归为其他更符合谨慎原则。"
           ],
           "repoUrl": "https://skills.sh/actionbook/actionbook/active-research",
           "sourceUrl": "https://skills.sh/hot"
         },
         {
-          "rank": 3,
-          "repoName": "extract",
+          "rank": 2,
+          "repoName": "planning-with-files-zh",
           "owner": "skills",
-          "language": "actionbook/actionbook",
+          "language": "othmanadi/planning-with-files",
           "category": "其他",
-          "summaryZh": "这是一个来自 actionbook/actionbook 的条目，当前公开信息非常有限，像是被 skills.sh 热门列表收录的仓库或技能项，但难以仅凭现有字段判断其具体功能与技术方向。",
-          "starsToday": 3,
-          "starsTotal": 31,
+          "summaryZh": "这是一个与“基于文件进行规划”相关的中文镜像或整理仓库，公开信息显示其来源于 othmanadi/planning-with-files，当前可见信息主要用于指向原始项目而非详细介绍功能实现。",
+          "starsToday": 2,
+          "starsTotal": 32,
           "reasons": [
-            "仓库描述只有来源指向 actionbook/actionbook，没有提供明确的项目用途、能力边界或应用场景。",
-            "公开字段中缺少主页、主题标签和详细说明，因此无法可靠归类到开发工具、数据处理或其他更具体的软件类别。",
-            "它出现在 skills.sh 的热门来源中并带有变化标签，说明该条目具备一定关注度，但这些信息不足以支持更深入的事实性判断。"
+            "仓库名称包含 planning-with-files-zh，且描述中明确标注来源于 othmanadi/planning-with-files，说明它很可能是中文化或转引版本。",
+            "公开元数据里没有提供主页、主题词和更完整的功能说明，因此更适合归为其他而不是细分到特定开发框架或应用类别。",
+            "该仓库出现在 skills.sh 热门列表并带有变更标记，表明它在相关技能或资源聚合场景中具有一定关注度。"
           ],
-          "repoUrl": "https://skills.sh/actionbook/actionbook/extract",
+          "repoUrl": "https://skills.sh/othmanadi/planning-with-files/planning-with-files-zh",
           "sourceUrl": "https://skills.sh/hot"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "repoName": "actionbook",
           "owner": "skills",
           "language": "actionbook/actionbook",
           "category": "其他",
-          "summaryZh": "这是一个名为 ActionBook 的项目条目，公开信息显示其来源指向 actionbook/actionbook，但当前可见资料非常有限，难以明确判断其具体功能、技术栈或应用场景。",
-          "starsToday": 4,
-          "starsTotal": 31,
+          "summaryZh": "这是一个名为 Actionbook 的仓库，当前公开信息非常有限，来源指向 actionbook/actionbook，本身更像是被 skills.sh 收录展示的项目条目，但无法仅凭现有数据明确判断其具体技术方向与功能定位。",
+          "starsToday": 3,
+          "starsTotal": 18,
           "reasons": [
-            "仓库描述仅显示来源信息，缺少对项目目标、核心能力和使用方式的直接说明。",
-            "当前提供的主页、主题和详细标签信息不足，无法可靠归类到开发工具、框架或应用等更具体类别。",
-            "虽然它出现在 skills.sh 的热门列表中并带有一定关注度，但这些信号只能说明其受到关注，不能替代对项目内容本身的确认。"
+            "仓库描述只有来源信息，缺少明确的功能介绍、技术栈说明或使用场景，因此难以归入常见的软件类别。",
+            "标签主要体现了 skills.sh 的收录来源与热度变化信息，而不是项目自身的产品特征或领域属性。",
+            "在缺乏主页、主题词和详细说明的情况下，将其归为其他更能避免对项目用途做出未经证实的推断。"
           ],
           "repoUrl": "https://skills.sh/actionbook/actionbook/actionbook",
           "sourceUrl": "https://skills.sh/hot"
         },
         {
-          "rank": 5,
-          "repoName": "test-driven-development",
+          "rank": 4,
+          "repoName": "extract",
           "owner": "skills",
-          "language": "obra/superpowers",
-          "category": "教程/实践技能",
-          "summaryZh": "这是一个围绕测试驱动开发的练习型仓库，名称表明其主题是通过实际操作学习 TDD 方法，来源信息显示它被 skills.sh 收录为热门技能内容之一。",
-          "starsToday": 5,
-          "starsTotal": 78,
+          "language": "actionbook/actionbook",
+          "category": "其他",
+          "summaryZh": "这是一个来自 actionbook/actionbook 的技能条目，当前公开信息主要表明它被 skills.sh 热门列表收录，但缺少关于具体功能、适用场景和实现内容的进一步说明。",
+          "starsToday": 4,
+          "starsTotal": 17,
           "reasons": [
-            "仓库名称直接指向 test-driven-development，能够明确判断其核心主题是测试驱动开发实践。",
-            "标签中包含 skills.sh 和 hot，说明它更像面向学习者的技能训练内容，并且近期具有一定关注度。",
-            "公开信息未提供详细功能介绍和代码细节，因此更稳妥的归类是教程或实践技能资源，而不是具体的软件产品。"
+            "仓库描述仅显示来源信息，未提供足够内容判断其明确的软件类别或技术方向。",
+            "标签中包含 skills.sh 和 hot，说明它与技能条目聚合或热门展示有关，但不足以确认更细分定位。",
+            "在缺少主页、主题词和详细说明的情况下，采用较为保守的“其他”分类更符合公开信息。"
           ],
-          "repoUrl": "https://skills.sh/obra/superpowers/test-driven-development",
+          "repoUrl": "https://skills.sh/actionbook/actionbook/extract",
+          "sourceUrl": "https://skills.sh/hot"
+        },
+        {
+          "rank": 5,
+          "repoName": "md2wechat",
+          "owner": "skills",
+          "language": "geekjourneyx/md2wechat-skill",
+          "category": "内容创作工具",
+          "summaryZh": "这是一个面向 skills 生态的 md2wechat 技能仓库，主要用于将 Markdown 内容适配或转换为适合微信公众号场景的输出形式。从仓库命名和来源信息看，它更偏向内容排版与发布流程中的辅助工具，适合有微信公众号编辑需求的用户关注。",
+          "starsToday": 5,
+          "starsTotal": 12,
+          "reasons": [
+            "仓库名称包含 md2wechat，直接表明其核心用途与 Markdown 到微信内容适配相关。",
+            "来源指向 geekjourneyx/md2wechat-skill，说明它是以技能形式封装的工具，便于集成到特定工作流中使用。",
+            "该条目出现在 skills.sh 的热门列表中，说明它近期获得了一定关注，具备实际使用或讨论价值。"
+          ],
+          "repoUrl": "https://skills.sh/geekjourneyx/md2wechat-skill/md2wechat",
           "sourceUrl": "https://skills.sh/hot"
         }
       ]
@@ -645,5 +645,5 @@
       "url": "https://skills.sh/hot"
     }
   ],
-  "generatedAt": "2026-03-27T02:43:09.466Z"
+  "generatedAt": "2026-03-27T03:23:25.229Z"
 }
