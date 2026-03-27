@@ -64,23 +64,33 @@ function collectUniqueRepos(sections: ScrapedSection[]): ScrapedRepo[] {
 
 async function main() {
   const date = parseDateArg(process.argv.slice(2)) ?? getShanghaiDateString();
+  console.log(`[step] generate start: ${date}`);
 
+  console.log('[step] fetching sections...');
   const sections = await Promise.all(DEFAULT_COLLECTION.sections.map(fetchSection));
+  console.log(`[step] fetched sections: ${sections.map((section) => `${section.id}=${section.items.length}`).join(', ')}`);
+
   const uniqueRepos = collectUniqueRepos(sections);
+  console.log(`[step] unique repos: ${uniqueRepos.length}`);
 
   const metadataMap = new Map<string, RepoMetadata | null>();
   for (const repo of uniqueRepos) {
+    console.log(`[step] metadata start: ${repo.owner}/${repo.repoName}`);
     const metadata = await fetchGitHubMetadata(repo.owner, repo.repoName);
     metadataMap.set(repoKey(repo), metadata);
+    console.log(`[step] metadata done: ${repo.owner}/${repo.repoName}`);
   }
 
   const enrichmentMap = new Map<string, RepoEnrichment>();
   for (const repo of uniqueRepos) {
     const metadata = metadataMap.get(repoKey(repo)) ?? null;
+    console.log(`[step] enrich start: ${repo.owner}/${repo.repoName}`);
     const enrichment = await enrichRepo(repo, metadata);
     enrichmentMap.set(repoKey(repo), enrichment);
+    console.log(`[step] enrich done: ${repo.owner}/${repo.repoName}`);
   }
 
+  console.log('[step] building issue...');
   const issue = buildIssue({
     date,
     sections,
@@ -89,6 +99,7 @@ async function main() {
   });
 
   await writeOutputs(date, `${JSON.stringify(issue, null, 2)}\n`, `${issue.rawText}\n`);
+  console.log(`[step] wrote outputs for ${date}`);
   console.log(`Generated ${date} issue: src/content/daily/${date}.json`);
 }
 
