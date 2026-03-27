@@ -2,18 +2,21 @@
 interface Props {
   githubLabel?: string;
   skillsLabel?: string;
+  defaultTab?: 'github' | 'skills';
 }
 
-const { githubLabel = 'GitHub', skillsLabel = 'Skills' } = Astro.props;
+const { githubLabel = 'GitHub', skillsLabel = 'Skills', defaultTab = 'github' } = Astro.props;
+const githubActive = defaultTab === 'github';
+const skillsActive = defaultTab === 'skills';
 ---
 
 <section class="section-tabs" data-section-tabs>
   <div class="section-tabs__list" role="tablist" aria-label="榜单分类切换">
     <button
       type="button"
-      class="section-tabs__tab is-active"
+      class:list={['section-tabs__tab', githubActive && 'is-active']}
       role="tab"
-      aria-selected="true"
+      aria-selected={githubActive ? 'true' : 'false'}
       aria-controls="panel-github"
       id="tab-github"
       data-tab-trigger="github"
@@ -22,9 +25,9 @@ const { githubLabel = 'GitHub', skillsLabel = 'Skills' } = Astro.props;
     </button>
     <button
       type="button"
-      class="section-tabs__tab"
+      class:list={['section-tabs__tab', skillsActive && 'is-active']}
       role="tab"
-      aria-selected="false"
+      aria-selected={skillsActive ? 'true' : 'false'}
       aria-controls="panel-skills"
       id="tab-skills"
       data-tab-trigger="skills"
@@ -33,11 +36,11 @@ const { githubLabel = 'GitHub', skillsLabel = 'Skills' } = Astro.props;
     </button>
   </div>
 
-  <div class="section-tabs__panel is-active" role="tabpanel" aria-labelledby="tab-github" id="panel-github" data-tab-panel="github">
+  <div class:list={['section-tabs__panel', githubActive && 'is-active']} role="tabpanel" aria-labelledby="tab-github" id="panel-github" data-tab-panel="github" hidden={githubActive ? undefined : true}>
     <slot name="github" />
   </div>
 
-  <div class="section-tabs__panel" role="tabpanel" aria-labelledby="tab-skills" id="panel-skills" data-tab-panel="skills" hidden>
+  <div class:list={['section-tabs__panel', skillsActive && 'is-active']} role="tabpanel" aria-labelledby="tab-skills" id="panel-skills" data-tab-panel="skills" hidden={skillsActive ? undefined : true}>
     <slot name="skills" />
   </div>
 </section>

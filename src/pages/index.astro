@@ -2,6 +2,7 @@
 import IssueHero from '@/components/IssueHero.astro';
 import RankingSection from '@/components/RankingSection.astro';
 import RawTextPanel from '@/components/RawTextPanel.astro';
+import SectionTabs from '@/components/SectionTabs.astro';
 import SourceList from '@/components/SourceList.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { countRepos, countUniqueRepos, getLatestIssue } from '@/lib/daily/content';
@@ -10,6 +11,8 @@ import { getLatestBuildMeta } from '@/lib/daily/latest-build';
 
 const latestIssue = await getLatestIssue();
 const latestBuild = getLatestBuildMeta();
+const githubSections = latestIssue?.data.sections.filter((section) => !section.id.startsWith('skills-')) ?? [];
+const skillsSections = latestIssue?.data.sections.filter((section) => section.id.startsWith('skills-')) ?? [];
 ---
 
 <BaseLayout title="GitHub 天榜速递 " latestBuild={latestBuild}>
@@ -27,7 +30,14 @@ const latestBuild = getLatestBuildMeta();
           ]}
         />
 
-        {latestIssue.data.sections.map((section, index) => <RankingSection section={section} index={index} />)}
+        <SectionTabs githubLabel="GitHub" skillsLabel="Skills" defaultTab="github">
+          <Fragment slot="github">
+            {githubSections.map((section, index) => <RankingSection section={section} index={index} />)}
+          </Fragment>
+          <Fragment slot="skills">
+            {skillsSections.map((section, index) => <RankingSection section={section} index={index} />)}
+          </Fragment>
+        </SectionTabs>
 
         <SourceList sources={latestIssue.data.sources} />
         <RawTextPanel rawText={latestIssue.data.rawText} />
