@@ -2,6 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { SECTION_CONFIG } from '../src/lib/daily/constants';
 import { buildIssue } from './lib/build-issue';
+import { readEnrichCache, setCachedEnrichment, writeEnrichCache } from './lib/enrich-cache';
 import { fetchGitHubMetadata } from './lib/github-api';
 import { fetchHtml } from './lib/http';
 import { buildFallbackEnrichment, enrichRepo } from './lib/llm';
@@ -82,6 +83,9 @@ async function main() {
   const uniqueRepos = collectUniqueRepos(sections);
   console.log(`[step] unique repos: ${uniqueRepos.length}`);
 
+  const enrichCache = await readEnrichCache(date);
+  console.log(`[step] enrich cache loaded: ${enrichCache.size}`);
+
   const metadataMap = new Map<string, RepoMetadata | null>();
   for (const repo of uniqueRepos) {
     console.log(`[step] metadata start: ${repo.owner}/${repo.repoName}`);
@@ -92,18 +96,32 @@ async function main() {
 
   const enrichmentMap = new Map<string, RepoEnrichment>();
   await runInBatches(uniqueRepos, ENRICH_BATCH_SIZE, async (repo) => {
-    const metadata = metadataMap.get(repoKey(repo)) ?? null;
+    const cacheKey = repoKey(repo);
+    const cached = enrichCache.get(cacheKey);
+    if (cached) {
+      enrichmentMap.set(cacheKey, cached);
+      console.log(`[step] enrich cache hit: ${repo.owner}/${repo.repoName}`);
+      return;
+    }
+
+    const metadata = metadataMap.get(cacheKey) ?? null;
     console.log(`[step] enrich start: ${repo.owner}/${repo.repoName}`);
     try {
       const enrichment = await enrichRepo(repo, metadata);
-      enrichmentMap.set(repoKey(repo), enrichment);
+      enrichmentMap.set(cacheKey, enrichment);
+      setCachedEnrichment(enrichCache, repo, enrichment);
       console.log(`[step] enrich done: ${repo.owner}/${repo.repoName}`);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       console.warn(`[warn] enrich fallback: ${repo.owner}/${repo.repoName} :: ${message}`);
-      enrichmentMap.set(repoKey(repo), buildFallbackEnrichment(repo, metadata));
+      const fallback = buildFallbackEnrichment(repo, metadata);
+      enrichmentMap.set(cacheKey, fallback);
+      setCachedEnrichment(enrichCache, repo, fallback);
     }
   });
+
+  await writeEnrichCache(date, enrichCache);
+  console.log(`[step] enrich cache saved: ${enrichCache.size}`);
 
   console.log('[step] building issue...');
   const issue = buildIssue({
