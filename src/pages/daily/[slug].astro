@@ -35,12 +35,7 @@ const skillsSections = entry.data.sections.filter((section) => section.id.starts
     ]}
   />
 
-  <SectionTabs
-    groups={[
-      { key: 'github', label: 'GitHub', sections: githubSections },
-      { key: 'skills', label: 'Skills', sections: skillsSections },
-    ]}
-  >
+  <SectionTabs githubLabel="GitHub" skillsLabel="Skills">
     <Fragment slot="github">
       {githubSections.map((section, index) => <RankingSection section={section} index={index} />)}
     </Fragment>

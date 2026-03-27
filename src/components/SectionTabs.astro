@@ -1,51 +1,45 @@
 ---
-import type { RankingSection as RankingSectionModel } from '@/lib/daily/schema';
-
 interface Props {
-  groups: Array<{
-    key: string;
-    label: string;
-    sections: RankingSectionModel[];
-  }>;
+  githubLabel?: string;
+  skillsLabel?: string;
 }
 
-const { groups } = Astro.props;
-const defaultKey = groups[0]?.key ?? 'github';
+const { githubLabel = 'GitHub', skillsLabel = 'Skills' } = Astro.props;
 ---
 
 <section class="section-tabs" data-section-tabs>
   <div class="section-tabs__list" role="tablist" aria-label="榜单分类切换">
-    {
-      groups.map((group) => (
-        <button
-          type="button"
-          class:list={['section-tabs__tab', group.key === defaultKey && 'is-active']}
-          role="tab"
-          aria-selected={group.key === defaultKey ? 'true' : 'false'}
-          aria-controls={`panel-${group.key}`}
-          id={`tab-${group.key}`}
-          data-tab-trigger={group.key}
-        >
-          {group.label}
-        </button>
-      ))
-    }
+    <button
+      type="button"
+      class="section-tabs__tab is-active"
+      role="tab"
+      aria-selected="true"
+      aria-controls="panel-github"
+      id="tab-github"
+      data-tab-trigger="github"
+    >
+      {githubLabel}
+    </button>
+    <button
+      type="button"
+      class="section-tabs__tab"
+      role="tab"
+      aria-selected="false"
+      aria-controls="panel-skills"
+      id="tab-skills"
+      data-tab-trigger="skills"
+    >
+      {skillsLabel}
+    </button>
   </div>
 
-  {
-    groups.map((group) => (
-      <div
-        class:list={['section-tabs__panel', group.key === defaultKey && 'is-active']}
-        role="tabpanel"
-        aria-labelledby={`tab-${group.key}`}
-        id={`panel-${group.key}`}
-        data-tab-panel={group.key}
-        hidden={group.key === defaultKey ? undefined : true}
-      >
-        <slot name={group.key} />
-      </div>
-    ))
-  }
+  <div class="section-tabs__panel is-active" role="tabpanel" aria-labelledby="tab-github" id="panel-github" data-tab-panel="github">
+    <slot name="github" />
+  </div>
+
+  <div class="section-tabs__panel" role="tabpanel" aria-labelledby="tab-skills" id="panel-skills" data-tab-panel="skills" hidden>
+    <slot name="skills" />
+  </div>
 </section>
 
 <script is:inline>
