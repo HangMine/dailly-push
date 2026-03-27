@@ -2,9 +2,10 @@ import type { SectionId } from '../../src/lib/daily/schema';
 import type { ScrapedRepo } from './types';
 import { parseBestOfJs } from './bestofjs';
 import { parseGitHubTrending } from './github-trending';
+import { parseMcpMarketDaily } from './mcp';
 import { parseSkillsHot, parseSkillsTrending } from './skills';
 
-export type DailySourceKind = 'github-trending' | 'bestofjs' | 'skills-trending' | 'skills-hot';
+export type DailySourceKind = 'github-trending' | 'bestofjs' | 'skills-trending' | 'skills-hot' | 'mcpmarket-daily';
 
 export interface DailySectionConfig {
   id: SectionId;
@@ -25,6 +26,8 @@ export function parseSectionItems(config: DailySectionConfig, html: string): Scr
       return parseSkillsTrending(html, config.sourceUrl, config.limit);
     case 'skills-hot':
       return parseSkillsHot(html, config.sourceUrl, config.limit);
+    case 'mcpmarket-daily':
+      return parseMcpMarketDaily(html, config.sourceUrl, config.limit);
     default: {
       const neverReached: never = config.sourceKind;
       throw new Error(`Unsupported source kind: ${String(neverReached)}`);

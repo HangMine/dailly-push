@@ -35,7 +35,8 @@ export function formatQqMessage(issue: Pick<DailyIssue, 'date' | 'sections' | 's
     for (const item of section.items) {
       const isSkillsTrending = section.id === 'skills-trending';
       const isSkillsHot = section.id === 'skills-hot';
-      const titleLine = item.owner === 'skills' ? `${item.rank}. ${item.repoName}｜${item.language}` : `${item.rank}. ${item.owner}/${item.repoName}（${item.language}）`;
+      const isMcp = section.id === 'mcp';
+      const titleLine = item.owner === 'skills' || item.owner === 'mcp' ? `${item.rank}. ${item.repoName}｜${item.language}` : `${item.rank}. ${item.owner}/${item.repoName}（${item.language}）`;
       lines.push(titleLine);
       lines.push(`▸ 类别：${item.category}`);
       lines.push(`▸ 简介：${item.summaryZh}`);
@@ -45,11 +46,13 @@ export function formatQqMessage(issue: Pick<DailyIssue, 'date' | 'sections' | 's
       } else if (isSkillsHot) {
         const change = item.starsTotal > 0 ? `+${formatNumber(item.starsTotal)}` : '-';
         lines.push(`▸ 数据：⚡ 1H ${item.starsToday > 0 ? formatNumber(item.starsToday) : '-'}｜📈 Change ${change}`);
+      } else if (isMcp) {
+        lines.push(`▸ 数据：🔥 单日热度 ${item.starsToday > 0 ? formatNumber(item.starsToday) : '-'}｜📊 累计指标 ${item.starsTotal > 0 ? formatNumber(item.starsTotal) : '-'}`);
       } else {
         lines.push(`▸ Stars：今日 ⭐${formatNumber(item.starsToday)}｜总 ⭐${formatNumber(item.starsTotal)}`);
       }
 
-      lines.push(isSkillsTrending || isSkillsHot ? '▸ 推荐理由：' : '▸ 增长原因：');
+      lines.push(isSkillsTrending || isSkillsHot || isMcp ? '▸ 推荐理由：' : '▸ 增长原因：');
 
       for (const reason of item.reasons) {
         lines.push(`${REASON_PREFIX}${reason.trim()}`);

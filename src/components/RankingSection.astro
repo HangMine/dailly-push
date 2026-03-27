@@ -10,6 +10,8 @@ interface Props {
 }
 
 const { section, index } = Astro.props;
+const isSkillsSection = section.id.startsWith('skills-');
+const isMcpSection = section.id === 'mcp';
 ---
 
 <section class="ranking-section" style={`--section-index:${index};`}>
@@ -43,12 +45,28 @@ const { section, index } = Astro.props;
             <p class="repo-summary">{item.summaryZh}</p>
 
             <div class="repo-stars">
-              <span>今日 ⭐{formatNumber(item.starsToday)}</span>
-              <span>总 ⭐{formatNumber(item.starsTotal)}</span>
+              {
+                isSkillsSection ? (
+                  <>
+                    <span>24h 📦{formatNumber(item.starsToday)}</span>
+                    <span>热度变化 📈{formatNumber(item.starsTotal)}</span>
+                  </>
+                ) : isMcpSection ? (
+                  <>
+                    <span>单日热度 🔥{formatNumber(item.starsToday)}</span>
+                    <span>累计指标 📊{formatNumber(item.starsTotal)}</span>
+                  </>
+                ) : (
+                  <>
+                    <span>今日 ⭐{formatNumber(item.starsToday)}</span>
+                    <span>总 ⭐{formatNumber(item.starsTotal)}</span>
+                  </>
+                )
+              }
             </div>
 
             <div class="repo-reasons">
-              <strong>增长原因</strong>
+              <strong>{isSkillsSection || isMcpSection ? '推荐理由' : '增长原因'}</strong>
               <ul>
                 {item.reasons.map((reason) => <li>{reason}</li>)}
               </ul>

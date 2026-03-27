@@ -8,6 +8,7 @@ import { fetchHtml } from './lib/http';
 import { buildFallbackEnrichment, enrichRepo } from './lib/llm';
 import { parseSectionItems } from './lib/multi-source';
 import { DEFAULT_COLLECTION } from './lib/collections';
+import { readMcpCache } from './lib/mcp-cache';
 import type { RepoEnrichment, RepoMetadata, ScrapedRepo, ScrapedSection } from './lib/types';
 import { getShanghaiDateString, parseDateArg, repoKey } from './lib/utils';
 
@@ -22,9 +23,25 @@ async function writeOutputs(date: string, content: string, rawText: string) {
   await writeFile(textPath, rawText, 'utf8');
 }
 
-async function fetchSection(config: (typeof SECTION_CONFIG)[number]): Promise<ScrapedSection> {
-  const html = await fetchHtml(config.sourceUrl);
-  const items = parseSectionItems(config, html);
+async function fetchSection(config: (typeof SECTION_CONFIG)[number], date: string): Promise<ScrapedSection> {
+  let items: ScrapedSection['items'];
+
+  try {
+    const html = await fetchHtml(config.sourceUrl);
+    items = parseSectionItems(config, html);
+  } catch (error) {
+    if (config.id === 'mcp') {
+      const cached = await readMcpCache(date);
+      if (cached?.length) {
+        console.warn(`[warn] ${config.title} online fetch failed, fallback to local MCP cache for ${date}.`);
+        items = cached;
+      } else {
+        throw error;
+      }
+    } else {
+      throw error;
+    }
+  }
 
   if (items.length < config.limit) {
     console.warn(
@@ -77,7 +94,7 @@ async function main() {
   console.log(`[step] generate start: ${date}`);
 
   console.log('[step] fetching sections...');
-  const sections = await Promise.all(DEFAULT_COLLECTION.sections.map(fetchSection));
+  const sections = await Promise.all(DEFAULT_COLLECTION.sections.map((config) => fetchSection(config, date)));
   console.log(`[step] fetched sections: ${sections.map((section) => `${section.id}=${section.items.length}`).join(', ')}`);
 
   const uniqueRepos = collectUniqueRepos(sections);
@@ -88,6 +105,12 @@ async function main() {
 
   const metadataMap = new Map<string, RepoMetadata | null>();
   for (const repo of uniqueRepos) {
+    if (repo.owner === 'skills' || repo.owner === 'mcp') {
+      metadataMap.set(repoKey(repo), null);
+      console.log(`[step] metadata skip: ${repo.owner}/${repo.repoName}`);
+      continue;
+    }
+
     console.log(`[step] metadata start: ${repo.owner}/${repo.repoName}`);
     const metadata = await fetchGitHubMetadata(repo.owner, repo.repoName);
     metadataMap.set(repoKey(repo), metadata);

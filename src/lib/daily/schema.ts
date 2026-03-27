@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const sectionIdSchema = z.enum(['overall', 'typescript', 'vue', 'react', 'skills-trending', 'skills-hot']);
+export const sectionIdSchema = z.enum(['overall', 'typescript', 'vue', 'react', 'skills-trending', 'skills-hot', 'mcp']);
 
 export const sourceLinkSchema = z.object({
   label: z.string().min(1),
@@ -32,8 +32,8 @@ export const dailyIssueSchema = z.object({
   slug: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   title: z.string().min(1),
   rawText: z.string().min(1),
-  sections: z.array(rankingSectionSchema).min(4),
-  sources: z.array(sourceLinkSchema).min(4),
+  sections: z.array(rankingSectionSchema).min(5),
+  sources: z.array(sourceLinkSchema).min(5),
   generatedAt: z.string().min(1),
 });
 

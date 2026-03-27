@@ -49,6 +49,14 @@ export const SECTION_CONFIG: DailySectionConfig[] = [
     sourceUrl: 'https://skills.sh/hot',
     sourceKind: 'skills-hot',
   },
+  {
+    id: 'mcp',
+    title: 'MCP 单天热榜 Top 10',
+    limit: 10,
+    sourceLabel: 'MCP Market（Daily）',
+    sourceUrl: 'https://mcpmarket.com/daily/top-mcp-server-list-march-27-2026',
+    sourceKind: 'mcpmarket-daily',
+  },
 ];
 
 export const SOURCE_LINKS = SECTION_CONFIG.map(({ sourceLabel, sourceUrl }) => ({

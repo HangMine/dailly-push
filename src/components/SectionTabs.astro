@@ -2,12 +2,14 @@
 interface Props {
   githubLabel?: string;
   skillsLabel?: string;
-  defaultTab?: 'github' | 'skills';
+  mcpLabel?: string;
+  defaultTab?: 'github' | 'skills' | 'mcp';
 }
 
-const { githubLabel = 'GitHub', skillsLabel = 'Skills', defaultTab = 'github' } = Astro.props;
+const { githubLabel = 'GitHub', skillsLabel = 'Skills', mcpLabel = 'MCP', defaultTab = 'github' } = Astro.props;
 const githubActive = defaultTab === 'github';
 const skillsActive = defaultTab === 'skills';
+const mcpActive = defaultTab === 'mcp';
 ---
 
 <section class="section-tabs" data-section-tabs>
@@ -34,6 +36,17 @@ const skillsActive = defaultTab === 'skills';
     >
       {skillsLabel}
     </button>
+    <button
+      type="button"
+      class:list={['section-tabs__tab', mcpActive && 'is-active']}
+      role="tab"
+      aria-selected={mcpActive ? 'true' : 'false'}
+      aria-controls="panel-mcp"
+      id="tab-mcp"
+      data-tab-trigger="mcp"
+    >
+      {mcpLabel}
+    </button>
   </div>
 
   <div class:list={['section-tabs__panel', githubActive && 'is-active']} role="tabpanel" aria-labelledby="tab-github" id="panel-github" data-tab-panel="github" hidden={githubActive ? undefined : true}>
@@ -42,6 +55,10 @@ const skillsActive = defaultTab === 'skills';
 
   <div class:list={['section-tabs__panel', skillsActive && 'is-active']} role="tabpanel" aria-labelledby="tab-skills" id="panel-skills" data-tab-panel="skills" hidden={skillsActive ? undefined : true}>
     <slot name="skills" />
+  </div>
+
+  <div class:list={['section-tabs__panel', mcpActive && 'is-active']} role="tabpanel" aria-labelledby="tab-mcp" id="panel-mcp" data-tab-panel="mcp" hidden={mcpActive ? undefined : true}>
+    <slot name="mcp" />
   </div>
 </section>
 

@@ -19,8 +19,9 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const latestBuild = getLatestBuildMeta();
-const githubSections = entry.data.sections.filter((section) => !section.id.startsWith('skills-'));
+const githubSections = entry.data.sections.filter((section) => !section.id.startsWith('skills-') && section.id !== 'mcp');
 const skillsSections = entry.data.sections.filter((section) => section.id.startsWith('skills-'));
+const mcpSections = entry.data.sections.filter((section) => section.id === 'mcp');
 ---
 
 <BaseLayout title={`${entry.data.title} | GitHub 天榜速递`} latestBuild={latestBuild}>
@@ -35,12 +36,15 @@ const skillsSections = entry.data.sections.filter((section) => section.id.starts
     ]}
   />
 
-  <SectionTabs githubLabel="GitHub" skillsLabel="Skills">
+  <SectionTabs githubLabel="GitHub" skillsLabel="Skills" mcpLabel="MCP">
     <Fragment slot="github">
       {githubSections.map((section, index) => <RankingSection section={section} index={index} />)}
     </Fragment>
     <Fragment slot="skills">
       {skillsSections.map((section, index) => <RankingSection section={section} index={index} />)}
+    </Fragment>
+    <Fragment slot="mcp">
+      {mcpSections.map((section, index) => <RankingSection section={section} index={index} />)}
     </Fragment>
   </SectionTabs>
 

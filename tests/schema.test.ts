@@ -16,6 +16,7 @@ describe('dailyIssueSchema', () => {
         { label: 'D', url: 'https://d.test' },
         { label: 'E', url: 'https://e.test' },
         { label: 'F', url: 'https://f.test' },
+        { label: 'G', url: 'https://g.test' },
       ],
       sections: [
         { id: 'overall', title: '全站天榜 Top10', items: [] },
@@ -24,6 +25,7 @@ describe('dailyIssueSchema', () => {
         { id: 'react', title: 'React 天榜 Top5', items: [] },
         { id: 'skills-trending', title: 'Trending Skills Top 5', items: [] },
         { id: 'skills-hot', title: 'Hot Skills Top 5', items: [] },
+        { id: 'mcp', title: 'MCP 单天热榜 Top 10', items: [] },
       ],
     };
 

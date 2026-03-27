@@ -13,13 +13,13 @@ const enrichmentSchema = z.object({
 export function buildFallbackEnrichment(repo: ScrapedRepo, metadata: RepoMetadata | null): RepoEnrichment {
   const language = metadata?.language || repo.language || '未知技术栈';
   const description = (metadata?.description || repo.descriptionEn || '').trim();
-  const source = repo.owner === 'skills' ? 'Skills 榜单' : 'GitHub 热门榜单';
+  const source = repo.owner === 'skills' ? 'Skills 榜单' : repo.owner === 'mcp' ? 'MCP 热榜' : 'GitHub 热门榜单';
   const summaryZh = description
     ? `这是一个来自${source}的热门项目，当前主要技术方向是${language}，核心信息可参考项目描述与来源页。`
     : `这是一个来自${source}的热门项目，当前主要技术方向是${language}，近期热度上升，值得继续关注。`;
 
   return {
-    category: repo.owner === 'skills' ? 'AI Skills' : '热门开源项目',
+    category: repo.owner === 'skills' ? 'AI Skills' : repo.owner === 'mcp' ? 'MCP Server' : '热门开源项目',
     summaryZh,
     reasons: [
       `该项目出现在${source}，说明它在当前周期内具备明确热度。`,
