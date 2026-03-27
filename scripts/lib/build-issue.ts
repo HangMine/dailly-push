@@ -25,8 +25,9 @@ function resolveItem(
     throw new Error(`缺少仓库增强结果: ${item.owner}/${item.repoName}`);
   }
 
-  const starsTotal = metadata?.starsTotal ?? item.starsTotal;
-  if (starsTotal == null) {
+  const isSkills = item.owner === 'skills';
+  const starsTotal = metadata?.starsTotal ?? item.starsTotal ?? 0;
+  if (!isSkills && starsTotal == null) {
     throw new Error(`缺少总 Star 数据: ${item.owner}/${item.repoName}`);
   }
 
@@ -55,7 +56,16 @@ export function buildIssue({ date, sections, enrichments, metadata }: BuildIssue
     return {
       id: config.id,
       title: config.title,
-      items: section.items.map((item, index) => resolveItem(item, index + 1, enrichments, metadata)),
+      items: section.items.map((item, index) => {
+        const resolved = resolveItem(item, index + 1, enrichments, metadata);
+        if (config.id === 'skills-hot') {
+          return {
+            ...resolved,
+            starsTotal: item.tags.find((tag) => tag.startsWith('change:')) ? Number(item.tags.find((tag) => tag.startsWith('change:'))?.slice(7) ?? '0') : resolved.starsTotal,
+          };
+        }
+        return resolved;
+      }),
     };
   });
 

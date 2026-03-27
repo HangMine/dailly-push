@@ -6,7 +6,7 @@ import type { DailyIssue } from '../src/lib/daily/schema';
 const sampleIssue: DailyIssue = {
   date: '2026-03-22',
   slug: '2026-03-22',
-  title: '📊 GitHub 天榜速递（2026-03-22）',
+  title: '📊 GitHub & Skills 天榜速递（2026-03-22）',
   rawText: '',
   generatedAt: '2026-03-22T10:00:00.000Z',
   sources: [
@@ -14,6 +14,8 @@ const sampleIssue: DailyIssue = {
     { label: 'GitHub Trending（TypeScript）', url: 'https://github.com/trending/typescript?since=daily' },
     { label: 'Best of JS（Vue）', url: 'https://bestofjs.org/projects?page=1&limit=5&tags=vue&sort=daily' },
     { label: 'Best of JS（React）', url: 'https://bestofjs.org/projects?page=1&limit=5&tags=react&sort=daily' },
+    { label: 'skills.sh（Trending）', url: 'https://skills.sh/trending' },
+    { label: 'skills.sh（Hot）', url: 'https://skills.sh/hot' },
   ],
   sections: [
     {
@@ -50,6 +52,16 @@ const sampleIssue: DailyIssue = {
       title: 'React 天榜 Top5',
       items: [],
     },
+    {
+      id: 'skills-trending',
+      title: 'Trending Skills Top 5',
+      items: [],
+    },
+    {
+      id: 'skills-hot',
+      title: 'Hot Skills Top 5',
+      items: [],
+    },
   ],
 };
 
@@ -57,7 +69,7 @@ describe('formatQqMessage', () => {
   it('keeps section order, full-width indents, and source links', () => {
     const output = formatQqMessage(sampleIssue);
 
-    expect(output).toContain('📊 GitHub 天榜速递（2026-03-22）');
+    expect(output).toContain('📊 GitHub & Skills 天榜速递（2026-03-22）');
     expect(output).toContain('━━━━━━━━━━\n【全站天榜 Top10】');
     expect(output).toContain(`${REASON_PREFIX}最近的演示内容更直观`);
     expect(output).toContain('来源链接：');

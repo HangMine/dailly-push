@@ -6,7 +6,7 @@ describe('dailyIssueSchema', () => {
     const issue = {
       date: '2026-03-22',
       slug: '2026-03-22',
-      title: '📊 GitHub 天榜速递（2026-03-22）',
+      title: '📊 GitHub & Skills 天榜速递（2026-03-22）',
       rawText: '正文',
       generatedAt: '2026-03-22T10:00:00.000Z',
       sources: [
@@ -14,12 +14,16 @@ describe('dailyIssueSchema', () => {
         { label: 'B', url: 'https://b.test' },
         { label: 'C', url: 'https://c.test' },
         { label: 'D', url: 'https://d.test' },
+        { label: 'E', url: 'https://e.test' },
+        { label: 'F', url: 'https://f.test' },
       ],
       sections: [
         { id: 'overall', title: '全站天榜 Top10', items: [] },
         { id: 'typescript', title: 'TypeScript 天榜 Top5', items: [] },
         { id: 'vue', title: 'Vue 天榜 Top5', items: [] },
         { id: 'react', title: 'React 天榜 Top5', items: [] },
+        { id: 'skills-trending', title: 'Trending Skills Top 5', items: [] },
+        { id: 'skills-hot', title: 'Hot Skills Top 5', items: [] },
       ],
     };
 

@@ -1,3 +1,4 @@
+import type { DailySectionConfig } from './multi-source';
 import type { SectionId } from '../../src/lib/daily/schema';
 
 export interface ScrapedRepo {
@@ -17,6 +18,12 @@ export interface ScrapedSection {
   title: string;
   sourceUrl: string;
   items: ScrapedRepo[];
+}
+
+export interface IssueCollection {
+  id: string;
+  title: string;
+  sections: DailySectionConfig[];
 }
 
 export interface RepoMetadata {

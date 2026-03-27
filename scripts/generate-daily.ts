@@ -1,12 +1,12 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { SECTION_CONFIG } from '../src/lib/daily/constants';
-import { parseBestOfJs } from './lib/bestofjs';
 import { buildIssue } from './lib/build-issue';
 import { fetchGitHubMetadata } from './lib/github-api';
-import { parseGitHubTrending } from './lib/github-trending';
 import { fetchHtml } from './lib/http';
 import { enrichRepo } from './lib/llm';
+import { parseSectionItems } from './lib/multi-source';
+import { DEFAULT_COLLECTION } from './lib/collections';
 import type { RepoEnrichment, RepoMetadata, ScrapedRepo, ScrapedSection } from './lib/types';
 import { getShanghaiDateString, parseDateArg, repoKey } from './lib/utils';
 
@@ -23,10 +23,7 @@ async function writeOutputs(date: string, content: string, rawText: string) {
 
 async function fetchSection(config: (typeof SECTION_CONFIG)[number]): Promise<ScrapedSection> {
   const html = await fetchHtml(config.sourceUrl);
-  const items =
-    config.id === 'overall' || config.id === 'typescript'
-      ? parseGitHubTrending(html, config.sourceUrl, config.limit, { allowShort: true })
-      : parseBestOfJs(html, config.sourceUrl, config.limit);
+  const items = parseSectionItems(config, html);
 
   if (items.length < config.limit) {
     console.warn(
@@ -68,7 +65,7 @@ function collectUniqueRepos(sections: ScrapedSection[]): ScrapedRepo[] {
 async function main() {
   const date = parseDateArg(process.argv.slice(2)) ?? getShanghaiDateString();
 
-  const sections = await Promise.all(SECTION_CONFIG.map(fetchSection));
+  const sections = await Promise.all(DEFAULT_COLLECTION.sections.map(fetchSection));
   const uniqueRepos = collectUniqueRepos(sections);
 
   const metadataMap = new Map<string, RepoMetadata | null>();

@@ -2,7 +2,7 @@ import type { DailyIssue } from './schema';
 import { REASON_PREFIX, SECTION_CONFIG } from './constants';
 
 export function formatIssueTitle(date: string): string {
-  return `📊 GitHub 天榜速递（${date}）`;
+  return `📊 GitHub & Skills 天榜速递（${date}）`;
 }
 
 export function formatDisplayDate(date: string): string {
@@ -33,11 +33,23 @@ export function formatQqMessage(issue: Pick<DailyIssue, 'date' | 'sections' | 's
     lines.push('');
 
     for (const item of section.items) {
-      lines.push(`${item.rank}. ${item.owner}/${item.repoName}（${item.language}）`);
+      const isSkillsTrending = section.id === 'skills-trending';
+      const isSkillsHot = section.id === 'skills-hot';
+      const titleLine = item.owner === 'skills' ? `${item.rank}. ${item.repoName}｜${item.language}` : `${item.rank}. ${item.owner}/${item.repoName}（${item.language}）`;
+      lines.push(titleLine);
       lines.push(`▸ 类别：${item.category}`);
       lines.push(`▸ 简介：${item.summaryZh}`);
-      lines.push(`▸ Stars：今日 ⭐${formatNumber(item.starsToday)}｜总 ⭐${formatNumber(item.starsTotal)}`);
-      lines.push('▸ 增长原因：');
+
+      if (isSkillsTrending) {
+        lines.push(`▸ 数据：📦 24h ${item.starsToday > 0 ? formatNumber(item.starsToday) : '-'}`);
+      } else if (isSkillsHot) {
+        const change = item.starsTotal > 0 ? `+${formatNumber(item.starsTotal)}` : '-';
+        lines.push(`▸ 数据：⚡ 1H ${item.starsToday > 0 ? formatNumber(item.starsToday) : '-'}｜📈 Change ${change}`);
+      } else {
+        lines.push(`▸ Stars：今日 ⭐${formatNumber(item.starsToday)}｜总 ⭐${formatNumber(item.starsTotal)}`);
+      }
+
+      lines.push(isSkillsTrending || isSkillsHot ? '▸ 推荐理由：' : '▸ 增长原因：');
 
       for (const reason of item.reasons) {
         lines.push(`${REASON_PREFIX}${reason.trim()}`);
