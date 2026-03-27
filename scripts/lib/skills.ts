@@ -22,6 +22,17 @@ function toAbsoluteSkillsUrl(href: string | undefined): string {
   return `https://skills.sh${href.startsWith('/') ? href : `/${href}`}`;
 }
 
+function parseInitialSkillsJson(html: string): Array<{ source: string; skillId: string; name: string; installs: number; installsYesterday?: number; change?: number }> {
+  const match = html.match(/"initialSkills":\s*(\[[\s\S]*?\])\s*,\s*"totalSkills"/);
+  if (!match) return [];
+
+  try {
+    return JSON.parse(match[1]);
+  } catch {
+    return [];
+  }
+}
+
 function splitNameCategory(value: string): { name: string; category: string } {
   const text = cleanText(value);
   const parts = text.split('｜').map((item) => item.trim()).filter(Boolean);
@@ -31,128 +42,93 @@ function splitNameCategory(value: string): { name: string; category: string } {
   return { name: text || '-', category: '-' };
 }
 
-function extractCardBlocks(html: string): string[] {
-  const matches = html.match(/<a[^>]+href="\/[^"#?]+"[^>]*>[\s\S]*?<\/a>/g) ?? [];
-  return matches.filter((block) => /skills\.sh\//i.test(`https://skills.sh${block}`) || /<svg|24h|1H|Change/i.test(block));
-}
-
-function fallbackParse(html: string, sourceUrl: string, limit: number, mode: 'trending' | 'hot'): ScrapedRepo[] {
-  const blocks = extractCardBlocks(html);
-  const items: ScrapedRepo[] = [];
-
-  for (const block of blocks) {
-    const hrefMatch = block.match(/href="([^"]+)"/i);
-    const href = hrefMatch?.[1];
-    if (!href || href === '/trending' || href === '/hot') continue;
-
-    const titleMatch = block.match(/>([^<>]{2,120})<\/h3>/i) || block.match(/>([^<>]{2,120})<\/p>/i);
-    const descMatch = block.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-
-    const metricMatch =
-      mode === 'trending'
-        ? block.match(/24h[^0-9]*([0-9][0-9.,KMB+-]*)/i)
-        : block.match(/1H[^0-9]*([0-9][0-9.,KMB+-]*)/i);
-
-    const rawTitle = cleanText(titleMatch?.[1]);
-    if (!rawTitle) continue;
-
-    const { name, category } = splitNameCategory(rawTitle);
-    const description = cleanText(descMatch?.[1]);
-    items.push({
-      owner: 'skills',
-      repoName: name,
-      repoUrl: toAbsoluteSkillsUrl(href),
-      sourceUrl,
-      language: category,
-      descriptionEn: description,
-      starsToday: compactNumber(metricMatch?.[1] ?? '0'),
-      starsTotal: 0,
-      tags: ['skills.sh', mode],
-    });
-
-    if (items.length >= limit) break;
-  }
-
-  return items;
+function makeSkillItem(
+  entry: { source: string; skillId: string; name: string; installs: number; installsYesterday?: number; change?: number },
+  sourceUrl: string,
+  mode: 'trending' | 'hot',
+): ScrapedRepo {
+  return {
+    owner: 'skills',
+    repoName: cleanText(entry.name || entry.skillId),
+    repoUrl: toAbsoluteSkillsUrl(`/${entry.source}/${entry.skillId}`),
+    sourceUrl,
+    language: cleanText(entry.source),
+    descriptionEn: `Source: ${entry.source}`,
+    starsToday: mode === 'trending' ? Number(entry.installs ?? 0) : Number(entry.installs ?? 0),
+    starsTotal: mode === 'hot' ? Number(entry.change ?? 0) : Number(entry.installsYesterday ?? 0),
+    tags: ['skills.sh', mode],
+  };
 }
 
 export function parseSkillsTrending(html: string, sourceUrl: string, limit: number): ScrapedRepo[] {
+  const entries = parseInitialSkillsJson(html);
+  if (entries.length > 0) {
+    return entries.slice(0, limit).map((entry) => makeSkillItem(entry, sourceUrl, 'trending'));
+  }
+
   const $ = load(html);
   const items: ScrapedRepo[] = [];
-  const seen = new Set<string>();
-
   $('a[href^="/"]').each((_, element) => {
     if (items.length >= limit) return false;
-
     const href = $(element).attr('href');
     if (!href || href === '/trending' || href === '/hot') return;
-    if (seen.has(href)) return;
 
-    const text = cleanText($(element).text());
-    if (!/24h/i.test(text)) return;
-
-    const title = cleanText($(element).find('h3, h2').first().text()) || cleanText(text.split('24h')[0]);
-    const desc = cleanText($(element).find('p').first().text());
-    if (!title) return;
-
+    const title = cleanText($(element).find('h3').first().text());
+    const sourceText = cleanText($(element).find('p').first().text()) || 'skills.sh';
+    const metric = cleanText($(element).find('span.font-mono').first().text()) || cleanText($(element).text().match(/24h\s*([0-9.,KMB]+)/i)?.[1]);
+    if (!title || !metric) return;
     const { name, category } = splitNameCategory(title);
-    const installMatch = text.match(/24h[^0-9]*([0-9][0-9.,KMB]*)/i);
+    const language = category !== '-' ? category : sourceText;
 
-    seen.add(href);
     items.push({
       owner: 'skills',
       repoName: name,
       repoUrl: toAbsoluteSkillsUrl(href),
       sourceUrl,
-      language: category,
-      descriptionEn: desc,
-      starsToday: compactNumber(installMatch?.[1] ?? '0'),
+      language,
+      descriptionEn: `Source: ${sourceText}`,
+      starsToday: compactNumber(metric),
       starsTotal: 0,
       tags: ['skills.sh', 'trending'],
     });
   });
-
-  if (items.length >= limit) return items.slice(0, limit);
-  return fallbackParse(html, sourceUrl, limit, 'trending');
+  return items.slice(0, limit);
 }
 
 export function parseSkillsHot(html: string, sourceUrl: string, limit: number): ScrapedRepo[] {
+  const entries = parseInitialSkillsJson(html);
+  if (entries.length > 0) {
+    return entries.slice(0, limit).map((entry) => makeSkillItem(entry, sourceUrl, 'hot'));
+  }
+
   const $ = load(html);
   const items: ScrapedRepo[] = [];
-  const seen = new Set<string>();
-
   $('a[href^="/"]').each((_, element) => {
     if (items.length >= limit) return false;
-
     const href = $(element).attr('href');
     if (!href || href === '/trending' || href === '/hot') return;
-    if (seen.has(href)) return;
 
+    const title = cleanText($(element).find('h3').first().text());
+    const sourceText = cleanText($(element).find('p').first().text()) || 'skills.sh';
     const text = cleanText($(element).text());
-    if (!/1H/i.test(text) || !/Change/i.test(text)) return;
-
-    const title = cleanText($(element).find('h3, h2').first().text()) || cleanText(text.split('1H')[0]);
-    const desc = cleanText($(element).find('p').first().text());
-    if (!title) return;
-
+    const spans = $(element).find('span.font-mono').toArray().map((node) => cleanText($(node).text())).filter(Boolean);
+    const hourly = spans[0] || cleanText(text.match(/1H\s*([0-9.,KMB]+)/i)?.[1]);
+    const change = spans[1] || cleanText(text.match(/Change\s*([+\-]?[0-9.,KMB]+)/i)?.[1]);
+    if (!title || !hourly) return;
     const { name, category } = splitNameCategory(title);
-    const hourlyMatch = text.match(/1H[^0-9]*([0-9][0-9.,KMB]*)/i);
-    const changeMatch = text.match(/Change[^+\-0-9]*([+\-]?[0-9][0-9.,KMB]*)/i);
+    const language = category !== '-' ? category : sourceText;
 
-    seen.add(href);
     items.push({
       owner: 'skills',
       repoName: name,
       repoUrl: toAbsoluteSkillsUrl(href),
       sourceUrl,
-      language: category,
-      descriptionEn: desc,
-      starsToday: compactNumber(hourlyMatch?.[1] ?? '0'),
-      starsTotal: 0,
-      tags: ['skills.sh', 'hot', `change:${compactNumber(changeMatch?.[1] ?? '0')}`],
+      language,
+      descriptionEn: `Source: ${sourceText}`,
+      starsToday: compactNumber(hourly),
+      starsTotal: compactNumber(change),
+      tags: ['skills.sh', 'hot', `change:${compactNumber(change)}`],
     });
   });
-
-  if (items.length >= limit) return items.slice(0, limit);
-  return fallbackParse(html, sourceUrl, limit, 'hot');
+  return items.slice(0, limit);
 }
